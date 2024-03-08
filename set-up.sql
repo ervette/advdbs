@@ -1,3 +1,25 @@
+/* drop types */
+
+DROP TYPE full_name;
+DROP TYPE address_type;
+DROP TYPE phone_type;
+DROP TYPE phones_collection;
+DROP TYPE person;
+DROP TYPE account;
+DROP TYPE employee_data;
+DROP TYPE branch_sub;
+DROP TYPE employee_sub;
+DROP TYPE customer_sub;
+
+/* drop tables */
+
+DROP TABLE branches;
+DROP TABLE employees;
+DROP TABLE customers;
+DROP TABLE accounts;
+DROP TABLE employees_data;
+DROP TABLE customer_account;
+
 /* types initialisation */
 
 CREATE TYPE full_name AS OBJECT (
