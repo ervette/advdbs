@@ -1,15 +1,15 @@
 /* drop types */
 
-DROP TYPE full_name;
-DROP TYPE address_type;
-DROP TYPE phone_type;
-DROP TYPE phones_collection;
-DROP TYPE person;
-DROP TYPE account;
-DROP TYPE employee_data;
-DROP TYPE branch_sub;
-DROP TYPE employee_sub;
-DROP TYPE customer_sub;
+DROP TYPE full_name FORCE;
+DROP TYPE address_type FORCE;
+DROP TYPE phone_type FORCE;
+DROP TYPE phones_collection FORCE;
+DROP TYPE person FORCE;
+DROP TYPE account FORCE;
+DROP TYPE employee_data FORCE;
+DROP TYPE branch_sub FORCE;
+DROP TYPE employee_sub FORCE;
+DROP TYPE customer_sub FORCE;
 
 /* drop tables */
 
