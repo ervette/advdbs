@@ -21,7 +21,7 @@ CREATE TYPE phone_type AS OBJECT (
     FINAL; 
 /
 
-CREATE TYPE phones_collection AS TABLE OF phone_nested;
+CREATE TYPE phones_collection AS TABLE OF phone_type;
 /
 
 CREATE TYPE person AS OBJECT(
@@ -85,7 +85,7 @@ CREATE TABLE branches OF branch_sub (
     CONSTRAINT street_not_null CHECK(street IS NOT NULL), 
     CONSTRAINT postcode_not_null CHECK(postcode IS NOT NULL),
     CONSTRAINT phone_not_null CHECK(phone IS NOT NULL))
-    NESTED TABLE phone STORE AS branch_phone_nested_table; 
+    NESTED TABLE phone STORE AS branch_collection_table; 
 
 CREATE TABLE employees OF employee_sub (
     CONSTRAINT emp_id_pk PRIMARY KEY (emp_id),
@@ -131,6 +131,36 @@ CREATE TABLE customer_account (
 SHOW ERROR;
 
 /* functions initialisation*/
+
+ALTER TYPE employee_sub
+ADD MEMBER FUNCTION award_stars RETURN VARCHAR2;
+
+CREATE OR REPLACE TYPE BODY employee_sub AS 
+member function award_stars return varchar2 is 
+    medal varchar2(20);  
+    years number;
+    employees_stars number;
+begin
+    select count(*)
+    into   employees_stars
+    from   employees e
+    where  Deref(e.supervisor_ID).emp_ID = self.emp_ID;
+    
+    years := trunc(months_between(sysDate,self.join_Date))/12;
+    
+    if years > 10 AND employees_stars > 10 then
+        medal := 'Gold Medal';
+    elsif years > 8 AND employees_stars > 6 then
+        medal := 'Silver Medal';
+    elsif years > 4 then
+        medal := 'Bronze Medal';
+    else
+        medal := 'No Medal Awarded';
+    end if;        
+    return medal;
+end award_stars;
+end;
+/
 
 ALTER TYPE person
 ADD MEMBER FUNCTION get_name RETURN STRING,
