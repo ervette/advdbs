@@ -114,9 +114,9 @@ CREATE TABLE employees OF employee_sub (
     CONSTRAINT position_not_null CHECK (emp_position IS NOT NULL),
     CONSTRAINT first_name_not_null CHECK (name.first_name IS NOT NULL), /* name */
     CONSTRAINT last_name_not_null CHECK (name.last_name IS NOT NULL), /* name */
-    CONSTRAINT city_not_null CHECK(city IS NOT NULL), /* address */
-    CONSTRAINT street_not_null CHECK(street IS NOT NULL), /* address */
-    CONSTRAINT postcode_not_null CHECK(postcode IS NOT NULL), /* address */
+    CONSTRAINT city_not_null CHECK(address.city IS NOT NULL), /* address */
+    CONSTRAINT street_not_null CHECK(address.street IS NOT NULL), /* address */
+    CONSTRAINT postcode_not_null CHECK(address.postcode IS NOT NULL), /* address */
     CONSTRAINT phone_not_null CHECK (phone IS NOT NULL), 
     CONSTRAINT join_date_not_null CHECK (join_date IS NOT NULL),
     CONSTRAINT branch_id_not_null CHECK(branch_id IS NOT NULL), 
