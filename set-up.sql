@@ -22,10 +22,10 @@ DROP TABLE customer_account FORCE;
 
 /* drop functions */
 
-DROP FUNCTION employee_sub.award_stars FORCE;
-DROP FUNCTION person.get_person_address FORCE;
-DROP FUNCTION person.get_person_name FORCE;
-DROP FUNCTION branch_sub.get_branch_address FORCE;
+DROP FUNCTION award_stars FORCE;
+DROP FUNCTION get_person_address FORCE;
+DROP FUNCTION get_person_name FORCE;
+DROP FUNCTION get_branch_address FORCE;
 
 /* types initialisation */
 
