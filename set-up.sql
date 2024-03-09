@@ -45,7 +45,7 @@ CREATE TYPE address_type AS OBJECT (
 
 
 CREATE TYPE phone_type AS OBJECT (
-    phone_type VARCHAR2(20), 
+    device_type VARCHAR2(20), 
     phone_number VARCHAR2(20))
     FINAL; 
 /
