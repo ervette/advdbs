@@ -207,7 +207,7 @@ ADD MEMBER FUNCTION get_address RETURN STRING CASCADE;
 /
 
 CREATE OR REPLACE TYPE BODY branch_sub AS
-MEMBER FUNCTION get_address RETURN STRING IS 
+MEMBER FUNCTION get_branch_address RETURN STRING IS 
     BEGIN
         RETURN self.street || ', ' || self.city || ', ' || self.postcode;
     END get_address; 
