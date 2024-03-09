@@ -165,61 +165,63 @@ ALTER TYPE employee_sub
 ADD MEMBER FUNCTION award_stars RETURN VARCHAR2 CASCADE;
 
 CREATE OR REPLACE TYPE BODY employee_sub AS 
-member function award_stars return varchar2 is 
-    medal varchar2(20);  
-    years number;
-    employees_stars number;
-begin
-    select count(*)
-    into   employees_stars
-    from   employees e
-    where  Deref(e.supervisor_ID).emp_ID = self.emp_ID;
+  MEMBER FUNCTION award_stars RETURN VARCHAR2 IS 
+    medal VARCHAR2(20);  
+    years NUMBER;
+    employees_stars NUMBER;
+  BEGIN
+    SELECT COUNT(*)
+    INTO employees_stars
+    FROM employees e
+    WHERE DEREF(e.supervisor_ID).emp_ID = self.emp_ID;
     
-    years := trunc(months_between(sysDate,self.join_Date))/12;
+    years := TRUNC(MONTHS_BETWEEN(SYSDATE, self.join_Date)) / 12;
     
-    if years > 10 AND employees_stars > 10 then
-        medal := 'Gold Medal';
-    elsif years > 8 AND employees_stars > 6 then
-        medal := 'Silver Medal';
-    elsif years > 4 then
-        medal := 'Bronze Medal';
-    else
-        medal := 'No Medal Awarded';
-    end if;        
-    return medal;
-end award_stars;
-end;
+    IF years > 10 AND employees_stars > 10 THEN
+      medal := 'Gold Medal';
+    ELSIF years > 8 AND employees_stars > 6 THEN
+      medal := 'Silver Medal';
+    ELSIF years > 4 THEN
+      medal := 'Bronze Medal';
+    ELSE
+      medal := 'No Medal Awarded';
+    END IF;        
+    RETURN medal;
+  END award_stars;
+END;
 /
 
-ALTER TYPE person
-ADD MEMBER FUNCTION get_person_name RETURN STRING,
-ADD MEMBER FUNCTION get_person_address RETURN STRING CASCADE; 
-/
+
+AALTER TYPE person
+ADD MEMBER FUNCTION get_person_name RETURN VARCHAR2,
+ADD MEMBER FUNCTION get_person_address RETURN VARCHAR2 CASCADE; 
 
 CREATE OR REPLACE TYPE BODY person AS 
-MEMBER FUNCTION get_person_name RETURN STRING IS 
-    BEGIN
-        RETURN name.title || '. ' || name.firstname || ' ' || name.surname;
-    END get_person_name; 
+  MEMBER FUNCTION get_person_name RETURN VARCHAR2 IS 
+  BEGIN
+    RETURN name.title || '. ' || name.firstname || ' ' || name.surname;
+  END get_person_name; 
 
-MEMBER FUNCTION get_person_address RETURN STRING IS 
-    BEGIN
-        RETURN address.street || ', ' || address.city || ', ' || address.postcode;
-    END get_person_address; 
+  MEMBER FUNCTION get_person_address RETURN VARCHAR2 IS 
+  BEGIN
+    RETURN address.street || ', ' || address.city || ', ' || address.postcode;
+  END get_person_address; 
 END; 
-/ 
+/
+
 
 ALTER TYPE branch_sub
 ADD MEMBER FUNCTION get_branch_address RETURN STRING CASCADE; 
 /
 
 CREATE OR REPLACE TYPE BODY branch_sub AS
-MEMBER FUNCTION get_branch_address RETURN STRING IS 
-    BEGIN
-        RETURN self.street || ', ' || self.city || ', ' || self.postcode;
-    END get_branch_address; 
-END; 
-/ 
+  MEMBER FUNCTION get_branch_address RETURN STRING IS
+  BEGIN
+      RETURN self.street || ', ' || self.city || ', ' || self.postcode;
+  END get_branch_address;
+END;
+/
+
 
 SHOW ERROR;
 
