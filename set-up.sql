@@ -103,47 +103,47 @@ CREATE TYPE customer_sub UNDER person (
 
 CREATE TABLE branches OF branch_sub (
     CONSTRAINT branch_id_pk PRIMARY KEY(branch_id), 
-    CONSTRAINT city_not_null CHECK(city IS NOT NULL),  
-    CONSTRAINT street_not_null CHECK(street IS NOT NULL), 
-    CONSTRAINT postcode_not_null CHECK(postcode IS NOT NULL),
-    CONSTRAINT phone_not_null CHECK(phone IS NOT NULL))
+    CONSTRAINT branches_city_not_null CHECK(city IS NOT NULL),  
+    CONSTRAINT branches_street_not_null CHECK(street IS NOT NULL), 
+    CONSTRAINT branches_postcode_not_null CHECK(postcode IS NOT NULL),
+    CONSTRAINT branches_phone_not_null CHECK(phone IS NOT NULL))
     NESTED TABLE phone STORE AS branch_collection_table; 
 
 CREATE TABLE employees OF employee_sub (
     CONSTRAINT emp_id_pk PRIMARY KEY (emp_id),
-    CONSTRAINT position_not_null CHECK (emp_position IS NOT NULL),
-    CONSTRAINT first_name_not_null CHECK (name.first_name IS NOT NULL), /* name */
-    CONSTRAINT last_name_not_null CHECK (name.last_name IS NOT NULL), /* name */
-    CONSTRAINT city_not_null CHECK(address.city IS NOT NULL), /* address */
-    CONSTRAINT street_not_null CHECK(address.street IS NOT NULL), /* address */
-    CONSTRAINT postcode_not_null CHECK(address.postcode IS NOT NULL), /* address */
-    CONSTRAINT phone_not_null CHECK (phone IS NOT NULL), 
-    CONSTRAINT join_date_not_null CHECK (join_date IS NOT NULL),
-    CONSTRAINT branch_id_not_null CHECK(branch_id IS NOT NULL), 
-    CONSTRAINT ni_num_unique UNIQUE (ni_num))
+    CONSTRAINT emp_position_not_null CHECK (emp_position IS NOT NULL),
+    CONSTRAINT emp_first_name_not_null CHECK (name.first_name IS NOT NULL), /* name */
+    CONSTRAINT emp_last_name_not_null CHECK (name.last_name IS NOT NULL), /* name */
+    CONSTRAINT emp_city_not_null CHECK(address.city IS NOT NULL), /* address */
+    CONSTRAINT emp_street_not_null CHECK(address.street IS NOT NULL), /* address */
+    CONSTRAINT emp_postcode_not_null CHECK(address.postcode IS NOT NULL), /* address */
+    CONSTRAINT emp_phone_not_null CHECK (phone IS NOT NULL), 
+    CONSTRAINT emp_join_date_not_null CHECK (join_date IS NOT NULL),
+    CONSTRAINT emp_branch_id_not_null CHECK(branch_id IS NOT NULL), 
+    CONSTRAINT emp_ni_num_unique UNIQUE (ni_num))
     NESTED TABLE phone STORE AS emp_phone_collection; 
 
 CREATE TABLE customers OF customer_sub (
-    CONSTRAINT customer_id_pk PRIMARY KEY(customer_id), 
-    CONSTRAINT first_name_not_null CHECK (name.first_name IS NOT NULL), /* name */
-    CONSTRAINT last_name_not_null CHECK (name.last_name IS NOT NULL), /* name */
-    CONSTRAINT city_not_null CHECK(city IS NOT NULL), /* address */
-    CONSTRAINT street_not_null CHECK(street IS NOT NULL), /* address */
-    CONSTRAINT postcode_not_null CHECK(postcode IS NOT NULL), /* address */
-    CONSTRAINT ni_num_unique UNIQUE (ni_num),
-    CONSTRAINT ni_num_not_null CHECK(ni_num IS NOT NULL))
+    CONSTRAINT cus_id_pk PRIMARY KEY(customer_id), 
+    CONSTRAINT cus_first_name_not_null CHECK (name.first_name IS NOT NULL), /* name */
+    CONSTRAINT cus_last_name_not_null CHECK (name.last_name IS NOT NULL), /* name */
+    CONSTRAINT cus_city_not_null CHECK(city IS NOT NULL), /* address */
+    CONSTRAINT cus_street_not_null CHECK(street IS NOT NULL), /* address */
+    CONSTRAINT cus_postcode_not_null CHECK(postcode IS NOT NULL), /* address */
+    CONSTRAINT cus_ni_num_unique UNIQUE (ni_num),
+    CONSTRAINT cus_ni_num_not_null CHECK(ni_num IS NOT NULL))
     NESTED TABLE phone STORE AS customer_phone_collection; 
 
 CREATE TABLE accounts OF account (
     CONSTRAINT acc_number_pk PRIMARY KEY(acc_number), 
     CONSTRAINT acc_type_not_null CHECK(acc_type IS NOT NULL), 
-    CONSTRAINT branch_id_not_null CHECK (branch_id IS NOT NULL), 
-    CONSTRAINT open_date_not_null CHECK (open_date IS NOT NULL));
+    CONSTRAINT acc_branch_id_not_null CHECK (branch_id IS NOT NULL), 
+    CONSTRAINT acc_open_date_not_null CHECK (open_date IS NOT NULL));
 
 CREATE TABLE employees_data OF employee_data(
     CONSTRAINT employee_data_id_pk PRIMARY KEY (employee_data_id), 
-    CONSTRAINT job_title_const CHECK (job_title IS NOT NULL),
-    CONSTRAINT salary_const CHECK (salary IS NOT NULL)); 
+    CONSTRAINT emp_data_job_title_not_null CHECK (job_title IS NOT NULL),
+    CONSTRAINT emp_data_salary_not_null CHECK (salary IS NOT NULL)); 
 
 CREATE TABLE customer_account (
     customer_id REF customer_sub SCOPE IS customers, 
