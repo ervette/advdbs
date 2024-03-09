@@ -155,7 +155,7 @@ SHOW ERROR;
 /* functions initialisation*/
 
 ALTER TYPE employee_sub
-ADD MEMBER FUNCTION award_stars RETURN VARCHAR2;
+ADD MEMBER FUNCTION award_stars RETURN VARCHAR2 CASCADE;
 
 CREATE OR REPLACE TYPE BODY employee_sub AS 
 member function award_stars return varchar2 is 
@@ -185,20 +185,20 @@ end;
 /
 
 ALTER TYPE person
-ADD MEMBER FUNCTION get_name RETURN STRING,
-ADD MEMBER FUNCTION get_address RETURN STRING CASCADE; 
+ADD MEMBER FUNCTION get_person_name RETURN STRING,
+ADD MEMBER FUNCTION get_person_address RETURN STRING CASCADE; 
 /
 
 CREATE OR REPLACE TYPE BODY person AS 
-MEMBER FUNCTION get_name RETURN STRING IS 
+MEMBER FUNCTION get_person_name RETURN STRING IS 
     BEGIN
         RETURN name.title || '. ' || name.firstname || ' ' || name.surname;
-    END get_name; 
+    END get_person_name; 
 
-MEMBER FUNCTION get_address RETURN STRING IS 
+MEMBER FUNCTION get_person_address RETURN STRING IS 
     BEGIN
         RETURN address.street || ', ' || address.city || ', ' || address.postcode;
-    END get_address; 
+    END get_person_address; 
 END; 
 / 
 
