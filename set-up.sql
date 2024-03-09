@@ -13,12 +13,19 @@ DROP TYPE customer_sub FORCE;
 
 /* drop tables */
 
-DROP TABLE branches;
-DROP TABLE employees;
-DROP TABLE customers;
-DROP TABLE accounts;
-DROP TABLE employees_data;
-DROP TABLE customer_account;
+DROP TABLE branches FORCE;
+DROP TABLE employees FORCE;
+DROP TABLE customers FORCE;
+DROP TABLE accounts FORCE;
+DROP TABLE employees_data FORCE;
+DROP TABLE customer_account FORCE;
+
+/* drop functions */
+
+DROP FUNCTION award_stars FORCE;
+DROP FUNCTION get_person_address FORCE;
+DROP FUNCTION get_person_name FORCE;
+DROP FUNCTION get_branch_address FORCE;
 
 /* types initialisation */
 
