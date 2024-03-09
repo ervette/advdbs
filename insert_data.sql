@@ -1,71 +1,758 @@
 /* ----------------- */
 /* populate branches */
 /* ----------------- */
-
-INSERT INTO branches (street, city, post_code, branch_id, phone)
-VALUES 
-    ('Rose St.', 'Paris', '75001', 'P753', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Portobello Rd.', 'Madrid', '28001', 'M822', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Rue de Rivoli', 'Paris', '75004', 'P129', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Gran Via', 'Madrid', '28013', 'M475', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Calle de Alcala', 'Madrid', '28009', 'M636', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Via del Corso', 'Rome', '00186', 'R901', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Viale dei Trastevere', 'Rome', '00153', 'R732', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Via Nazionale', 'Rome', '00184', 'R500', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Via Condotti', 'Rome', '00187', 'R211', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Calle de Goya', 'Madrid', '28001', 'M333', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Calle de la Princesa', 'Madrid', '28008', 'M808', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Calle de Fuencarral', 'Madrid', '28004', 'M200', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Carrer de Balmes', 'Barcelona', '08007', 'B555', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Carrer de Ferran', 'Barcelona', '08002', 'B123', phones_collections (phone_type ('Mobile', '07081234567'))),
-    ('Passeig de Gracia', 'Barcelona', '08008', 'B789', phones_collections (phone_type ('Mobile', '07081234567')));
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Rose St.', 
+    'Paris', 
+    '75001', 
+    'P753', 
+    phones_collection(phone_type('Mobile','07081234567')));
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Portobello Rd.', 
+    'Madrid', 
+    '28001', 
+    'M822', 
+    phones_collection(phone_type('Mobile','07081234567')));   
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Rue de Rivoli', 
+    'Paris', 
+    '75004', 
+    'P129', 
+    phones_collection(phone_type('Mobile','07081234567'))); 
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Gran Via', 
+    'Madrid', 
+    '28013', 
+    'M475', 
+    phones_collection(phone_type('Mobile','07081234567')));     
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Calle de Alcala', 
+    'Madrid', 
+    '28009', 
+    'M636', 
+    phones_collection(phone_type('Mobile','07081234567')));   
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Via del Corso', 
+    'Rome', 
+    '00186', 
+    'R901', 
+    phones_collection(phone_type('Mobile','07081234567')));      
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Viale dei Trastevere', 
+    'Rome', 
+    '00153', 
+    'R732', 
+    phones_collection(phone_type('Mobile','07081234567'))); 
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Via Nazionale', 
+    'Rome', 
+    '00184', 
+    'R500', 
+    phones_collection(phone_type('Mobile','07081234567')));      
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Via Condotti', 
+    'Rome', 
+    '00187', 
+    'R211', 
+    phones_collection(phone_type('Mobile','07081234567')));         
+    
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Calle de Goya', 
+    'Madrid', 
+    '28001', 
+    'M333', 
+    phones_collection(phone_type('Mobile','07081234567')));  
+	
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Calle de la Princesa', 
+    'Madrid', 
+    '28008', 
+    'M808', 
+    phones_collection(phone_type('Mobile','07081234567')));  
+	
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Calle de Fuencarral', 
+    'Madrid', 
+    '28004', 
+    'M200', 
+    phones_collection(phone_type('Mobile','07081234567')));  
+	
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Carrer de Balmes', 
+    'Barcelona', 
+    '08007', 
+    'B555', 
+    phones_collection(phone_type('Mobile','07081234567')));  
+	
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Carrer de Ferran', 
+    'Barcelona', 
+    '08002', 
+    'B123', 
+    phones_collection(phone_type('Mobile','07081234567')));  
+	
+INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
+    'Passeig de Gracia', 
+    'Barcelona', 
+    '08008', 
+    'B789', 
+    phones_collection(phone_type('Mobile','07081234567')));  
 
 
 /* ----------------- */
 /* populate accounts */
 /* ----------------- */
-
-INSERT INTO accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date) VALUES
-    (12345678, 'Current', 450.00, (select ref(b) from branches b where b.branch_id = 'P753'), '0.08', 2000, '12-MAY-2018'),
-    (23456789, 'Savings', 700.00, (select ref(b) from branches b where b.branch_id = 'M822'), '0.11', 500, '25-JUN-2017'),
-    (34567890, 'Current', 1200.00, (select ref(b) from branches b where b.branch_id = 'P129'), '0.05', 1000, '03-APR-2016'),
-    (45678901, 'Savings', 850.00, (select ref(b) from branches b where b.branch_id = 'M475'), '0.13', 2000, '19-JUL-2019'),
-    (56789012, 'Current', 1600.00, (select ref(b) from branches b where b.branch_id = 'M636'), '0.04', 100, '08-SEP-2018'),
-    (67890123, 'Savings', 420.00, (select ref(b) from branches b where b.branch_id = 'R901'), '0.15', 500, '30-DEC-2017'),
-    (78901234, 'Current', 950.00, (select ref(b) from branches b where b.branch_id = 'R732'), '0.09', 2000, '14-MAR-2020'),
-    (89012345, 'Savings', 550.00, (select ref(b) from branches b where b.branch_id = 'R500'), '0.03', 1000, '22-NOV-2023'),
-    (90123456, 'Current', 2000.00, (select ref(b) from branches b where b.branch_id = 'M333'), '0.07', 500, '10-OCT-2016'),
-    (10234567, 'Savings', 870.00, (select ref(b) from branches b where b.branch_id = 'M808'), '0.12', 2000, '01-JAN-2019'),
-    (21345678, 'Current', 330.00, (select ref(b) from branches b where b.branch_id = 'M200'), '0.06', 100, '18-AUG-2017'),
-    (32456789, 'Savings', 1100.00, (select ref(b) from branches b where b.branch_id = 'B555'), '0.14', 1000, '07-MAY-2018'),
-    (43567890, 'Current', 640.00, (select ref(b) from branches b where b.branch_id = 'B123'), '0.10', 500, '29-JUN-2019'),
-    (54678901, 'Savings', 1800.00, (select ref(b) from branches b where b.branch_id = 'B789'), '0.01', 2000, '11-DEC-2016'),
-    (65789012, 'Current', 920.00, (select ref(b) from branches b where b.branch_id = 'P753'), '0.08', 100, '03-FEB-2020'),
-    (76890123, 'Savings', 770.00, (select ref(b) from branches b where b.branch_id = 'M822'), '0.11', 2000, '09-APR-2017'),
-    (87901234, 'Current', 1500.00, (select ref(b) from branches b where b.branch_id = 'P129'), '0.05', 500, '17-JUL-2018'),
-    (99012345, 'Savings', 630.00, (select ref(b) from branches b where b.branch_id = 'M475'), '0.13', 1000, '23-SEP-2019'),
-    (10123456, 'Current', 1750.00, (select ref(b) from branches b where b.branch_id = 'M636'), '0.04', 2000, '05-NOV-2021'),
-    (11234567, 'Savings', 820.00, (select ref(b) from branches b where b.branch_id = 'R901'), '0.15', 100, '13-MAR-2016'),
-    (22345678, 'Current', 390.00, (select ref(b) from branches b where b.branch_id = 'R732'), '0.09', 2000, '28-AUG-2019'),
-    (33456789, 'Savings', 1050.00, (select ref(b) from branches b where b.branch_id = 'R500'), '0.03', 500, '02-JUN-2017'),
-    (44567890, 'Current', 590.00, (select ref(b) from branches b where b.branch_id = 'M333'), '0.07', 1000, '16-OCT-2018'),
-    (55678901, 'Savings', 1950.00, (select ref(b) from branches b where b.branch_id = 'M808'), '0.12', 2000, '20-DEC-2016'),
-    (66789012, 'Current', 870.00, (select ref(b) from branches b where b.branch_id = 'M200'), '0.06', 100, '04-FEB-2023'),
-    (77890123, 'Savings', 710.00, (select ref(b) from branches b where b.branch_id = 'B555'), '0.14', 500, '15-SEP-2020'),
-    (88901234, 'Current', 1300.00, (select ref(b) from branches b where b.branch_id = 'B123'), '0.10', 2000, '26-JUL-2019'),
-    (90012345, 'Savings', 590.00, (select ref(b) from branches b where b.branch_id = 'B789'), '0.01', 1000, '09-MAY-2018'),
-    (12345670, 'Current', 2100.00, (select ref(b) from branches b where b.branch_id = 'P753'), '0.08', 2000, '18-AUG-2017'),
-    (23456701, 'Savings', 730.00, (select ref(b) from branches b where b.branch_id = 'M822'), '0.11', 100, '27-NOV-2016'),
-    (34567012, 'Current', 1150.00, (select ref(b) from branches b where b.branch_id = 'P129'), '0.05', 1000, '14-JAN-2019'),
-    (45670123, 'Savings', 840.00, (select ref(b) from branches b where b.branch_id = 'M475'), '0.13', 500, '20-MAR-2018'),
-    (56701234, 'Current', 1650.00, (select ref(b) from branches b where b.branch_id = 'M636'), '0.04', 2000, '08-MAY-2020'),
-    (67012345, 'Savings', 430.00, (select ref(b) from branches b where b.branch_id = 'R901'), '0.15', 1000, '02-JUL-2017'),
-    (78012345, 'Current', 970.00, (select ref(b) from branches b where b.branch_id = 'R732'), '0.09', 2000, '11-SEP-2019'),
-    (89012340, 'Savings', 560.00, (select ref(b) from branches b where b.branch_id = 'R500'), '0.03', 500, '29-APR-2016'),
-    (90123450, 'Current', 1980.00, (select ref(b) from branches b where b.branch_id = 'M333'), '0.07', 1000, '10-OCT-2018'),
-    (12345680, 'Savings', 880.00, (select ref(b) from branches b where b.branch_id = 'M808'), '0.12', 2000, '15-DEC-2021'),
-    (23456710, 'Current', 320.00, (select ref(b) from branches b where b.branch_id = 'M200'), '0.06', 100, '07-FEB-2020'),
-    (34567801, 'Savings', 1150.00, (select ref(b) from branches b where b.branch_id = 'B555'), '0.14', 500, '23-MAY-2017');
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
+    (
+        12345678,
+        'Current',
+        450.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'P753'
+        ),
+        '0.08',
+        2000,
+        '12-MAY-2018'
+    ),
+    (
+        23456789,
+        'Savings',
+        700.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M822'
+        ),
+        '0.11',
+        500,
+        '25-JUN-2017'
+    ),
+    (
+        34567890,
+        'Current',
+        1200.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'P129'
+        ),
+        '0.05',
+        1000,
+        '03-APR-2016'
+    ),
+    (
+        45678901,
+        'Savings',
+        850.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M475'
+        ),
+        '0.13',
+        2000,
+        '19-JUL-2019'
+    ),
+    (
+        56789012,
+        'Current',
+        1600.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M636'
+        ),
+        '0.04',
+        100,
+        '08-SEP-2018'
+    ),
+    (
+        67890123,
+        'Savings',
+        420.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R901'
+        ),
+        '0.15',
+        500,
+        '30-DEC-2017'
+    ),
+    (
+        78901234,
+        'Current',
+        950.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R732'
+        ),
+        '0.09',
+        2000,
+        '14-MAR-2020'
+    ),
+    (
+        89012345,
+        'Savings',
+        550.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R500'
+        ),
+        '0.03',
+        1000,
+        '22-NOV-2023'
+    ),
+    (
+        90123456,
+        'Current',
+        2000.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M333'
+        ),
+        '0.07',
+        500,
+        '10-OCT-2016'
+    ),
+    (
+        10234567,
+        'Savings',
+        870.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M808'
+        ),
+        '0.12',
+        2000,
+        '01-JAN-2019'
+    ),
+    (
+        21345678,
+        'Current',
+        330.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M200'
+        ),
+        '0.06',
+        100,
+        '18-AUG-2017'
+    ),
+    (
+        32456789,
+        'Savings',
+        1100.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B555'
+        ),
+        '0.14',
+        1000,
+        '07-MAY-2018'
+    ),
+    (
+        43567890,
+        'Current',
+        640.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B123'
+        ),
+        '0.10',
+        500,
+        '29-JUN-2019'
+    ),
+    (
+        54678901,
+        'Savings',
+        1800.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B789'
+        ),
+        '0.01',
+        2000,
+        '11-DEC-2016'
+    ),
+    (
+        65789012,
+        'Current',
+        920.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'P753'
+        ),
+        '0.08',
+        100,
+        '03-FEB-2020'
+    ),
+    (
+        76890123,
+        'Savings',
+        770.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M822'
+        ),
+        '0.11',
+        2000,
+        '09-APR-2017'
+    ),
+    (
+        87901234,
+        'Current',
+        1500.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'P129'
+        ),
+        '0.05',
+        500,
+        '17-JUL-2018'
+    ),
+    (
+        99012345,
+        'Savings',
+        630.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M475'
+        ),
+        '0.13',
+        1000,
+        '23-SEP-2019'
+    ),
+    (
+        10123456,
+        'Current',
+        1750.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M636'
+        ),
+        '0.04',
+        2000,
+        '05-NOV-2021'
+    ),
+    (
+        11234567,
+        'Savings',
+        820.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R901'
+        ),
+        '0.15',
+        100,
+        '13-MAR-2016'
+    ),
+    (
+        22345678,
+        'Current',
+        390.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R732'
+        ),
+        '0.09',
+        2000,
+        '28-AUG-2019'
+    ),
+    (
+        33456789,
+        'Savings',
+        1050.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R500'
+        ),
+        '0.03',
+        500,
+        '02-JUN-2017'
+    ),
+    (
+        44567890,
+        'Current',
+        590.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M333'
+        ),
+        '0.07',
+        1000,
+        '16-OCT-2018'
+    ),
+    (
+        55678901,
+        'Savings',
+        1950.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M808'
+        ),
+        '0.12',
+        2000,
+        '20-DEC-2016'
+    ),
+    (
+        66789012,
+        'Current',
+        870.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M200'
+        ),
+        '0.06',
+        100,
+        '04-FEB-2023'
+    ),
+    (
+        77890123,
+        'Savings',
+        710.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B555'
+        ),
+        '0.14',
+        500,
+        '15-SEP-2020'
+    ),
+    (
+        88901234,
+        'Current',
+        1300.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B123'
+        ),
+        '0.10',
+        2000,
+        '26-JUL-2019'
+    ),
+    (
+        90012345,
+        'Savings',
+        590.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B789'
+        ),
+        '0.01',
+        1000,
+        '09-MAY-2018'
+    ),
+    (
+        12345670,
+        'Current',
+        2100.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'P753'
+        ),
+        '0.08',
+        2000,
+        '18-AUG-2017'
+    ),
+    (
+        23456701,
+        'Savings',
+        730.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M822'
+        ),
+        '0.11',
+        100,
+        '27-NOV-2016'
+    ),
+    (
+        34567012,
+        'Current',
+        1150.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'P129'
+        ),
+        '0.05',
+        1000,
+        '14-JAN-2019'
+    ),
+    (
+        45670123,
+        'Savings',
+        840.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M475'
+        ),
+        '0.13',
+        500,
+        '20-MAR-2018'
+    ),
+    (
+        56701234,
+        'Current',
+        1650.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M636'
+        ),
+        '0.04',
+        2000,
+        '08-MAY-2020'
+    ),
+    (
+        67012345,
+        'Savings',
+        430.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R901'
+        ),
+        '0.15',
+        1000,
+        '02-JUL-2017'
+    ),
+    (
+        78012345,
+        'Current',
+        970.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R732'
+        ),
+        '0.09',
+        2000,
+        '11-SEP-2019'
+    ),
+    (
+        89012340,
+        'Savings',
+        560.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'R500'
+        ),
+        '0.03',
+        500,
+        '29-APR-2016'
+    ),
+    (
+        90123450,
+        'Current',
+        1980.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M333'
+        ),
+        '0.07',
+        1000,
+        '10-OCT-2018'
+    ),
+    (
+        12345680,
+        'Savings',
+        880.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M808'
+        ),
+        '0.12',
+        2000,
+        '15-DEC-2021'
+    ),
+    (
+        23456710,
+        'Current',
+        320.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'M200'
+        ),
+        '0.06',
+        100,
+        '07-FEB-2020'
+    ),
+    (
+        34567801,
+        'Savings',
+        1150.00,
+        (
+            select
+                ref (b)
+            from
+                branches b
+            where
+                b.branch_id = 'B555'
+        ),
+        '0.14',
+        500,
+        '23-MAY-2017'
+    );
 
 /*
 
