@@ -1,5 +1,4 @@
-/* drop types */
-
+/* Drop types */
 DROP TYPE full_name FORCE;
 DROP TYPE address_type FORCE;
 DROP TYPE phone_type FORCE;
@@ -11,8 +10,7 @@ DROP TYPE branch_sub FORCE;
 DROP TYPE employee_sub FORCE;
 DROP TYPE customer_sub FORCE;
 
-/* drop tables */
-
+/* Drop tables */
 DROP TABLE branches FORCE;
 DROP TABLE employees FORCE;
 DROP TABLE customers FORCE;
@@ -20,38 +18,31 @@ DROP TABLE accounts FORCE;
 DROP TABLE employees_data FORCE;
 DROP TABLE customer_account FORCE;
 
-/* drop functions */
-
+/* Drop functions */
 DROP FUNCTION award_stars FORCE;
 DROP FUNCTION get_person_address FORCE;
 DROP FUNCTION get_person_name FORCE;
 DROP FUNCTION get_branch_address FORCE;
 
-/* types initialisation */
-
+/* Types initialization */
 CREATE TYPE full_name AS OBJECT (
     title VARCHAR2(5), 
     first_name VARCHAR2(20), 
     last_name VARCHAR2(20))
     FINAL; 
-/ 
 
 CREATE TYPE address_type AS OBJECT (
     street VARCHAR2(20), 
     city VARCHAR2(20), 
     postcode VARCHAR2(10))
     NOT FINAL; 
-/
-
 
 CREATE TYPE phone_type AS OBJECT (
     device_type VARCHAR2(20), 
     phone_number VARCHAR2(20))
     FINAL; 
-/
 
 CREATE TYPE phones_collection AS TABLE OF phone_type;
-/
 
 CREATE TYPE person AS OBJECT(
     name full_name,
@@ -59,18 +50,12 @@ CREATE TYPE person AS OBJECT(
     phone phones_collection, 
     ni_num VARCHAR2(10))
     NOT FINAL; 
-/   
 
-/* --------------------------------------- */
-/* branch subtype initialisation to allow reference to account type */
-
+/* Branch subtype initialization to allow reference to account type */
 CREATE TYPE branch_sub UNDER address_type (
     branch_id VARCHAR2(5), 
     phone phones_collection)
     FINAL; 
-/ 
-
-/* --------------------------------------- */
 
 CREATE TYPE account AS OBJECT (
     acc_number INT, 
@@ -81,17 +66,14 @@ CREATE TYPE account AS OBJECT (
     open_date DATE, 
     branch_id REF branch_sub)
     FINAL; 
-/  
 
 CREATE TYPE employee_data AS OBJECT(
     employee_data_id VARCHAR2(5), 
     position VARCHAR2(20), 
     salary INTEGER)
     FINAL; 
-/    
 
-/* subtypes initialisation */ 
-
+/* Subtypes initialization */ 
 CREATE TYPE employee_sub UNDER person (
     emp_id VARCHAR2(5),
     branch_id REF branch_sub, 
@@ -99,15 +81,12 @@ CREATE TYPE employee_sub UNDER person (
     supervisor_id REF employee_sub,
     join_date DATE)
     FINAL;
-/    
 
 CREATE TYPE customer_sub UNDER person (
     customer_id VARCHAR2(6))
     FINAL;
-/
 
-/* tables initialisation */
-
+/* Tables initialization */
 CREATE TABLE branches OF branch_sub (
     CONSTRAINT branch_id_pk PRIMARY KEY(branch_id), 
     CONSTRAINT branches_city_not_null CHECK(city IS NOT NULL),  
@@ -155,12 +134,8 @@ CREATE TABLE employees_data OF employee_data(
 CREATE TABLE customer_account (
     customer_id REF customer_sub SCOPE IS customers, 
     acc_number REF account SCOPE IS accounts); 
-    
-    
-SHOW ERROR;
 
-/* functions initialisation*/
-
+/* Functions initialization */
 ALTER TYPE employee_sub
 ADD MEMBER FUNCTION award_stars RETURN VARCHAR2 CASCADE;
 
@@ -191,8 +166,7 @@ CREATE OR REPLACE TYPE BODY employee_sub AS
 END;
 /
 
-
-AALTER TYPE person
+ALTER TYPE person
 ADD MEMBER FUNCTION get_person_name RETURN VARCHAR2,
 ADD MEMBER FUNCTION get_person_address RETURN VARCHAR2 CASCADE; 
 
@@ -209,20 +183,13 @@ CREATE OR REPLACE TYPE BODY person AS
 END; 
 /
 
-
 ALTER TYPE branch_sub
-ADD MEMBER FUNCTION get_branch_address RETURN STRING CASCADE; 
-/
+ADD MEMBER FUNCTION get_branch_address RETURN VARCHAR2 CASCADE; 
 
 CREATE OR REPLACE TYPE BODY branch_sub AS
-  MEMBER FUNCTION get_branch_address RETURN STRING IS
+  MEMBER FUNCTION get_branch_address RETURN VARCHAR2 IS
   BEGIN
       RETURN self.street || ', ' || self.city || ', ' || self.postcode;
   END get_branch_address;
 END;
 /
-
-
-SHOW ERROR;
-
-   
