@@ -30,19 +30,23 @@ CREATE TYPE full_name AS OBJECT (
     first_name VARCHAR2(20), 
     last_name VARCHAR2(20))
     FINAL; 
+/
 
 CREATE TYPE address_type AS OBJECT (
     street VARCHAR2(20), 
     city VARCHAR2(20), 
     postcode VARCHAR2(10))
     NOT FINAL; 
+/
 
 CREATE TYPE phone_type AS OBJECT (
     device_type VARCHAR2(20), 
     phone_number VARCHAR2(20))
     FINAL; 
+/
 
 CREATE TYPE phones_collection AS TABLE OF phone_type;
+/
 
 CREATE TYPE person AS OBJECT(
     name full_name,
@@ -50,12 +54,14 @@ CREATE TYPE person AS OBJECT(
     phone phones_collection, 
     ni_num VARCHAR2(10))
     NOT FINAL; 
+/
 
 /* Branch subtype initialization to allow reference to account type */
 CREATE TYPE branch_sub UNDER address_type (
     branch_id VARCHAR2(5), 
     phone phones_collection)
     FINAL; 
+/
 
 CREATE TYPE account AS OBJECT (
     acc_number INT, 
@@ -66,12 +72,14 @@ CREATE TYPE account AS OBJECT (
     open_date DATE, 
     branch_id REF branch_sub)
     FINAL; 
+/
 
 CREATE TYPE employee_data AS OBJECT(
     employee_data_id VARCHAR2(5), 
     position VARCHAR2(20), 
     salary INTEGER)
     FINAL; 
+/
 
 /* Subtypes initialization */ 
 CREATE TYPE employee_sub UNDER person (
@@ -81,10 +89,12 @@ CREATE TYPE employee_sub UNDER person (
     supervisor_id REF employee_sub,
     join_date DATE)
     FINAL;
+/
 
 CREATE TYPE customer_sub UNDER person (
     customer_id VARCHAR2(6))
     FINAL;
+/
 
 /* Tables initialization */
 CREATE TABLE branches OF branch_sub (
