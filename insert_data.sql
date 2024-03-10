@@ -878,7 +878,7 @@ VALUES
         500,
         '23-MAY-2017'
     );
-
+/* populate employees data */
 INSERT INTO
     employees_data (employee_data_id, position, salary)
 VALUES
@@ -1015,11 +1015,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Director'
+                e.employee_data_id = 10001
         ),
         null
     );
@@ -1044,11 +1044,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 10002
         ),
         null
     );
@@ -1073,11 +1073,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 10003
         ),
         (
             SELECT
@@ -1109,11 +1109,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 10004
         ),
         (
             SELECT
@@ -1145,11 +1145,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1181,11 +1181,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1210,11 +1210,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1246,11 +1246,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1282,11 +1282,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1311,11 +1311,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1347,11 +1347,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1383,11 +1383,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1419,11 +1419,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1455,11 +1455,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1484,11 +1484,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1520,11 +1520,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1556,11 +1556,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1585,11 +1585,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1621,11 +1621,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1657,11 +1657,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1686,11 +1686,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1722,11 +1722,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1758,11 +1758,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1783,11 +1783,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1812,11 +1812,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1848,11 +1848,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -1884,11 +1884,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1920,11 +1920,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -1949,11 +1949,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -1985,11 +1985,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -2021,11 +2021,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -2057,11 +2057,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -2086,11 +2086,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -2122,11 +2122,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -2158,11 +2158,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -2194,11 +2194,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -2223,11 +2223,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -2259,11 +2259,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
@@ -2295,11 +2295,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -2331,11 +2331,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Supervisor'
+                e.employee_data_id = 'Supervisor'
         ),
         null
     );
@@ -2360,11 +2360,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Worker'
+                e.employee_data_id = 'Worker'
         ),
         (
             SELECT
@@ -2396,11 +2396,11 @@ VALUES
         ),
         (
             SELECT
-                ref (j)
+                ref (e)
             FROM
-                employees_data j
+                employees_data e
             WHERE
-                j.position = 'Intern'
+                e.employee_data_id = 'Intern'
         ),
         (
             SELECT
