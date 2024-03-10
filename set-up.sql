@@ -138,7 +138,7 @@ CREATE TABLE accounts OF account (
 
 CREATE TABLE employees_data OF employee_data(
     CONSTRAINT employee_data_id_pk PRIMARY KEY (employee_data_id), 
-    CONSTRAINT emp_data_job_title_not_null CHECK (job_title IS NOT NULL),
+    CONSTRAINT emp_data_job_title_not_null CHECK (position IS NOT NULL),
     CONSTRAINT emp_data_salary_not_null CHECK (salary IS NOT NULL)); 
 
 CREATE TABLE customer_account (
