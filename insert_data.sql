@@ -902,9 +902,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Director'
+                j.position = 'Director'
         ),
         null
     );
@@ -931,9 +931,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -960,9 +960,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -996,9 +996,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1032,9 +1032,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1068,9 +1068,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1097,9 +1097,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1133,9 +1133,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1169,9 +1169,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1198,9 +1198,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1234,9 +1234,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1270,9 +1270,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1306,9 +1306,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1342,9 +1342,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1371,9 +1371,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1407,9 +1407,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1443,9 +1443,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1472,9 +1472,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1508,9 +1508,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1544,9 +1544,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1573,9 +1573,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1609,9 +1609,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1645,9 +1645,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1670,9 +1670,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1699,9 +1699,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1735,9 +1735,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1771,9 +1771,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1807,9 +1807,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1836,9 +1836,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1872,9 +1872,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -1908,9 +1908,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -1944,9 +1944,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -1973,9 +1973,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -2009,9 +2009,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -2045,9 +2045,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -2081,9 +2081,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -2110,9 +2110,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -2146,9 +2146,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
@@ -2182,9 +2182,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -2218,9 +2218,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Supervisor'
+                j.position = 'Supervisor'
         ),
         null
     );
@@ -2247,9 +2247,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Worker'
+                j.position = 'Worker'
         ),
         (
             SELECT
@@ -2283,9 +2283,9 @@ VALUES
             SELECT
                 ref (j)
             FROM
-                job_table j
+                employees_data j
             WHERE
-                j.job_title = 'Intern'
+                j.position = 'Intern'
         ),
         (
             SELECT
