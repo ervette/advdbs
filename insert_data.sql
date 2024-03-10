@@ -887,7 +887,7 @@ VALUES
         name_type ('Dr', 'Michael', 'Brown'),
         address_type ('Brown St.', 'Paris', '75001'),
         'AB123',
-        phones_collections (phone_type ('Mobile', '07701234566'), phone_type ('Home', '0131 496 0355')),
+        emp_phone_collection (phone_type ('Mobile', '07701234566'), phone_type ('Home', '0131 496 0355')),
         10001,
         '21-Feb-2004',
         (
@@ -916,7 +916,7 @@ VALUES
         name_type ('Mrs', 'Emily', 'Johnson'),
         address_type ('Johnson Ave.', 'Madrid', '28001'),
         'CD234',
-        phones_collections (phone_type ('Mobile', '07701234567'), phone_type ('Home', '0131 496 0356')),
+        emp_phone_collection (phone_type ('Mobile', '07701234567'), phone_type ('Home', '0131 496 0356')),
         10002,
         '15-Mar-2006',
         (
@@ -943,7 +943,7 @@ VALUES(
         name_type ('Mr', 'David', 'Taylor'),
         address_type ('Taylor Rd.', 'Paris', '75004'),
         'EF345',
-        phones_collections (phone_type ('Mobile', '07701234568'), phone_type ('Home', '0131 496 0357')),
+        emp_phone_collection (phone_type ('Mobile', '07701234568'), phone_type ('Home', '0131 496 0357')),
         10003,
         '10-Jul-2008',
         (
@@ -977,7 +977,7 @@ VALUES(
         name_type ('Ms', 'Sophia', 'Clark'),
         address_type ('Clark Lane', 'Madrid', '28013'),
         'GH456',
-        phones_collections (phone_type ('Mobile', '07701234569'), phone_type ('Home', '0131 496 0358')),
+        emp_phone_collection (phone_type ('Mobile', '07701234569'), phone_type ('Home', '0131 496 0358')),
         10004,
         '05-Sep-2010',
         (
@@ -1011,7 +1011,7 @@ VALUES(
         name_type ('Mr', 'Daniel', 'Wilson'),
         address_type ('Wilson Street', 'Madrid', '28009'),
         'IJ567',
-        phones_collections (phone_type ('Mobile', '07701234570'), phone_type ('Home', '0131 496 0359')),
+        emp_phone_collection (phone_type ('Mobile', '07701234570'), phone_type ('Home', '0131 496 0359')),
         10005,
         '20-Nov-2012',
         (
@@ -1045,7 +1045,7 @@ VALUES(
         name_type ('Mrs', 'Olivia', 'Anderson'),
         address_type ('Anderson Rd.', 'Rome', '00186'),
         'KL678',
-        phones_collections (phone_type ('Mobile', '07701234571'), phone_type ('Home', '0131 496 0360')),
+        emp_phone_collection (phone_type ('Mobile', '07701234571'), phone_type ('Home', '0131 496 0360')),
         10006,
         '14-Feb-2014',
         (
@@ -1072,7 +1072,7 @@ VALUES(
         name_type ('Mr', 'Matthew', 'Thomas'),
         address_type ('Thomas Street', 'Rome', '00153'),
         'MN789',
-        phones_collections (phone_type ('Mobile', '07701234572'), phone_type ('Home', '0131 496 0361')),
+        emp_phone_collection (phone_type ('Mobile', '07701234572'), phone_type ('Home', '0131 496 0361')),
         10007,
         '03-Apr-2016',
         (
@@ -1106,7 +1106,7 @@ VALUES(
         name_type ('Ms', 'Isabella', 'Martinez'),
         address_type ('Martinez Lane', 'Rome', '00184'),
         'OP890',
-        phones_collections (phone_type ('Mobile', '07701234573'), phone_type ('Home', '0131 496 0362')),
+        emp_phone_collection (phone_type ('Mobile', '07701234573'), phone_type ('Home', '0131 496 0362')),
         10008,
         '29-Jun-2018',
         (
@@ -1140,7 +1140,7 @@ VALUES(
         name_type ('Dr', 'Elizabeth', 'Garcia'),
         address_type ('Garcia St.', 'Madrid', '28001'),
         'QR901',
-        phones_collections (phone_type ('Mobile', '07701234574'), phone_type ('Home', '0131 496 0363')),
+        emp_phone_collection (phone_type ('Mobile', '07701234574'), phone_type ('Home', '0131 496 0363')),
         10009,
         '12-Sep-2020',
         (
@@ -1167,7 +1167,7 @@ VALUES(
         name_type ('Mrs', 'Mia', 'Rodriguez'),
         address_type ('Rodriguez Rd.', 'Madrid', '28008'),
         'ST012',
-        phones_collections (phone_type ('Mobile', '07701234575'), phone_type ('Home', '0131 496 0364')),
+        emp_phone_collection (phone_type ('Mobile', '07701234575'), phone_type ('Home', '0131 496 0364')),
         10010,
         '08-Nov-2005',
         (
@@ -1201,7 +1201,7 @@ VALUES(
         name_type ('Mr', 'James', 'Hernandez'),
         address_type ('Hernandez Lane', 'Madrid', '28004'),
         'UV123',
-        phones_collections (phone_type ('Mobile', '07701234576'), phone_type ('Home', '0131 496 0365')),
+        emp_phone_collection (phone_type ('Mobile', '07701234576'), phone_type ('Home', '0131 496 0365')),
         10011,
         '17-Mar-2007',
         (
@@ -1235,7 +1235,7 @@ VALUES(
         name_type ('Ms', 'Charlotte', 'Lopez'),
         address_type ('Lopez St.', 'Barcelona', '08007'),
         'WX234',
-        phones_collections (phone_type ('Mobile', '07701234577'), phone_type ('Home', '0131 496 0366')),
+        emp_phone_collection (phone_type ('Mobile', '07701234577'), phone_type ('Home', '0131 496 0366')),
         10012,
         '30-Apr-2009',
         (
@@ -1269,7 +1269,7 @@ VALUES(
         name_type ('Mr', 'Henry', 'Gomez'),
         address_type ('Gomez Rd.', 'Barcelona', '08002'),
         'YZ345',
-        phones_collections (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
+        emp_phone_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
         10013,
         '25-Jul-2011',
         (
@@ -1303,7 +1303,7 @@ VALUES(
         name_type ('Mrs', 'Amelia', 'Sanchez'),
         address_type ('Sanchez St.', 'Barcelona', '08008'),
         'ZA456',
-        phones_collections (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
+        emp_phone_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
         10014,
         '19-Sep-2013',
         (
@@ -1330,7 +1330,7 @@ VALUES(
         name_type ('Ms', 'Victoria', 'Perez'),
         address_type ('Perez Lane', 'Barcelona', '08009'),
         'AB567',
-        phones_collections (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
+        emp_phone_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
         10015,
         '07-Nov-2015',
         (
@@ -1364,7 +1364,7 @@ VALUES(
         name_type ('Mr', 'Joseph', 'Gonzalez'),
         address_type ('Gonzalez St.', 'Barcelona', '08010'),
         'CD678',
-        phones_collections (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
+        emp_phone_collection (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
         10016,
         '02-Jan-2017',
         (
@@ -1398,7 +1398,7 @@ VALUES(
         name_type ('Mrs', 'Grace', 'Diaz'),
         address_type ('Diaz Rd.', 'Cambridge', 'CB2 3AX'),
         'EF789',
-        phones_collections (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
+        emp_phone_collection (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
         10017,
         '21-Mar-2019',
         (
@@ -1425,7 +1425,7 @@ VALUES(
         name_type ('Mr', 'Jack', 'Torres'),
         address_type ('Torres Lane', 'Bedford', 'MK40 1PR'),
         'GH890',
-        phones_collections (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
+        emp_phone_collection (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
         10018,
         '15-May-2020',
         (
@@ -1459,7 +1459,7 @@ VALUES(
         name_type ('Ms', 'Chloe', 'Fernandez'),
         address_type ('Fernandez Rd.', 'Northampton', 'NN1 2BH'),
         'IJ901',
-        phones_collections (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
+        emp_phone_collection (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
         10019,
         '10-Aug-2008',
         (
@@ -1493,7 +1493,7 @@ VALUES(
         name_type ('Mr', 'Benjamin', 'Ramirez'),
         address_type ('Ramirez St.', 'Hitchin', 'SG5 1LP'),
         'KL012',
-        phones_collections (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
+        emp_phone_collection (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
         10020,
         '05-Nov-2010',
         (
@@ -1520,7 +1520,7 @@ VALUES(
         name_type ('Mrs', 'Emma', 'Wood'),
         address_type ('Wood Rd.', 'Stevenage', 'SG1 1DH'),
         'MN234',
-        phones_collections (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
+        emp_phone_collection (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
         10021,
         '29-Jan-2012',
         (
@@ -1554,7 +1554,7 @@ VALUES(
         name_type ('Ms', 'Lily', 'Russell'),
         address_type ('Russell Rd.', 'Ware', 'SG12 9BD'),
         'OP345',
-        phones_collections (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
+        emp_phone_collection (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
         10022,
         '14-Mar-2014',
         (
@@ -1588,7 +1588,7 @@ VALUES(
         name_type ('Dr', 'William', 'Baker'),
         address_type ('Baker St.', 'Barcelona', '08007'),
         'QR567',
-        phones_collections (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
+        emp_phone_collection (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
         10023,
         '02-Jun-2016',
         (
@@ -1638,7 +1638,7 @@ VALUES(
         name_type ('Mr', 'Benjamin', 'Gonzalez'),
         address_type ('Gonzalez Lane', 'Barcelona', '08002'),
         'YZ345',
-        phones_collections (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
+        emp_phone_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
         10013,
         '22-Jun-2011',
         (
@@ -1672,7 +1672,7 @@ VALUES(
         name_type ('Mrs', 'Amelia', 'Perez'),
         address_type ('Perez St.', 'Barcelona', '08008'),
         'AB456',
-        phones_collections (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
+        emp_phone_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
         10014,
         '19-Sep-2013',
         (
@@ -1706,7 +1706,7 @@ VALUES(
         name_type ('Mr', 'Ethan', 'Sanchez'),
         address_type ('Sanchez Rd.', 'Barcelona', '08008'),
         'CD567',
-        phones_collections (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
+        emp_phone_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
         10015,
         '14-Nov-2015',
         (
@@ -1740,7 +1740,7 @@ VALUES(
         name_type ('Ms', 'Chloe', 'Ramirez'),
         address_type ('Ramirez Lane', 'Barcelona', '08007'),
         'EF678',
-        phones_collections (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
+        emp_phone_collection (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
         10016,
         '05-Jan-2017',
         (
@@ -1767,7 +1767,7 @@ VALUES(
         name_type ('Dr', 'Ava', 'Torres'),
         address_type ('Torres St.', 'Barcelona', '08002'),
         'GH890',
-        phones_collections (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
+        emp_phone_collection (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
         10017,
         '28-Mar-2019',
         (
@@ -1801,7 +1801,7 @@ VALUES(
         name_type ('Mrs', 'Aria', 'Vazquez'),
         address_type ('Vazquez Rd.', 'Barcelona', '08008'),
         'IJ012',
-        phones_collections (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
+        emp_phone_collection (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
         10018,
         '10-Jun-2005',
         (
@@ -1835,7 +1835,7 @@ VALUES(
         name_type ('Mr', 'Leo', 'Gomez'),
         address_type ('Gomez Lane', 'Paris', '75001'),
         'KL234',
-        phones_collections (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
+        emp_phone_collection (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
         10019,
         '17-Aug-2007',
         (
@@ -1869,7 +1869,7 @@ VALUES(
         name_type ('Ms', 'Scarlett', 'Fernandez'),
         address_type ('Fernandez St.', 'Paris', '75004'),
         'MN456',
-        phones_collections (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
+        emp_phone_collection (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
         10020,
         '03-Oct-2009',
         (
@@ -1896,7 +1896,7 @@ VALUES(
         name_type ('Mr', 'Jack', 'Lopez'),
         address_type ('Lopez Lane', 'Paris', '75001'),
         'OP678',
-        phones_collections (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
+        emp_phone_collection (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
         10021,
         '26-Dec-2011',
         (
@@ -1930,7 +1930,7 @@ VALUES(
         name_type ('Mrs', 'Nora', 'Hernandez'),
         address_type ('Hernandez St.', 'Paris', '75001'),
         'QR890',
-        phones_collections (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
+        emp_phone_collection (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
         10022,
         '19-Mar-2014',
         (
@@ -1964,7 +1964,7 @@ VALUES(
         name_type ('Mr', 'Logan', 'Martinez'),
         address_type ('Martinez Rd.', 'Madrid', '28001'),
         'ST234',
-        phones_collections (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
+        emp_phone_collection (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
         10023,
         '02-Feb-2016',
         (
@@ -1998,7 +1998,7 @@ VALUES(
         name_type ('Ms', 'Lily', 'Gomez'),
         address_type ('Gomez St.', 'Madrid', '28013'),
         'UV456',
-        phones_collections (phone_type ('Mobile', '07701234589'), phone_type ('Home', '0131 496 0378')),
+        emp_phone_collection (phone_type ('Mobile', '07701234589'), phone_type ('Home', '0131 496 0378')),
         10024,
         '14-Apr-2018',
         (
@@ -2025,7 +2025,7 @@ VALUES(
         name_type ('Dr', 'Avery', 'Sanchez'),
         address_type ('Sanchez Lane', 'Madrid', '28009'),
         'WX678',
-        phones_collections (phone_type ('Mobile', '07701234590'), phone_type ('Home', '0131 496 0379')),
+        emp_phone_collection (phone_type ('Mobile', '07701234590'), phone_type ('Home', '0131 496 0379')),
         10025,
         '09-Jul-2020',
         (
@@ -2059,7 +2059,7 @@ VALUES(
         name_type ('Mrs', 'Zoe', 'Perez'),
         address_type ('Perez St.', 'Madrid', '28001'),
         'YZ890',
-        phones_collections (phone_type ('Mobile', '07701234591'), phone_type ('Home', '0131 496 0380')),
+        emp_phone_collection (phone_type ('Mobile', '07701234591'), phone_type ('Home', '0131 496 0380')),
         10026,
         '23-Sep-2005',
         (
@@ -2093,7 +2093,7 @@ VALUES(
         name_type ('Mr', 'Sebastian', 'Garcia'),
         address_type ('Garcia Lane', 'Madrid', '28008'),
         'AB123',
-        phones_collections (phone_type ('Mobile', '07701234592'), phone_type ('Home', '0131 496 0381')),
+        emp_phone_collection (phone_type ('Mobile', '07701234592'), phone_type ('Home', '0131 496 0381')),
         10027,
         '18-Aug-2007',
         (
@@ -2127,7 +2127,7 @@ VALUES(
         name_type ('Ms', 'Aurora', 'Rodriguez'),
         address_type ('Rodriguez Rd.', 'Madrid', '28004'),
         'CD234',
-        phones_collections (phone_type ('Mobile', '07701234593'), phone_type ('Home', '0131 496 0382')),
+        emp_phone_collection (phone_type ('Mobile', '07701234593'), phone_type ('Home', '0131 496 0382')),
         10028,
         '12-Oct-2009',
         (
@@ -2154,7 +2154,7 @@ VALUES(
         name_type ('Mr', 'Elijah', 'Lopez'),
         address_type ('Lopez St.', 'Madrid', '28013'),
         'EF345',
-        phones_collections (phone_type ('Mobile', '07701234594'), phone_type ('Home', '0131 496 0383')),
+        emp_phone_collection (phone_type ('Mobile', '07701234594'), phone_type ('Home', '0131 496 0383')),
         10029,
         '05-Dec-2011',
         (
@@ -2188,7 +2188,7 @@ VALUES(
         name_type ('Mrs', 'Stella', 'Hernandez'),
         address_type ('Hernandez Rd.', 'Madrid', '28009'),
         'GH456',
-        phones_collections (phone_type ('Mobile', '07701234595'), phone_type ('Home', '0131 496 0384')),
+        emp_phone_collection (phone_type ('Mobile', '07701234595'), phone_type ('Home', '0131 496 0384')),
         10030,
         '29-Jan-2014',
         (
