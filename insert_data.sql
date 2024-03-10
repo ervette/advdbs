@@ -884,7 +884,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Dr', 'Michael', 'Brown'),
+        full_name ('Dr', 'Michael', 'Brown'),
         address_type ('Brown St.', 'Paris', '75001'),
         'AB123',
         phones_collection (phone_type ('Mobile', '07701234566'), phone_type ('Home', '0131 496 0355')),
@@ -913,7 +913,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Emily', 'Johnson'),
+        full_name ('Mrs', 'Emily', 'Johnson'),
         address_type ('Johnson Ave.', 'Madrid', '28001'),
         'CD234',
         phones_collection (phone_type ('Mobile', '07701234567'), phone_type ('Home', '0131 496 0356')),
@@ -942,7 +942,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'David', 'Taylor'),
+        full_name ('Mr', 'David', 'Taylor'),
         address_type ('Taylor Rd.', 'Paris', '75004'),
         'EF345',
         phones_collection (phone_type ('Mobile', '07701234568'), phone_type ('Home', '0131 496 0357')),
@@ -978,7 +978,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Sophia', 'Clark'),
+        full_name ('Ms', 'Sophia', 'Clark'),
         address_type ('Clark Lane', 'Madrid', '28013'),
         'GH456',
         phones_collection (phone_type ('Mobile', '07701234569'), phone_type ('Home', '0131 496 0358')),
@@ -1014,7 +1014,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Daniel', 'Wilson'),
+        full_name ('Mr', 'Daniel', 'Wilson'),
         address_type ('Wilson Street', 'Madrid', '28009'),
         'IJ567',
         phones_collection (phone_type ('Mobile', '07701234570'), phone_type ('Home', '0131 496 0359')),
@@ -1050,7 +1050,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Olivia', 'Anderson'),
+        full_name ('Mrs', 'Olivia', 'Anderson'),
         address_type ('Anderson Rd.', 'Rome', '00186'),
         'KL678',
         phones_collection (phone_type ('Mobile', '07701234571'), phone_type ('Home', '0131 496 0360')),
@@ -1079,7 +1079,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Matthew', 'Thomas'),
+        full_name ('Mr', 'Matthew', 'Thomas'),
         address_type ('Thomas Street', 'Rome', '00153'),
         'MN789',
         phones_collection (phone_type ('Mobile', '07701234572'), phone_type ('Home', '0131 496 0361')),
@@ -1115,7 +1115,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Isabella', 'Martinez'),
+        full_name ('Ms', 'Isabella', 'Martinez'),
         address_type ('Martinez Lane', 'Rome', '00184'),
         'OP890',
         phones_collection (phone_type ('Mobile', '07701234573'), phone_type ('Home', '0131 496 0362')),
@@ -1151,7 +1151,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Dr', 'Elizabeth', 'Garcia'),
+        full_name ('Dr', 'Elizabeth', 'Garcia'),
         address_type ('Garcia St.', 'Madrid', '28001'),
         'QR901',
         phones_collection (phone_type ('Mobile', '07701234574'), phone_type ('Home', '0131 496 0363')),
@@ -1180,7 +1180,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Mia', 'Rodriguez'),
+        full_name ('Mrs', 'Mia', 'Rodriguez'),
         address_type ('Rodriguez Rd.', 'Madrid', '28008'),
         'ST012',
         phones_collection (phone_type ('Mobile', '07701234575'), phone_type ('Home', '0131 496 0364')),
@@ -1216,7 +1216,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'James', 'Hernandez'),
+        full_name ('Mr', 'James', 'Hernandez'),
         address_type ('Hernandez Lane', 'Madrid', '28004'),
         'UV123',
         phones_collection (phone_type ('Mobile', '07701234576'), phone_type ('Home', '0131 496 0365')),
@@ -1252,7 +1252,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Charlotte', 'Lopez'),
+        full_name ('Ms', 'Charlotte', 'Lopez'),
         address_type ('Lopez St.', 'Barcelona', '08007'),
         'WX234',
         phones_collection (phone_type ('Mobile', '07701234577'), phone_type ('Home', '0131 496 0366')),
@@ -1288,7 +1288,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Henry', 'Gomez'),
+        full_name ('Mr', 'Henry', 'Gomez'),
         address_type ('Gomez Rd.', 'Barcelona', '08002'),
         'YZ345',
         phones_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
@@ -1324,7 +1324,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Amelia', 'Sanchez'),
+        full_name ('Mrs', 'Amelia', 'Sanchez'),
         address_type ('Sanchez St.', 'Barcelona', '08008'),
         'ZA456',
         phones_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
@@ -1353,7 +1353,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Victoria', 'Perez'),
+        full_name ('Ms', 'Victoria', 'Perez'),
         address_type ('Perez Lane', 'Barcelona', '08009'),
         'AB567',
         phones_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
@@ -1389,7 +1389,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Joseph', 'Gonzalez'),
+        full_name ('Mr', 'Joseph', 'Gonzalez'),
         address_type ('Gonzalez St.', 'Barcelona', '08010'),
         'CD678',
         phones_collection (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
@@ -1425,7 +1425,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Grace', 'Diaz'),
+        full_name ('Mrs', 'Grace', 'Diaz'),
         address_type ('Diaz Rd.', 'Cambridge', 'CB2 3AX'),
         'EF789',
         phones_collection (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
@@ -1454,7 +1454,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Jack', 'Torres'),
+        full_name ('Mr', 'Jack', 'Torres'),
         address_type ('Torres Lane', 'Bedford', 'MK40 1PR'),
         'GH890',
         phones_collection (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
@@ -1490,7 +1490,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Chloe', 'Fernandez'),
+        full_name ('Ms', 'Chloe', 'Fernandez'),
         address_type ('Fernandez Rd.', 'Northampton', 'NN1 2BH'),
         'IJ901',
         phones_collection (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
@@ -1526,7 +1526,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Benjamin', 'Ramirez'),
+        full_name ('Mr', 'Benjamin', 'Ramirez'),
         address_type ('Ramirez St.', 'Hitchin', 'SG5 1LP'),
         'KL012',
         phones_collection (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
@@ -1555,7 +1555,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Emma', 'Wood'),
+        full_name ('Mrs', 'Emma', 'Wood'),
         address_type ('Wood Rd.', 'Stevenage', 'SG1 1DH'),
         'MN234',
         phones_collection (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
@@ -1591,7 +1591,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Lily', 'Russell'),
+        full_name ('Ms', 'Lily', 'Russell'),
         address_type ('Russell Rd.', 'Ware', 'SG12 9BD'),
         'OP345',
         phones_collection (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
@@ -1627,7 +1627,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Dr', 'William', 'Baker'),
+        full_name ('Dr', 'William', 'Baker'),
         address_type ('Baker St.', 'Barcelona', '08007'),
         'QR567',
         phones_collection (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
@@ -1656,7 +1656,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Zoe', 'Hughes'),
+        full_name ('Mrs', 'Zoe', 'Hughes'),
         address_type '30-Apr-2009',
         (
             SELECT
@@ -1681,7 +1681,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Benjamin', 'Gonzalez'),
+        full_name ('Mr', 'Benjamin', 'Gonzalez'),
         address_type ('Gonzalez Lane', 'Barcelona', '08002'),
         'YZ345',
         phones_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
@@ -1717,7 +1717,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Amelia', 'Perez'),
+        full_name ('Mrs', 'Amelia', 'Perez'),
         address_type ('Perez St.', 'Barcelona', '08008'),
         'AB456',
         phones_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
@@ -1753,7 +1753,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Ethan', 'Sanchez'),
+        full_name ('Mr', 'Ethan', 'Sanchez'),
         address_type ('Sanchez Rd.', 'Barcelona', '08008'),
         'CD567',
         phones_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
@@ -1789,7 +1789,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Chloe', 'Ramirez'),
+        full_name ('Ms', 'Chloe', 'Ramirez'),
         address_type ('Ramirez Lane', 'Barcelona', '08007'),
         'EF678',
         phones_collection (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
@@ -1818,7 +1818,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Dr', 'Ava', 'Torres'),
+        full_name ('Dr', 'Ava', 'Torres'),
         address_type ('Torres St.', 'Barcelona', '08002'),
         'GH890',
         phones_collection (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
@@ -1854,7 +1854,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Aria', 'Vazquez'),
+        full_name ('Mrs', 'Aria', 'Vazquez'),
         address_type ('Vazquez Rd.', 'Barcelona', '08008'),
         'IJ012',
         phones_collection (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
@@ -1890,7 +1890,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Leo', 'Gomez'),
+        full_name ('Mr', 'Leo', 'Gomez'),
         address_type ('Gomez Lane', 'Paris', '75001'),
         'KL234',
         phones_collection (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
@@ -1926,7 +1926,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Scarlett', 'Fernandez'),
+        full_name ('Ms', 'Scarlett', 'Fernandez'),
         address_type ('Fernandez St.', 'Paris', '75004'),
         'MN456',
         phones_collection (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
@@ -1955,7 +1955,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Jack', 'Lopez'),
+        full_name ('Mr', 'Jack', 'Lopez'),
         address_type ('Lopez Lane', 'Paris', '75001'),
         'OP678',
         phones_collection (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
@@ -1991,7 +1991,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Nora', 'Hernandez'),
+        full_name ('Mrs', 'Nora', 'Hernandez'),
         address_type ('Hernandez St.', 'Paris', '75001'),
         'QR890',
         phones_collection (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
@@ -2027,7 +2027,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Logan', 'Martinez'),
+        full_name ('Mr', 'Logan', 'Martinez'),
         address_type ('Martinez Rd.', 'Madrid', '28001'),
         'ST234',
         phones_collection (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
@@ -2063,7 +2063,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Lily', 'Gomez'),
+        full_name ('Ms', 'Lily', 'Gomez'),
         address_type ('Gomez St.', 'Madrid', '28013'),
         'UV456',
         phones_collection (phone_type ('Mobile', '07701234589'), phone_type ('Home', '0131 496 0378')),
@@ -2092,7 +2092,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Dr', 'Avery', 'Sanchez'),
+        full_name ('Dr', 'Avery', 'Sanchez'),
         address_type ('Sanchez Lane', 'Madrid', '28009'),
         'WX678',
         phones_collection (phone_type ('Mobile', '07701234590'), phone_type ('Home', '0131 496 0379')),
@@ -2128,7 +2128,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Zoe', 'Perez'),
+        full_name ('Mrs', 'Zoe', 'Perez'),
         address_type ('Perez St.', 'Madrid', '28001'),
         'YZ890',
         phones_collection (phone_type ('Mobile', '07701234591'), phone_type ('Home', '0131 496 0380')),
@@ -2164,7 +2164,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Sebastian', 'Garcia'),
+        full_name ('Mr', 'Sebastian', 'Garcia'),
         address_type ('Garcia Lane', 'Madrid', '28008'),
         'AB123',
         phones_collection (phone_type ('Mobile', '07701234592'), phone_type ('Home', '0131 496 0381')),
@@ -2200,7 +2200,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Ms', 'Aurora', 'Rodriguez'),
+        full_name ('Ms', 'Aurora', 'Rodriguez'),
         address_type ('Rodriguez Rd.', 'Madrid', '28004'),
         'CD234',
         phones_collection (phone_type ('Mobile', '07701234593'), phone_type ('Home', '0131 496 0382')),
@@ -2229,7 +2229,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Elijah', 'Lopez'),
+        full_name ('Mr', 'Elijah', 'Lopez'),
         address_type ('Lopez St.', 'Madrid', '28013'),
         'EF345',
         phones_collection (phone_type ('Mobile', '07701234594'), phone_type ('Home', '0131 496 0383')),
@@ -2265,7 +2265,7 @@ INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mrs', 'Stella', 'Hernandez'),
+        full_name ('Mrs', 'Stella', 'Hernandez'),
         address_type ('Hernandez Rd.', 'Madrid', '28009'),
         'GH456',
         phones_collection (phone_type ('Mobile', '07701234595'), phone_type ('Home', '0131 496 0384')),
@@ -2302,7 +2302,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Kevin', 'Rivera'),
+        full_name ('Mr', 'Kevin', 'Rivera'),
         address_Type ('KevinStreet', 'KevinCity', 'Post'),
         'N2001',
         phones_collections (phone_type ('Mobile', '07700 900314'), phone_type ('Home', '020 7946 0648')),
@@ -2313,7 +2313,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Harold', 'Jackson'),
+        full_name ('Mr', 'Harold', 'Jackson'),
         address_Type ('HaroldStreet', 'HaroldCity', 'Post'),
         'N2002',
         phones_collections (phone_type ('Mobile', '07700 900272'), phone_type ('Home', '020 7946 0889')),
@@ -2324,7 +2324,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Arthur', 'Cook'),
+        full_name ('Mr', 'Arthur', 'Cook'),
         address_Type ('CookStreet', 'CookCity', 'Post'),
         'N2003',
         phones_collections (phone_type ('Mobile', '07800900791'), phone_type ('Mobile', '07700 900518'), phone_type ('Home', '020 7946 0325')),
@@ -2335,7 +2335,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Patrick', 'Kelly'),
+        full_name ('Mr', 'Patrick', 'Kelly'),
         address_Type ('PatrickStreet', 'PatrickCity', 'Post'),
         'N2004',
         phones_collections (phone_type ('Mobile', '07700 900105'), phone_type ('Home', '020 7946 0097')),
@@ -2346,7 +2346,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Fred', 'Johnson'),
+        full_name ('Mr', 'Fred', 'Johnson'),
         address_Type ('FredStreet', 'FredCity', 'Post'),
         'N2005',
         phones_collections (phone_type ('Mobile', '07700 900955'), phone_type ('Home', '020 7946 0996')),
@@ -2357,7 +2357,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Earl', 'Gray'),
+        full_name ('Mr', 'Earl', 'Gray'),
         address_Type ('EarlStreet', 'EarlCity', 'Post'),
         'N2006',
         phones_collections (phone_type ('Mobile', '07700 900719'), phone_type ('Home', '020 7946 0571')),
@@ -2368,7 +2368,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Frank', 'Long'),
+        full_name ('Mr', 'Frank', 'Long'),
         address_Type ('FrankStreet', 'FrankCity', 'Post'),
         'N2007',
         phones_collections (phone_type ('Mobile', '07600900791'), phone_type ('Mobile', '07700 900125'), phone_type ('Home', '0141 496 0039')),
@@ -2379,7 +2379,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Ralph', 'James'),
+        full_name ('Mr', 'Ralph', 'James'),
         address_Type ('RalphStreet', 'RalphCity', 'Post'),
         'N2008',
         phones_collections (phone_type ('Mobile', '07700 900475'), phone_type ('Home', '0141 496 0039')),
@@ -2390,7 +2390,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Ernest', 'Cevic'),
+        full_name ('Mr', 'Ernest', 'Cevic'),
         address_Type ('ErnestStreet', 'ErnestCity', 'Post'),
         'N2009',
         phones_collections (phone_type ('Mobile', '07700 900485'), phone_type ('Home', '0141 496 0948')),
@@ -2401,7 +2401,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Eric', 'Perez'),
+        full_name ('Mr', 'Eric', 'Perez'),
         address_Type ('EricStreet', 'EricCity', 'Post'),
         'N2010',
         phones_collections (phone_type ('Mobile', '07700 900758'), phone_type ('Home', '0141 496 0000')),
@@ -2412,7 +2412,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Victor', 'Evans'),
+        full_name ('Mr', 'Victor', 'Evans'),
         address_Type ('VictorStreet', 'VictorCity', 'Post'),
         'N2011',
         phones_collections (phone_type ('Mobile', '07700 900899'), phone_type ('Home', '0141 496 0207')),
@@ -2423,7 +2423,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Dennis', 'Henderson'),
+        full_name ('Mr', 'Dennis', 'Henderson'),
         address_Type ('DennisStreet', 'DennisCity', 'Post'),
         'N2012',
         phones_collections (phone_type ('Mobile', '07700 900721'), phone_type ('Home', '0141 496 0251')),
@@ -2434,7 +2434,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Brandon', 'Smith'),
+        full_name ('Mr', 'Brandon', 'Smith'),
         address_Type ('BrandonStreet', 'BrandonCity', 'Post'),
         'N2013',
         phones_collections (phone_type ('Mobile', '07500900791'), phone_type ('Mobile', '07700 900286'), phone_type ('Home', '029 2018 0579')),
@@ -2445,7 +2445,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Clarence', 'Diaz'),
+        full_name ('Mr', 'Clarence', 'Diaz'),
         address_Type ('ClarenceStreet', 'ClarenceCity', 'Post'),
         'N2014',
         phones_collections (phone_type ('Mobile', '07700 900384'), phone_type ('Home', '029 2018 0579')),
@@ -2456,7 +2456,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Edward', 'Scott'),
+        full_name ('Mr', 'Edward', 'Scott'),
         address_Type ('ScottStreet', 'ScottCity', 'Post'),
         'N2015',
         phones_collections (phone_type ('Mobile', '07700 900847'), phone_type ('Home', '029 2018 0911')),
@@ -2467,7 +2467,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Kevin', 'Collins'),
+        full_name ('Mr', 'Kevin', 'Collins'),
         address_Type ('CollinsStreet', 'CollinsCity', 'Post'),
         'N2016',
         phones_collections (phone_type ('Mobile', '07700 900225'), phone_type ('Home', '029 2018 0765')),
@@ -2478,7 +2478,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Gary', 'Sanchez'),
+        full_name ('Mr', 'Gary', 'Sanchez'),
         address_Type ('GaryStreet', 'GaryCity', 'Post'),
         'N2017',
         phones_collections (phone_type ('Mobile', '07700 900324'), phone_type ('Home', '029 2018 0897')),
@@ -2489,7 +2489,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Russell', 'Wright'),
+        full_name ('Mr', 'Russell', 'Wright'),
         address_Type ('WrightStreet', 'WrightCity', 'Post'),
         'N2018',
         phones_collections (phone_type ('Mobile', '07700 900591'), phone_type ('Home', '29 2018 0570')),
@@ -2500,7 +2500,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Joshua', 'Rogers'),
+        full_name ('Mr', 'Joshua', 'Rogers'),
         address_Type ('JoshuaStreet', 'JoshuaCity', 'Post'),
         'N2019',
         phones_collections (phone_type ('Mobile', '07400900791'), phone_type ('Mobile', '07700 900890'), phone_type ('Home', '029 2018 0062')),
@@ -2511,7 +2511,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Michael', 'Walker'),
+        full_name ('Mr', 'Michael', 'Walker'),
         address_Type ('MichaelStreet', 'MichaelCity', 'Post'),
         'N2020',
         phones_collections (phone_type ('Mobile', '07700 900514'), phone_type ('Home', '0191 498 0472')),
@@ -2522,7 +2522,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Sandra', 'Richardson'),
+        full_name ('Ms', 'Sandra', 'Richardson'),
         address_Type ('SandraStreet', 'SandraCity', 'Post'),
         'N2021',
         phones_collections (phone_type ('Mobile', '07700 900671'), phone_type ('Home', '0191 498 0674')),
@@ -2533,7 +2533,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Sarah', 'King'),
+        full_name ('Ms', 'Sarah', 'King'),
         address_Type ('SarahStreet', 'SarahCity', 'Post'),
         'N2022',
         phones_collections (phone_type ('Mobile', '07700 900045'), phone_type ('Home', '0191 498 0932')),
@@ -2544,7 +2544,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Doris', 'Gonzales'),
+        full_name ('Ms', 'Doris', 'Gonzales'),
         address_Type ('DorisStreet', 'DorisCity', 'Post'),
         'N2023',
         phones_collections (phone_type ('Mobile', '07700 900861'), phone_type ('Home', '0191 498 0754')),
@@ -2555,7 +2555,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Bruce', 'Barnes'),
+        full_name ('Mr', 'Bruce', 'Barnes'),
         address_Type ('BruceStreet', 'BruceCity', 'Post'),
         'N2024',
         phones_collections (phone_type ('Mobile', '07700 900024'), phone_type ('Home', '0191 498 0265')),
@@ -2566,7 +2566,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Katherine', 'Jones'),
+        full_name ('Ms', 'Katherine', 'Jones'),
         address_Type ('KatherineStreet', 'KatherineCity', 'Post'),
         'N2025',
         phones_collections (phone_type ('Mobile', '07700 900001'), phone_type ('Home', '0191 498 0236')),
@@ -2577,7 +2577,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Kathryn', 'Rogers'),
+        full_name ('Ms', 'Kathryn', 'Rogers'),
         address_Type ('KathrynStreet', 'KathrynCity', 'Post'),
         'N2026',
         phones_collections (phone_type ('Mobile', '07300900791'), phone_type ('Mobile', '07700 900694'), phone_type ('Home', '0113 496 0953')),
@@ -2588,7 +2588,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Karen', 'Martinez'),
+        full_name ('Ms', 'Karen', 'Martinez'),
         address_Type ('DorisStreet', 'DorisCity', 'Post'),
         'N2027',
         phones_collections (phone_type ('Mobile', '07700 900267'), phone_type ('Home', '0113 496 0895')),
@@ -2599,7 +2599,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Judy', 'Taylor'),
+        full_name ('Ms', 'Judy', 'Taylor'),
         address_Type ('JudyStreet', 'JudyCity', 'Post'),
         'N2028',
         phones_collections (phone_type ('Mobile', '07700 900843'), phone_type ('Home', '0113 496 0052')),
@@ -2610,7 +2610,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Priscilla', 'Moure'),
+        full_name ('Ms', 'Priscilla', 'Moure'),
         address_Type ('AnnStreet', 'AnnCity', 'Post'),
         'N2029',
         phones_collections (phone_type ('Mobile', '07700 900549'), phone_type ('Home', '0113 496 0566')),
@@ -2621,7 +2621,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Esther', 'Moure'),
+        full_name ('Ms', 'Esther', 'Moure'),
         address_Type ('EstherStreet', 'EstherCity', 'Post'),
         'N2030',
         phones_collections (phone_type ('Mobile', '07700 900571'), phone_type ('Home', '0113 496 0070')),
@@ -2632,7 +2632,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Christine', 'Bennett'),
+        full_name ('Ms', 'Christine', 'Bennett'),
         address_Type ('ChristineStreet', 'ChristineCity', 'Post'),
         'N2031',
         phones_collections (phone_type ('Mobile', '07700 900381'), phone_type ('Home', '0113 496 0981')),
@@ -2643,7 +2643,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Lois', 'Adams'),
+        full_name ('Ms', 'Lois', 'Adams'),
         address_Type ('LoisStreet', 'LoisCity', 'Post'),
         'N2032',
         phones_collections (phone_type ('Mobile', '07700 900203'), phone_type ('Home', '0116 496 0515')),
@@ -2654,7 +2654,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Jessica', 'Young'),
+        full_name ('Ms', 'Jessica', 'Young'),
         address_Type ('JessicaStreet', 'JessicaCity', 'Post'),
         'N2033',
         phones_collections (phone_type ('Mobile', '07700 900791'), phone_type ('Mobile', '07700 900219'), phone_type ('Home', '0116 496 0549')),
@@ -2665,7 +2665,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Amanda', 'Parker'),
+        full_name ('Ms', 'Amanda', 'Parker'),
         address_Type ('AmandaStreet', 'AmandaCity', 'Post'),
         'N2034',
         phones_collections (phone_type ('Mobile', '07700 900525'), phone_type ('Home', '0116 496 0738')),
@@ -2676,7 +2676,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Angela', 'Jackson'),
+        full_name ('Ms', 'Angela', 'Jackson'),
         address_Type ('AngelaStreet', 'AngelaCity', 'Post'),
         'N2035',
         phones_collections (phone_type ('Mobile', '07700 900867'), phone_type ('Home', '0116 496 0805')),
@@ -2687,7 +2687,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Denise', 'Edwards'),
+        full_name ('Ms', 'Denise', 'Edwards'),
         address_Type ('ChristineStreet', 'ChristineCity', 'Post'),
         'N2036',
         phones_collections (phone_type ('Mobile', '07700 900003'), phone_type ('Home', '0116 496 0841')),
@@ -2698,7 +2698,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Helen', 'Russel'),
+        full_name ('Ms', 'Helen', 'Russel'),
         address_Type ('HelenWStreet', 'HelenWCity', 'Post'),
         'N2037',
         phones_collections (phone_type ('Mobile', '07700 900640'), phone_type ('Home', '0116 496 0160')),
@@ -2709,7 +2709,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Laura', 'Young'),
+        full_name ('Ms', 'Laura', 'Young'),
         address_Type ('LauraStreet', 'LauraCity', 'Post'),
         'N2038',
         phones_collections (phone_type ('Mobile', '07200900791'), phone_type ('Mobile', '07700 900041'), phone_type ('Home', '0161 496 0590')),
@@ -2720,7 +2720,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Marie', 'Robinson'),
+        full_name ('Ms', 'Marie', 'Robinson'),
         address_Type ('MarieStreet', 'MarieCity', 'Post'),
         'N2039',
         phones_collections (phone_type ('Mobile', '07700 900731'), phone_type ('Home', '0161 496 0190')),
@@ -2731,7 +2731,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Ms', 'Louise', 'Williams'),
+        full_name ('Ms', 'Louise', 'Williams'),
         address_Type ('LouiseStreet', 'LouiseCity', 'Post'),
         'N2040',
         phones_collections (phone_type ('Mobile', '07700 900599'), phone_type ('Home', '0161 496 0495')),
@@ -2742,7 +2742,7 @@ INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
     (
-        name_Type ('Mr', 'Jonathan', 'Saxo'),
+        full_name ('Mr', 'Jonathan', 'Saxo'),
         address_Type ('JonathanStreet', 'JonathanCity', 'Post'),
         'N2041',
         phones_collections (phone_type ('Mobile', '07100900791'), phone_type ('Mobile', '07700 900833'), phone_type ('Home', '0161 496 0667')),
