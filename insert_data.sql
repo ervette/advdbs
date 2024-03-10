@@ -882,7 +882,7 @@ VALUES
 INSERT INTO
     employees_data (employee_data_id, position, salary)
 VALUES
-    (10001, 'Director', 50000);
+    (10001, 'Director', 500000000);
 
 INSERT INTO
     employees_data (employee_data_id, position, salary)
@@ -957,7 +957,7 @@ VALUES
 INSERT INTO
     employees_data (employee_data_id, position, salary)
 VALUES
-    (10016, 'Worker', 70000);
+    (10016, 'Supervisor', 70000);
 
 INSERT INTO
     employees_data (employee_data_id, position, salary)
@@ -1149,7 +1149,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10005
         ),
         (
             SELECT
@@ -1185,7 +1185,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Supervisor'
+                e.employee_data_id = 10006
         ),
         null
     );
@@ -1214,7 +1214,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10007
         ),
         (
             SELECT
@@ -1250,7 +1250,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10008
         ),
         (
             SELECT
@@ -1286,7 +1286,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Supervisor'
+                e.employee_data_id = 10009
         ),
         null
     );
@@ -1315,7 +1315,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10010
         ),
         (
             SELECT
@@ -1351,7 +1351,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10011
         ),
         (
             SELECT
@@ -1387,7 +1387,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10012
         ),
         (
             SELECT
@@ -1423,7 +1423,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10013
         ),
         (
             SELECT
@@ -1459,7 +1459,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Supervisor'
+                e.employee_data_id = 10014
         ),
         null
     );
@@ -1488,7 +1488,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10015
         ),
         (
             SELECT
@@ -1524,7 +1524,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10016
         ),
         (
             SELECT
@@ -1560,7 +1560,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Supervisor'
+                e.employee_data_id = 10017
         ),
         null
     );
@@ -1589,7 +1589,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10018
         ),
         (
             SELECT
@@ -1625,7 +1625,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10019
         ),
         (
             SELECT
@@ -1661,7 +1661,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Supervisor'
+                e.employee_data_id = 10020
         ),
         null
     );
@@ -1690,7 +1690,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10021
         ),
         (
             SELECT
@@ -1726,7 +1726,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10022
         ),
         (
             SELECT
@@ -1762,32 +1762,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Supervisor'
-        ),
-        null
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Mrs', 'Zoe', 'Hughes'),
-        address_type '30-Apr-2009',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'B123'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Supervisor'
+                e.employee_data_id = 10023
         ),
         null
     );
@@ -1800,7 +1775,7 @@ VALUES
         address_type ('Gonzalez Lane', 'Barcelona', '08002'),
         'YZ345',
         phones_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
-        10013,
+        10024,
         '22-Jun-2011',
         (
             SELECT
@@ -1816,7 +1791,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10024
         ),
         (
             SELECT
@@ -1836,7 +1811,7 @@ VALUES
         address_type ('Perez St.', 'Barcelona', '08008'),
         'AB456',
         phones_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
-        10014,
+        10025,
         '19-Sep-2013',
         (
             SELECT
@@ -1852,7 +1827,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10025
         ),
         (
             SELECT
@@ -1872,7 +1847,7 @@ VALUES
         address_type ('Sanchez Rd.', 'Barcelona', '08008'),
         'CD567',
         phones_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
-        10015,
+        10026,
         '14-Nov-2015',
         (
             SELECT
@@ -1888,7 +1863,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10026
         ),
         (
             SELECT
@@ -1989,7 +1964,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Intern'
+                e.employee_data_id = 10018
         ),
         (
             SELECT
@@ -2162,7 +2137,7 @@ VALUES
             FROM
                 employees_data e
             WHERE
-                e.employee_data_id = 'Worker'
+                e.employee_data_id = 10023
         ),
         (
             SELECT
@@ -2174,243 +2149,6 @@ VALUES
         )
     );
 
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Ms', 'Lily', 'Gomez'),
-        address_type ('Gomez St.', 'Madrid', '28013'),
-        'UV456',
-        phones_collection (phone_type ('Mobile', '07701234589'), phone_type ('Home', '0131 496 0378')),
-        10024,
-        '14-Apr-2018',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'M475'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Supervisor'
-        ),
-        null
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Dr', 'Avery', 'Sanchez'),
-        address_type ('Sanchez Lane', 'Madrid', '28009'),
-        'WX678',
-        phones_collection (phone_type ('Mobile', '07701234590'), phone_type ('Home', '0131 496 0379')),
-        10025,
-        '09-Jul-2020',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'M636'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Worker'
-        ),
-        (
-            SELECT
-                REF (e)
-            FROM
-                employees e
-            WHERE
-                e.emp_id = 10024
-        )
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Mrs', 'Zoe', 'Perez'),
-        address_type ('Perez St.', 'Madrid', '28001'),
-        'YZ890',
-        phones_collection (phone_type ('Mobile', '07701234591'), phone_type ('Home', '0131 496 0380')),
-        10026,
-        '23-Sep-2005',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'R901'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Intern'
-        ),
-        (
-            SELECT
-                REF (e)
-            FROM
-                employees e
-            WHERE
-                e.emp_id = 10024
-        )
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Mr', 'Sebastian', 'Garcia'),
-        address_type ('Garcia Lane', 'Madrid', '28008'),
-        'AB123',
-        phones_collection (phone_type ('Mobile', '07701234592'), phone_type ('Home', '0131 496 0381')),
-        10027,
-        '18-Aug-2007',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'P753'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Worker'
-        ),
-        (
-            SELECT
-                REF (e)
-            FROM
-                employees e
-            WHERE
-                e.emp_id = 10026
-        )
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Ms', 'Aurora', 'Rodriguez'),
-        address_type ('Rodriguez Rd.', 'Madrid', '28004'),
-        'CD234',
-        phones_collection (phone_type ('Mobile', '07701234593'), phone_type ('Home', '0131 496 0382')),
-        10028,
-        '12-Oct-2009',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'R732'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Supervisor'
-        ),
-        null
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Mr', 'Elijah', 'Lopez'),
-        address_type ('Lopez St.', 'Madrid', '28013'),
-        'EF345',
-        phones_collection (phone_type ('Mobile', '07701234594'), phone_type ('Home', '0131 496 0383')),
-        10029,
-        '05-Dec-2011',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'R500'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Worker'
-        ),
-        (
-            SELECT
-                REF (e)
-            FROM
-                employees e
-            WHERE
-                e.emp_id = 10028
-        )
-    );
-
-INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
-VALUES
-    (
-        full_name ('Mrs', 'Stella', 'Hernandez'),
-        address_type ('Hernandez Rd.', 'Madrid', '28009'),
-        'GH456',
-        phones_collection (phone_type ('Mobile', '07701234595'), phone_type ('Home', '0131 496 0384')),
-        10030,
-        '29-Jan-2014',
-        (
-            SELECT
-                REF (b)
-            FROM
-                branches b
-            WHERE
-                b.branch_id = 'M333'
-        ),
-        (
-            SELECT
-                ref (e)
-            FROM
-                employees_data e
-            WHERE
-                e.employee_data_id = 'Intern'
-        ),
-        (
-            SELECT
-                REF (e)
-            FROM
-                employees e
-            WHERE
-                e.emp_id = 10028
-        )
-    );
 
 /* populating customers */
 INSERT INTO
