@@ -881,7 +881,7 @@ VALUES
 
 /* populating employees */
 INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
         name_type ('Dr', 'Michael', 'Brown'),
@@ -910,7 +910,7 @@ VALUES
     );
 
 INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
         name_type ('Mrs', 'Emily', 'Johnson'),
@@ -938,7 +938,7 @@ VALUES
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'David', 'Taylor'),
         address_type ('Taylor Rd.', 'Paris', '75004'),
@@ -966,13 +966,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10002
         )
 );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Sophia', 'Clark'),
         address_type ('Clark Lane', 'Madrid', '28013'),
@@ -1000,13 +1000,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10002
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Daniel', 'Wilson'),
         address_type ('Wilson Street', 'Madrid', '28009'),
@@ -1034,13 +1034,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10002
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Olivia', 'Anderson'),
         address_type ('Anderson Rd.', 'Rome', '00186'),
@@ -1067,7 +1067,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Matthew', 'Thomas'),
         address_type ('Thomas Street', 'Rome', '00153'),
@@ -1095,13 +1095,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10006
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Isabella', 'Martinez'),
         address_type ('Martinez Lane', 'Rome', '00184'),
@@ -1129,13 +1129,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10006
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Dr', 'Elizabeth', 'Garcia'),
         address_type ('Garcia St.', 'Madrid', '28001'),
@@ -1162,7 +1162,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Mia', 'Rodriguez'),
         address_type ('Rodriguez Rd.', 'Madrid', '28008'),
@@ -1190,13 +1190,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10009
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'James', 'Hernandez'),
         address_type ('Hernandez Lane', 'Madrid', '28004'),
@@ -1224,13 +1224,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10009
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Charlotte', 'Lopez'),
         address_type ('Lopez St.', 'Barcelona', '08007'),
@@ -1258,13 +1258,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10010
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Henry', 'Gomez'),
         address_type ('Gomez Rd.', 'Barcelona', '08002'),
@@ -1292,13 +1292,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10010
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Amelia', 'Sanchez'),
         address_type ('Sanchez St.', 'Barcelona', '08008'),
@@ -1325,7 +1325,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Victoria', 'Perez'),
         address_type ('Perez Lane', 'Barcelona', '08009'),
@@ -1353,13 +1353,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10014
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Joseph', 'Gonzalez'),
         address_type ('Gonzalez St.', 'Barcelona', '08010'),
@@ -1387,13 +1387,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10014
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Grace', 'Diaz'),
         address_type ('Diaz Rd.', 'Cambridge', 'CB2 3AX'),
@@ -1420,7 +1420,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Jack', 'Torres'),
         address_type ('Torres Lane', 'Bedford', 'MK40 1PR'),
@@ -1448,13 +1448,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10017
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Chloe', 'Fernandez'),
         address_type ('Fernandez Rd.', 'Northampton', 'NN1 2BH'),
@@ -1482,13 +1482,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10017
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Benjamin', 'Ramirez'),
         address_type ('Ramirez St.', 'Hitchin', 'SG5 1LP'),
@@ -1515,7 +1515,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Emma', 'Wood'),
         address_type ('Wood Rd.', 'Stevenage', 'SG1 1DH'),
@@ -1543,13 +1543,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10020
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Lily', 'Russell'),
         address_type ('Russell Rd.', 'Ware', 'SG12 9BD'),
@@ -1577,13 +1577,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10020
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Dr', 'William', 'Baker'),
         address_type ('Baker St.', 'Barcelona', '08007'),
@@ -1610,7 +1610,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Zoe', 'Hughes'),
         address_type '30-Apr-2009',
@@ -1633,7 +1633,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Benjamin', 'Gonzalez'),
         address_type ('Gonzalez Lane', 'Barcelona', '08002'),
@@ -1661,13 +1661,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10012
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Amelia', 'Perez'),
         address_type ('Perez St.', 'Barcelona', '08008'),
@@ -1695,13 +1695,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10012
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Ethan', 'Sanchez'),
         address_type ('Sanchez Rd.', 'Barcelona', '08008'),
@@ -1729,13 +1729,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10012
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Chloe', 'Ramirez'),
         address_type ('Ramirez Lane', 'Barcelona', '08007'),
@@ -1762,7 +1762,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Dr', 'Ava', 'Torres'),
         address_type ('Torres St.', 'Barcelona', '08002'),
@@ -1790,13 +1790,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10016
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Aria', 'Vazquez'),
         address_type ('Vazquez Rd.', 'Barcelona', '08008'),
@@ -1824,13 +1824,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10016
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Leo', 'Gomez'),
         address_type ('Gomez Lane', 'Paris', '75001'),
@@ -1858,13 +1858,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10006
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Scarlett', 'Fernandez'),
         address_type ('Fernandez St.', 'Paris', '75004'),
@@ -1891,7 +1891,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Jack', 'Lopez'),
         address_type ('Lopez Lane', 'Paris', '75001'),
@@ -1919,13 +1919,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10020
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Nora', 'Hernandez'),
         address_type ('Hernandez St.', 'Paris', '75001'),
@@ -1953,13 +1953,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10020
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Logan', 'Martinez'),
         address_type ('Martinez Rd.', 'Madrid', '28001'),
@@ -1987,13 +1987,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10022
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Lily', 'Gomez'),
         address_type ('Gomez St.', 'Madrid', '28013'),
@@ -2020,7 +2020,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Dr', 'Avery', 'Sanchez'),
         address_type ('Sanchez Lane', 'Madrid', '28009'),
@@ -2048,13 +2048,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10024
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Zoe', 'Perez'),
         address_type ('Perez St.', 'Madrid', '28001'),
@@ -2082,13 +2082,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10024
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Sebastian', 'Garcia'),
         address_type ('Garcia Lane', 'Madrid', '28008'),
@@ -2116,13 +2116,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10026
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Ms', 'Aurora', 'Rodriguez'),
         address_type ('Rodriguez Rd.', 'Madrid', '28004'),
@@ -2149,7 +2149,7 @@ VALUES(
         null
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mr', 'Elijah', 'Lopez'),
         address_type ('Lopez St.', 'Madrid', '28013'),
@@ -2177,13 +2177,13 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10028
         )
     );
     INSERT INTO
-    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES(
         name_type ('Mrs', 'Stella', 'Hernandez'),
         address_type ('Hernandez Rd.', 'Madrid', '28009'),
@@ -2211,7 +2211,7 @@ VALUES(
             SELECT
                 REF (e)
             FROM
-                employee_table e
+                employees e
             WHERE
                 e.emp_id = 10028
         )
