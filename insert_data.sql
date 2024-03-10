@@ -1,111 +1,80 @@
 /* ----------------- */
 /* populate branches */
 /* ----------------- */
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Rose St.', 
-    'Paris', 
-    '75001', 
-    'P753', 
-    phones_collection(phone_type('Mobile','07081234567')));
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Portobello Rd.', 
-    'Madrid', 
-    '28001', 
-    'M822', 
-    phones_collection(phone_type('Mobile','07081234567')));   
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Rue de Rivoli', 
-    'Paris', 
-    '75004', 
-    'P129', 
-    phones_collection(phone_type('Mobile','07081234567'))); 
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Gran Via', 
-    'Madrid', 
-    '28013', 
-    'M475', 
-    phones_collection(phone_type('Mobile','07081234567')));     
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Calle de Alcala', 
-    'Madrid', 
-    '28009', 
-    'M636', 
-    phones_collection(phone_type('Mobile','07081234567')));   
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Via del Corso', 
-    'Rome', 
-    '00186', 
-    'R901', 
-    phones_collection(phone_type('Mobile','07081234567')));      
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Viale dei Trastevere', 
-    'Rome', 
-    '00153', 
-    'R732', 
-    phones_collection(phone_type('Mobile','07081234567'))); 
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Via Nazionale', 
-    'Rome', 
-    '00184', 
-    'R500', 
-    phones_collection(phone_type('Mobile','07081234567')));      
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Via Condotti', 
-    'Rome', 
-    '00187', 
-    'R211', 
-    phones_collection(phone_type('Mobile','07081234567')));         
-    
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Calle de Goya', 
-    'Madrid', 
-    '28001', 
-    'M333', 
-    phones_collection(phone_type('Mobile','07081234567')));  
-	
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Calle de la Princesa', 
-    'Madrid', 
-    '28008', 
-    'M808', 
-    phones_collection(phone_type('Mobile','07081234567')));  
-	
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Calle de Fuencarral', 
-    'Madrid', 
-    '28004', 
-    'M200', 
-    phones_collection(phone_type('Mobile','07081234567')));  
-	
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Carrer de Balmes', 
-    'Barcelona', 
-    '08007', 
-    'B555', 
-    phones_collection(phone_type('Mobile','07081234567')));  
-	
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Carrer de Ferran', 
-    'Barcelona', 
-    '08002', 
-    'B123', 
-    phones_collection(phone_type('Mobile','07081234567')));  
-	
-INSERT INTO branches (street, city, postcode, branch_id, phone) VALUES( 
-    'Passeig de Gracia', 
-    'Barcelona', 
-    '08008', 
-    'B789', 
-    phones_collection(phone_type('Mobile','07081234567')));  
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Rose St.', 'Paris', '75001', 'P753', phones_collection (phone_type ('Mobile', '07081234567')));
 
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Portobello Rd.', 'Madrid', '28001', 'M822', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Rue de Rivoli', 'Paris', '75004', 'P129', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Gran Via', 'Madrid', '28013', 'M475', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Calle de Alcala', 'Madrid', '28009', 'M636', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Via del Corso', 'Rome', '00186', 'R901', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Viale dei Trastevere', 'Rome', '00153', 'R732', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Via Nazionale', 'Rome', '00184', 'R500', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Via Condotti', 'Rome', '00187', 'R211', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Calle de Goya', 'Madrid', '28001', 'M333', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Calle de la Princesa', 'Madrid', '28008', 'M808', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Calle de Fuencarral', 'Madrid', '28004', 'M200', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Carrer de Balmes', 'Barcelona', '08007', 'B555', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Carrer de Ferran', 'Barcelona', '08002', 'B123', phones_collection (phone_type ('Mobile', '07081234567')));
+
+INSERT INTO
+    branches (street, city, postcode, branch_id, phone)
+VALUES
+    ('Passeig de Gracia', 'Barcelona', '08008', 'B789', phones_collection (phone_type ('Mobile', '07081234567')));
 
 /* ----------------- */
 /* populate accounts */
@@ -128,7 +97,11 @@ VALUES
         '0.08',
         2000,
         '12-MAY-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         23456789,
         'Savings',
@@ -144,7 +117,11 @@ VALUES
         '0.11',
         500,
         '25-JUN-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         34567890,
         'Current',
@@ -160,7 +137,11 @@ VALUES
         '0.05',
         1000,
         '03-APR-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         45678901,
         'Savings',
@@ -176,7 +157,11 @@ VALUES
         '0.13',
         2000,
         '19-JUL-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         56789012,
         'Current',
@@ -192,7 +177,11 @@ VALUES
         '0.04',
         100,
         '08-SEP-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         67890123,
         'Savings',
@@ -208,7 +197,11 @@ VALUES
         '0.15',
         500,
         '30-DEC-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         78901234,
         'Current',
@@ -224,7 +217,11 @@ VALUES
         '0.09',
         2000,
         '14-MAR-2020'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         89012345,
         'Savings',
@@ -240,7 +237,11 @@ VALUES
         '0.03',
         1000,
         '22-NOV-2023'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         90123456,
         'Current',
@@ -256,7 +257,11 @@ VALUES
         '0.07',
         500,
         '10-OCT-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         10234567,
         'Savings',
@@ -272,7 +277,11 @@ VALUES
         '0.12',
         2000,
         '01-JAN-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         21345678,
         'Current',
@@ -288,7 +297,11 @@ VALUES
         '0.06',
         100,
         '18-AUG-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         32456789,
         'Savings',
@@ -304,7 +317,11 @@ VALUES
         '0.14',
         1000,
         '07-MAY-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         43567890,
         'Current',
@@ -320,7 +337,11 @@ VALUES
         '0.10',
         500,
         '29-JUN-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         54678901,
         'Savings',
@@ -336,7 +357,11 @@ VALUES
         '0.01',
         2000,
         '11-DEC-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         65789012,
         'Current',
@@ -352,7 +377,11 @@ VALUES
         '0.08',
         100,
         '03-FEB-2020'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         76890123,
         'Savings',
@@ -368,7 +397,11 @@ VALUES
         '0.11',
         2000,
         '09-APR-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         87901234,
         'Current',
@@ -384,7 +417,11 @@ VALUES
         '0.05',
         500,
         '17-JUL-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         99012345,
         'Savings',
@@ -400,7 +437,11 @@ VALUES
         '0.13',
         1000,
         '23-SEP-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         10123456,
         'Current',
@@ -416,7 +457,11 @@ VALUES
         '0.04',
         2000,
         '05-NOV-2021'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         11234567,
         'Savings',
@@ -432,7 +477,11 @@ VALUES
         '0.15',
         100,
         '13-MAR-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         22345678,
         'Current',
@@ -448,7 +497,11 @@ VALUES
         '0.09',
         2000,
         '28-AUG-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         33456789,
         'Savings',
@@ -464,7 +517,11 @@ VALUES
         '0.03',
         500,
         '02-JUN-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         44567890,
         'Current',
@@ -480,7 +537,11 @@ VALUES
         '0.07',
         1000,
         '16-OCT-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         55678901,
         'Savings',
@@ -496,7 +557,11 @@ VALUES
         '0.12',
         2000,
         '20-DEC-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         66789012,
         'Current',
@@ -512,7 +577,11 @@ VALUES
         '0.06',
         100,
         '04-FEB-2023'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         77890123,
         'Savings',
@@ -528,7 +597,11 @@ VALUES
         '0.14',
         500,
         '15-SEP-2020'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         88901234,
         'Current',
@@ -544,7 +617,11 @@ VALUES
         '0.10',
         2000,
         '26-JUL-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         90012345,
         'Savings',
@@ -560,7 +637,11 @@ VALUES
         '0.01',
         1000,
         '09-MAY-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         12345670,
         'Current',
@@ -576,7 +657,11 @@ VALUES
         '0.08',
         2000,
         '18-AUG-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         23456701,
         'Savings',
@@ -592,7 +677,11 @@ VALUES
         '0.11',
         100,
         '27-NOV-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         34567012,
         'Current',
@@ -608,7 +697,11 @@ VALUES
         '0.05',
         1000,
         '14-JAN-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         45670123,
         'Savings',
@@ -624,7 +717,11 @@ VALUES
         '0.13',
         500,
         '20-MAR-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         56701234,
         'Current',
@@ -640,7 +737,11 @@ VALUES
         '0.04',
         2000,
         '08-MAY-2020'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         67012345,
         'Savings',
@@ -656,7 +757,11 @@ VALUES
         '0.15',
         1000,
         '02-JUL-2017'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         78012345,
         'Current',
@@ -672,7 +777,11 @@ VALUES
         '0.09',
         2000,
         '11-SEP-2019'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         89012340,
         'Savings',
@@ -688,7 +797,11 @@ VALUES
         '0.03',
         500,
         '29-APR-2016'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         90123450,
         'Current',
@@ -704,7 +817,11 @@ VALUES
         '0.07',
         1000,
         '10-OCT-2018'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         12345680,
         'Savings',
@@ -720,7 +837,11 @@ VALUES
         '0.12',
         2000,
         '15-DEC-2021'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         23456710,
         'Current',
@@ -736,7 +857,11 @@ VALUES
         '0.06',
         100,
         '07-FEB-2020'
-    ),
+    );
+
+INSERT INTO
+    accounts (acc_number, acc_type, balance, branch_id, interest_rate, limit_of_free_od, open_date)
+VALUES
     (
         34567801,
         'Savings',
@@ -754,30 +879,24 @@ VALUES
         '23-MAY-2017'
     );
 
-/*
-
- ****
-INSERT INTO EMPLOYEE_TABLE
- ****
-
- */
+/* populating employees */
 INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'John', 'Smith'),
-        address_type ('JohnStreet', 'JohnCity', 'Post'),
-        'N1001',
+        name_type ('Dr', 'Michael', 'Brown'),
+        address_type ('Brown St.', 'Paris', '75001'),
+        'AB123',
         phones_collections (phone_type ('Mobile', '07701234566'), phone_type ('Home', '0131 496 0355')),
-        1,
-        '21-Feb-04',
+        10001,
+        '21-Feb-2004',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E4'
+                b.branch_id = 'P753'
         ),
         (
             SELECT
@@ -785,35 +904,28 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Head'
+                j.job_title = 'Director'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 1
-        )
+        null
     );
 
 INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
     (
-        name_type ('Mr', 'Max', 'Mustermann'),
-        address_type ('MaxStreet', 'MaxCity', 'Post'),
-        'N1002',
-        phones_collections (phone_type ('Mobile', '07700900553'), phone_type ('Home', '0131 496 0274')),
-        2,
-        '21-Aug-08',
+        name_type ('Mrs', 'Emily', 'Johnson'),
+        address_type ('Johnson Ave.', 'Madrid', '28001'),
+        'CD234',
+        phones_collections (phone_type ('Mobile', '07701234567'), phone_type ('Home', '0131 496 0356')),
+        10002,
+        '15-Mar-2006',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E4'
+                b.branch_id = 'M822'
         ),
         (
             SELECT
@@ -821,35 +933,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Manager'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 1
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Candace', 'Gibbon'),
-        address_type ('CandaceStreet', 'CandaceCity', 'Post'),
-        'N1003',
-        phones_collections (phone_type ('Mobile', '07700900938'), phone_type ('Home', '0131 496 0101')),
-        3,
-        '21-Aug-09',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'David', 'Taylor'),
+        address_type ('Taylor Rd.', 'Paris', '75004'),
+        'EF345',
+        phones_collections (phone_type ('Mobile', '07701234568'), phone_type ('Home', '0131 496 0357')),
+        10003,
+        '10-Jul-2008',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E4'
+                b.branch_id = 'P129'
         ),
         (
             SELECT
@@ -857,35 +960,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Project Leader'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 2
+                e.emp_id = 10002
         )
-    );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Esther', 'Moure'),
-        address_type ('EstherStreet', 'EstherCity', 'Post'),
-        'N1004',
-        phones_collections (phone_type ('Mobile', '07700900864'), phone_type ('Home', '0131 496 0275')),
-        4,
-        '21-Aug-08',
+);
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Sophia', 'Clark'),
+        address_type ('Clark Lane', 'Madrid', '28013'),
+        'GH456',
+        phones_collections (phone_type ('Mobile', '07701234569'), phone_type ('Home', '0131 496 0358')),
+        10004,
+        '05-Sep-2010',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E4'
+                b.branch_id = 'M475'
         ),
         (
             SELECT
@@ -893,35 +994,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Accountant'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 2
+                e.emp_id = 10002
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Jedidiah  ', 'Cammelli'),
-        address_type ('Jedidiah Street', 'Jedidiah City', 'Post'),
-        'N1005',
-        phones_collections (phone_type ('Mobile', '07700900325'), phone_type ('Home', '0131 496 0286')),
-        5,
-        '21-Aug-17',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Daniel', 'Wilson'),
+        address_type ('Wilson Street', 'Madrid', '28009'),
+        'IJ567',
+        phones_collections (phone_type ('Mobile', '07701234570'), phone_type ('Home', '0131 496 0359')),
+        10005,
+        '20-Nov-2012',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E4'
+                b.branch_id = 'M636'
         ),
         (
             SELECT
@@ -929,35 +1028,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Cashier'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 4
+                e.emp_id = 10002
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Laurel', 'Withington'),
-        address_type ('LaurelStreet', 'LaurelCity', 'Post'),
-        'N1006',
-        phones_collections (phone_type ('Mobile', '07700900263'), phone_type ('Home', '0131 496 0855')),
-        6,
-        '21-Feb-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Olivia', 'Anderson'),
+        address_type ('Anderson Rd.', 'Rome', '00186'),
+        'KL678',
+        phones_collections (phone_type ('Mobile', '07701234571'), phone_type ('Home', '0131 496 0360')),
+        10006,
+        '14-Feb-2014',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L5'
+                b.branch_id = 'R901'
         ),
         (
             SELECT
@@ -965,35 +1062,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Head'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 1
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Bernice', 'Kurkjian'),
-        address_type ('BerniceStreet', 'BerniceCity', 'Post'),
-        'N1007',
-        phones_collections (phone_type ('Mobile', '07700900535'), phone_type ('Home', '0121 496 0196')),
-        7,
-        '21-Aug-13',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Matthew', 'Thomas'),
+        address_type ('Thomas Street', 'Rome', '00153'),
+        'MN789',
+        phones_collections (phone_type ('Mobile', '07701234572'), phone_type ('Home', '0131 496 0361')),
+        10007,
+        '03-Apr-2016',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L5'
+                b.branch_id = 'R732'
         ),
         (
             SELECT
@@ -1001,35 +1089,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Manager'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 6
+                e.emp_id = 10006
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Susanna', 'Gibbon'),
-        address_type ('SusannaStreet', 'SusannaCity', 'Post'),
-        'N1008',
-        phones_collections (phone_type ('Mobile', '07700900848'), phone_type ('Home', '0121 496 0368')),
-        8,
-        '21-Aug-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Isabella', 'Martinez'),
+        address_type ('Martinez Lane', 'Rome', '00184'),
+        'OP890',
+        phones_collections (phone_type ('Mobile', '07701234573'), phone_type ('Home', '0131 496 0362')),
+        10008,
+        '29-Jun-2018',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L5'
+                b.branch_id = 'R500'
         ),
         (
             SELECT
@@ -1037,35 +1123,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Project Leader'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 7
+                e.emp_id = 10006
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Priscilla', 'Moure'),
-        address_type ('PriscillaStreet', 'PriscillaCity', 'Post'),
-        'N1009',
-        phones_collections (phone_type ('Mobile', '07700900041'), phone_type ('Home', '0121 496 0403')),
-        9,
-        '21-Aug-16',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Dr', 'Elizabeth', 'Garcia'),
+        address_type ('Garcia St.', 'Madrid', '28001'),
+        'QR901',
+        phones_collections (phone_type ('Mobile', '07701234574'), phone_type ('Home', '0131 496 0363')),
+        10009,
+        '12-Sep-2020',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L5'
+                b.branch_id = 'M333'
         ),
         (
             SELECT
@@ -1073,35 +1157,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Accountant'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 7
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Essie', 'Cammelli'),
-        address_type ('EssieStreet', 'EssieCity', 'Post'),
-        'N1010',
-        phones_collections (phone_type ('Mobile', '07700900160'), phone_type ('Home', '0121 496 0766')),
-        10,
-        '21-Aug-17',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Mia', 'Rodriguez'),
+        address_type ('Rodriguez Rd.', 'Madrid', '28008'),
+        'ST012',
+        phones_collections (phone_type ('Mobile', '07701234575'), phone_type ('Home', '0131 496 0364')),
+        10010,
+        '08-Nov-2005',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L5'
+                b.branch_id = 'M808'
         ),
         (
             SELECT
@@ -1109,35 +1184,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Cashier'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 3
+                e.emp_id = 10009
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Honour', 'Tosteson'),
-        address_type ('3 Dinmont Dr.', 'Edinburgh', 'EH16 5RF'),
-        'N1011',
-        phones_collections (phone_type ('Mobile', '07700900410'), phone_type ('Home', '0121 496 0937')),
-        11,
-        '21-Feb-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'James', 'Hernandez'),
+        address_type ('Hernandez Lane', 'Madrid', '28004'),
+        'UV123',
+        phones_collections (phone_type ('Mobile', '07701234576'), phone_type ('Home', '0131 496 0365')),
+        10011,
+        '17-Mar-2007',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E1'
+                b.branch_id = 'B555'
         ),
         (
             SELECT
@@ -1145,35 +1218,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Head'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 1
+                e.emp_id = 10009
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Bonnie', 'Davis'),
-        address_type ('21 Durward Grove', 'Edinburgh', 'EH16 5RS'),
-        'N1012',
-        phones_collections (phone_type ('Mobile', '07700900095'), phone_type ('Home', '0121 496 0410')),
-        12,
-        '21-Aug-13',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Charlotte', 'Lopez'),
+        address_type ('Lopez St.', 'Barcelona', '08007'),
+        'WX234',
+        phones_collections (phone_type ('Mobile', '07701234577'), phone_type ('Home', '0131 496 0366')),
+        10012,
+        '30-Apr-2009',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E1'
+                b.branch_id = 'B123'
         ),
         (
             SELECT
@@ -1181,35 +1252,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Manager'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 11
+                e.emp_id = 10010
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Betty', 'Walker'),
-        address_type ('BettyStreet', 'BettyCity', 'Post'),
-        'N1013',
-        phones_collections (phone_type ('Mobile', '07700900815'), phone_type ('Home', '029 2018 0579')),
-        13,
-        '21-Aug-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Henry', 'Gomez'),
+        address_type ('Gomez Rd.', 'Barcelona', '08002'),
+        'YZ345',
+        phones_collections (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
+        10013,
+        '25-Jul-2011',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E1'
+                b.branch_id = 'B789'
         ),
         (
             SELECT
@@ -1217,35 +1286,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Project Leader'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 12
+                e.emp_id = 10010
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Lois', 'Adams'),
-        address_type ('LoisStreet', 'LoisCity', 'Post'),
-        'N1014',
-        phones_collections (phone_type ('Mobile', '07700900012'), phone_type ('Home', '029 2018 0911')),
-        14,
-        '21-Aug-16',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Amelia', 'Sanchez'),
+        address_type ('Sanchez St.', 'Barcelona', '08008'),
+        'ZA456',
+        phones_collections (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
+        10014,
+        '19-Sep-2013',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E1'
+                b.branch_id = 'P753'
         ),
         (
             SELECT
@@ -1253,35 +1320,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Accountant'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 12
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Frances', 'Evans'),
-        address_type ('FrancesStreet', 'FrancesCity', 'Post'),
-        'N1015',
-        phones_collections (phone_type ('Mobile', '07700900845'), phone_type ('Home', '029 2018 0765')),
-        15,
-        '21-Aug-17',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Victoria', 'Perez'),
+        address_type ('Perez Lane', 'Barcelona', '08009'),
+        'AB567',
+        phones_collections (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
+        10015,
+        '07-Nov-2015',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E1'
+                b.branch_id = 'M822'
         ),
         (
             SELECT
@@ -1289,35 +1347,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Cashier'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 2
+                e.emp_id = 10014
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Michelle', 'Ramirez'),
-        address_type ('MichelleStreet', 'MichelleCity', 'Post'),
-        'N1016',
-        phones_collections (phone_type ('Mobile', '07700900427'), phone_type ('Home', '029 2018 0897')),
-        16,
-        '21-Feb-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Joseph', 'Gonzalez'),
+        address_type ('Gonzalez St.', 'Barcelona', '08010'),
+        'CD678',
+        phones_collections (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
+        10016,
+        '02-Jan-2017',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E2'
+                b.branch_id = 'P129'
         ),
         (
             SELECT
@@ -1325,35 +1381,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Head'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 1
+                e.emp_id = 10014
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Janet', 'Brooks'),
-        address_type ('JanetStreet', 'JanetCity', 'Post'),
-        'N1017',
-        phones_collections (phone_type ('Mobile', '07700900946'), phone_type ('Home', '029 2018 0570')),
-        17,
-        '21-Aug-13',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Grace', 'Diaz'),
+        address_type ('Diaz Rd.', 'Cambridge', 'CB2 3AX'),
+        'EF789',
+        phones_collections (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
+        10017,
+        '21-Mar-2019',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E2'
+                b.branch_id = 'M475'
         ),
         (
             SELECT
@@ -1361,35 +1415,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Manager'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 16
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Tammy', 'Russell'),
-        address_type ('TammyStreet', 'TammyCity', 'Post'),
-        'N1018',
-        phones_collections (phone_type ('Mobile', '07700900196'), phone_type ('Home', '029 2018 0062')),
-        18,
-        '21-Aug-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Jack', 'Torres'),
+        address_type ('Torres Lane', 'Bedford', 'MK40 1PR'),
+        'GH890',
+        phones_collections (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
+        10018,
+        '15-May-2020',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E2'
+                b.branch_id = 'M636'
         ),
         (
             SELECT
@@ -1397,35 +1442,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Project Leader'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 17
+                e.emp_id = 10017
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Kathryn', 'Rogers'),
-        address_type ('KathrynStreet', 'KathrynCity', 'Post'),
-        'N1019',
-        phones_collections (phone_type ('Mobile', '07700900327'), phone_type ('Home', '0191 498 0472')),
-        19,
-        '21-Aug-16',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Chloe', 'Fernandez'),
+        address_type ('Fernandez Rd.', 'Northampton', 'NN1 2BH'),
+        'IJ901',
+        phones_collections (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
+        10019,
+        '10-Aug-2008',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E2'
+                b.branch_id = 'R901'
         ),
         (
             SELECT
@@ -1433,35 +1476,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Accountant'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 17
+                e.emp_id = 10017
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Heather', 'Wood'),
-        address_type ('HeatherStreet', 'HeatherCity', 'Post'),
-        'N1020',
-        phones_collections (phone_type ('Mobile', '07700900705'), phone_type ('Home', '0191 498 0674')),
-        20,
-        '21-Aug-17',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Benjamin', 'Ramirez'),
+        address_type ('Ramirez St.', 'Hitchin', 'SG5 1LP'),
+        'KL012',
+        phones_collections (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
+        10020,
+        '05-Nov-2010',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E2'
+                b.branch_id = 'R732'
         ),
         (
             SELECT
@@ -1469,35 +1510,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Cashier'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 3
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Rachel', 'Gray'),
-        address_type ('RachelStreet', 'RachelCity', 'Post'),
-        'N1021',
-        phones_collections (phone_type ('Mobile', '07700900633'), phone_type ('Home', '0191 498 0932')),
-        21,
-        '21-Feb-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Emma', 'Wood'),
+        address_type ('Wood Rd.', 'Stevenage', 'SG1 1DH'),
+        'MN234',
+        phones_collections (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
+        10021,
+        '29-Jan-2012',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E3'
+                b.branch_id = 'R500'
         ),
         (
             SELECT
@@ -1505,35 +1537,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Head'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 1
+                e.emp_id = 10020
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Deborah', 'Lee'),
-        address_type ('DeborahStreet', 'DeborahCity', 'Post'),
-        'N1022',
-        phones_collections (phone_type ('Mobile', '07700900682'), phone_type ('Home', '0191 498 0754')),
-        22,
-        '21-Aug-13',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Lily', 'Russell'),
+        address_type ('Russell Rd.', 'Ware', 'SG12 9BD'),
+        'OP345',
+        phones_collections (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
+        10022,
+        '14-Mar-2014',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E3'
+                b.branch_id = 'M333'
         ),
         (
             SELECT
@@ -1541,35 +1571,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Manager'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 21
+                e.emp_id = 10020
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Lori', 'Russell'),
-        address_type ('LoriStreet', 'LoriCity', 'Post'),
-        'N1023',
-        phones_collections (phone_type ('Mobile', '07700900663'), phone_type ('Home', '0191 498 0265')),
-        23,
-        '21-Aug-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Dr', 'William', 'Baker'),
+        address_type ('Baker St.', 'Barcelona', '08007'),
+        'QR567',
+        phones_collections (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
+        10023,
+        '02-Jun-2016',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E3'
+                b.branch_id = 'B555'
         ),
         (
             SELECT
@@ -1577,35 +1605,22 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Project Leader'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 22
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Jessica', 'Young'),
-        address_type ('JessicaStreet', 'JessicaCity', 'Post'),
-        'N1024',
-        phones_collections (phone_type ('Mobile', '07700900041'), phone_type ('Home', '0191 498 0236')),
-        24,
-        '21-Aug-16',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Zoe', 'Hughes'),
+        address_type '30-Apr-2009',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E3'
+                b.branch_id = 'B123'
         ),
         (
             SELECT
@@ -1613,35 +1628,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Accountant'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 22
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Ms', 'Marilyn', 'Hernandez'),
-        address_type ('MarilynStreet', 'MarilynCity', 'Post'),
-        'N1025',
-        phones_collections (phone_type ('Mobile', '07700900760'), phone_type ('Home', '0141 496 0039')),
-        25,
-        '21-Aug-17',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Benjamin', 'Gonzalez'),
+        address_type ('Gonzalez Lane', 'Barcelona', '08002'),
+        'YZ345',
+        phones_collections (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
+        10013,
+        '22-Jun-2011',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'E3'
+                b.branch_id = 'B789'
         ),
         (
             SELECT
@@ -1649,35 +1655,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Cashier'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 2
+                e.emp_id = 10012
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Mr', 'Stephen', 'Gray'),
-        address_type ('StephenStreet', 'StephenCity', 'Post'),
-        'N1026',
-        phones_collections (phone_type ('Mobile', '07700900219'), phone_type ('Home', '0141 496 0948')),
-        26,
-        '21-Feb-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Amelia', 'Perez'),
+        address_type ('Perez St.', 'Barcelona', '08008'),
+        'AB456',
+        phones_collections (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
+        10014,
+        '19-Sep-2013',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L1'
+                b.branch_id = 'P753'
         ),
         (
             SELECT
@@ -1685,35 +1689,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Head'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 1
+                e.emp_id = 10012
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Mr', 'Albert', 'Perry'),
-        address_type ('DeborahStreet', 'DeborahCity', 'Post'),
-        'N1027',
-        phones_collections (phone_type ('Mobile', '07700900694'), phone_type ('Home', '0141 496 0000')),
-        27,
-        '21-Aug-14',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Ethan', 'Sanchez'),
+        address_type ('Sanchez Rd.', 'Barcelona', '08008'),
+        'CD567',
+        phones_collections (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
+        10015,
+        '14-Nov-2015',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L1'
+                b.branch_id = 'M822'
         ),
         (
             SELECT
@@ -1721,35 +1723,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Manager'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 26
+                e.emp_id = 10012
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Mr', 'Gregory', 'Simmons'),
-        address_type ('GregoryStreet', 'GregoryCity', 'Post'),
-        'N1028',
-        phones_collections (phone_type ('Mobile', '07700900450'), phone_type ('Home', '0141 496 0207')),
-        28,
-        '21-Aug-15',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Chloe', 'Ramirez'),
+        address_type ('Ramirez Lane', 'Barcelona', '08007'),
+        'EF678',
+        phones_collections (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
+        10016,
+        '05-Jan-2017',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L1'
+                b.branch_id = 'M475'
         ),
         (
             SELECT
@@ -1757,35 +1757,26 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Project Leader'
+                j.job_title = 'Supervisor'
         ),
-        (
-            select
-                REF (e)
-            FROM
-                employee_table e
-            WHERE
-                e.emp_id = 27
-        )
+        null
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Mr', 'Christopher', 'Young'),
-        address_type ('ChristopherStreet', 'ChristopherCity', 'Post'),
-        'N1029',
-        phones_collections (phone_type ('Mobile', '07700900314'), phone_type ('Home', '0141 496 0251')),
-        29,
-        '21-Aug-16',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Dr', 'Ava', 'Torres'),
+        address_type ('Torres St.', 'Barcelona', '08002'),
+        'GH890',
+        phones_collections (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
+        10017,
+        '28-Mar-2019',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L1'
+                b.branch_id = 'M636'
         ),
         (
             SELECT
@@ -1793,35 +1784,33 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Accountant'
+                j.job_title = 'Worker'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 3
+                e.emp_id = 10016
         )
     );
-
-INSERT INTO
-    employee_table (NAME, ADDRESS, ni_num, phone, emp_id, JOIN_DATE, branch_id, position, supervisor_id)
-VALUES
-    (
-        name_type ('Mr', 'Bruce', 'Barnes'),
-        address_type ('BruceStreet', 'BruceCity', 'Post'),
-        'N1030',
-        phones_collections (phone_type ('Mobile', '07700900272'), phone_type ('Home', '0141 496 0051')),
-        30,
-        '21-Aug-17',
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Aria', 'Vazquez'),
+        address_type ('Vazquez Rd.', 'Barcelona', '08008'),
+        'IJ012',
+        phones_collections (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
+        10018,
+        '10-Jun-2005',
         (
             SELECT
                 REF (b)
             FROM
                 branches b
             WHERE
-                b.branch_id = 'L1'
+                b.branch_id = 'R901'
         ),
         (
             SELECT
@@ -1829,25 +1818,406 @@ VALUES
             FROM
                 job_table j
             WHERE
-                j.job_title = 'Cashier'
+                j.job_title = 'Intern'
         ),
         (
-            select
+            SELECT
                 REF (e)
             FROM
                 employee_table e
             WHERE
-                e.emp_id = 29
+                e.emp_id = 10016
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Leo', 'Gomez'),
+        address_type ('Gomez Lane', 'Paris', '75001'),
+        'KL234',
+        phones_collections (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
+        10019,
+        '17-Aug-2007',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'R732'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Worker'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10006
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Scarlett', 'Fernandez'),
+        address_type ('Fernandez St.', 'Paris', '75004'),
+        'MN456',
+        phones_collections (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
+        10020,
+        '03-Oct-2009',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'R500'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Supervisor'
+        ),
+        null
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Jack', 'Lopez'),
+        address_type ('Lopez Lane', 'Paris', '75001'),
+        'OP678',
+        phones_collections (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
+        10021,
+        '26-Dec-2011',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'M333'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Worker'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10020
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Nora', 'Hernandez'),
+        address_type ('Hernandez St.', 'Paris', '75001'),
+        'QR890',
+        phones_collections (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
+        10022,
+        '19-Mar-2014',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'M808'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Intern'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10020
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Logan', 'Martinez'),
+        address_type ('Martinez Rd.', 'Madrid', '28001'),
+        'ST234',
+        phones_collections (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
+        10023,
+        '02-Feb-2016',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'M822'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Worker'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10022
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Lily', 'Gomez'),
+        address_type ('Gomez St.', 'Madrid', '28013'),
+        'UV456',
+        phones_collections (phone_type ('Mobile', '07701234589'), phone_type ('Home', '0131 496 0378')),
+        10024,
+        '14-Apr-2018',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'M475'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Supervisor'
+        ),
+        null
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Dr', 'Avery', 'Sanchez'),
+        address_type ('Sanchez Lane', 'Madrid', '28009'),
+        'WX678',
+        phones_collections (phone_type ('Mobile', '07701234590'), phone_type ('Home', '0131 496 0379')),
+        10025,
+        '09-Jul-2020',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'M636'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Worker'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10024
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Zoe', 'Perez'),
+        address_type ('Perez St.', 'Madrid', '28001'),
+        'YZ890',
+        phones_collections (phone_type ('Mobile', '07701234591'), phone_type ('Home', '0131 496 0380')),
+        10026,
+        '23-Sep-2005',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'R901'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Intern'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10024
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Sebastian', 'Garcia'),
+        address_type ('Garcia Lane', 'Madrid', '28008'),
+        'AB123',
+        phones_collections (phone_type ('Mobile', '07701234592'), phone_type ('Home', '0131 496 0381')),
+        10027,
+        '18-Aug-2007',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'P753'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Worker'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10026
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Ms', 'Aurora', 'Rodriguez'),
+        address_type ('Rodriguez Rd.', 'Madrid', '28004'),
+        'CD234',
+        phones_collections (phone_type ('Mobile', '07701234593'), phone_type ('Home', '0131 496 0382')),
+        10028,
+        '12-Oct-2009',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'R732'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Supervisor'
+        ),
+        null
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mr', 'Elijah', 'Lopez'),
+        address_type ('Lopez St.', 'Madrid', '28013'),
+        'EF345',
+        phones_collections (phone_type ('Mobile', '07701234594'), phone_type ('Home', '0131 496 0383')),
+        10029,
+        '05-Dec-2011',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'R500'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Worker'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10028
+        )
+    );
+    INSERT INTO
+    employee_table (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+VALUES(
+        name_type ('Mrs', 'Stella', 'Hernandez'),
+        address_type ('Hernandez Rd.', 'Madrid', '28009'),
+        'GH456',
+        phones_collections (phone_type ('Mobile', '07701234595'), phone_type ('Home', '0131 496 0384')),
+        10030,
+        '29-Jan-2014',
+        (
+            SELECT
+                REF (b)
+            FROM
+                branches b
+            WHERE
+                b.branch_id = 'M333'
+        ),
+        (
+            SELECT
+                ref (j)
+            FROM
+                job_table j
+            WHERE
+                j.job_title = 'Intern'
+        ),
+        (
+            SELECT
+                REF (e)
+            FROM
+                employee_table e
+            WHERE
+                e.emp_id = 10028
         )
     );
 
-/*
-
- ****
-INSERT INTO CUSTOMER_TABLE
- ****
-
- */
+/* populating customers */
 INSERT INTO
     customer_table (name, address, ni_num, phone, cust_id)
 VALUES
