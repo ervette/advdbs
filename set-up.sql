@@ -117,7 +117,7 @@ CREATE TABLE employees OF employee_sub (
     CONSTRAINT emp_join_date_not_null CHECK (join_date IS NOT NULL),
     CONSTRAINT emp_branch_id_not_null CHECK(branch_id IS NOT NULL), 
     CONSTRAINT emp_ni_num_unique UNIQUE (ni_num))
-    NESTED TABLE phones_collection STORE AS emp_phone_collection; 
+    NESTED TABLE phone STORE AS emp_phone_collection; 
 
 CREATE TABLE customers OF customer_sub (
     CONSTRAINT cus_id_pk PRIMARY KEY(customer_id), 
