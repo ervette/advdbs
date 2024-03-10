@@ -123,9 +123,9 @@ CREATE TABLE customers OF customer_sub (
     CONSTRAINT cus_id_pk PRIMARY KEY(customer_id), 
     CONSTRAINT cus_first_name_not_null CHECK (name.first_name IS NOT NULL), /* name */
     CONSTRAINT cus_last_name_not_null CHECK (name.last_name IS NOT NULL), /* name */
-    CONSTRAINT cus_city_not_null CHECK(city IS NOT NULL), /* address */
-    CONSTRAINT cus_street_not_null CHECK(street IS NOT NULL), /* address */
-    CONSTRAINT cus_postcode_not_null CHECK(postcode IS NOT NULL), /* address */
+    CONSTRAINT cus_city_not_null CHECK(address.city IS NOT NULL), /* address */
+    CONSTRAINT cus_street_not_null CHECK(address.street IS NOT NULL), /* address */
+    CONSTRAINT cus_postcode_not_null CHECK(address.postcode IS NOT NULL), /* address */
     CONSTRAINT cus_ni_num_unique UNIQUE (ni_num),
     CONSTRAINT cus_ni_num_not_null CHECK(ni_num IS NOT NULL))
     NESTED TABLE phone STORE AS customer_phone_collection; 
