@@ -879,6 +879,121 @@ VALUES
         '23-MAY-2017'
     );
 
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10001, 'Director', 50000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10002, 'Supervisor', 55000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10003, 'Worker', 60000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10004, 'Intern', 70000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10005, 'Worker', 100000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10006, 'Supervisor', 200000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10007, 'Worker', 500000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10008, 'Intern', 55000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10009, 'Supervisor', 60000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10010, 'Worker', 70000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10011, 'Intern', 100000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10012, 'Supervisor', 200000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10013, 'Worker', 500000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10014, 'Intern', 55000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10015, 'Supervisor', 60000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10016, 'Worker', 70000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10017, 'Intern', 100000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10018, 'Supervisor', 200000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10019, 'Worker', 500000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10020, 'Supervisor', 55000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10021, 'Worker', 60000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10022, 'Intern', 70000);
+
+INSERT INTO
+    employees_data (employee_data_id, position, salary)
+VALUES
+    (10023, 'Supervisor', 100000);
+
 /* populating employees */
 INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)

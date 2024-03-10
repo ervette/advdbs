@@ -105,6 +105,11 @@ CREATE TABLE branches OF branch_sub (
     CONSTRAINT branches_phone_not_null CHECK(phone IS NOT NULL))
     NESTED TABLE phone STORE AS branch_collection_table; 
 
+CREATE TABLE employees_data OF employee_data(
+    CONSTRAINT employee_data_id_pk PRIMARY KEY (employee_data_id), 
+    CONSTRAINT emp_data_position_not_null CHECK (position IS NOT NULL),
+    CONSTRAINT emp_data_salary_not_null CHECK (salary IS NOT NULL)); 
+
 CREATE TABLE employees OF employee_sub (
     CONSTRAINT emp_id_pk PRIMARY KEY (emp_id),
     CONSTRAINT emp_position_not_null CHECK (emp_position IS NOT NULL),
@@ -135,11 +140,6 @@ CREATE TABLE accounts OF account (
     CONSTRAINT acc_type_not_null CHECK(acc_type IS NOT NULL), 
     CONSTRAINT acc_branch_id_not_null CHECK (branch_id IS NOT NULL), 
     CONSTRAINT acc_open_date_not_null CHECK (open_date IS NOT NULL));
-
-CREATE TABLE employees_data OF employee_data(
-    CONSTRAINT employee_data_id_pk PRIMARY KEY (employee_data_id), 
-    CONSTRAINT emp_data_job_title_not_null CHECK (position IS NOT NULL),
-    CONSTRAINT emp_data_salary_not_null CHECK (salary IS NOT NULL)); 
 
 CREATE TABLE customer_account (
     customer_id REF customer_sub SCOPE IS customers, 
