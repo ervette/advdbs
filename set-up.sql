@@ -92,7 +92,7 @@ CREATE TYPE employee_sub UNDER person (
 /
 
 CREATE TYPE customer_sub UNDER person (
-    customer_id VARCHAR2(6))
+    customer_id VARCHAR2(5))
     FINAL;
 /
 

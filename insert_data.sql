@@ -878,6 +878,7 @@ VALUES
         500,
         '23-MAY-2017'
     );
+
 /* populate employees data */
 INSERT INTO
     employees_data (employee_data_id, position, salary)
@@ -2149,477 +2150,349 @@ VALUES
         )
     );
 
-
 /* populating customers */
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
+        'C1001',
         full_name ('Mr', 'Kevin', 'Rivera'),
-        address_Type ('KevinStreet', 'KevinCity', 'Post'),
-        'N2001',
-        phones_collections (phone_type ('Mobile', '07700 900314'), phone_type ('Home', '020 7946 0648')),
-        'C1001'
+        address_Type ('KevinStreet', 'London', 'WC2E 8JF'),
+        'DC001',
+        phones_collections (phone_type ('Mobile', '07700900314'), phone_type ('Home', '020 7946 0648'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Harold', 'Jackson'),
-        address_Type ('HaroldStreet', 'HaroldCity', 'Post'),
-        'N2002',
-        phones_collections (phone_type ('Mobile', '07700 900272'), phone_type ('Home', '020 7946 0889')),
-        'C1002'
+        'C1002',
+        full_name ('Mrs', 'Emily', 'Johnson'),
+        address_Type ('Johnson Ave.', 'Madrid', '28001'),
+        'DC002',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0655'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Arthur', 'Cook'),
-        address_Type ('CookStreet', 'CookCity', 'Post'),
-        'N2003',
-        phones_collections (phone_type ('Mobile', '07800900791'), phone_type ('Mobile', '07700 900518'), phone_type ('Home', '020 7946 0325')),
-        'C1003'
+        'C1003',
+        full_name ('Ms', 'Sophia', 'Clark'),
+        address_Type ('Clark Lane', 'Madrid', '28013'),
+        'DC003',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0666'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Patrick', 'Kelly'),
-        address_Type ('PatrickStreet', 'PatrickCity', 'Post'),
-        'N2004',
-        phones_collections (phone_type ('Mobile', '07700 900105'), phone_type ('Home', '020 7946 0097')),
-        'C1004'
+        'C1004',
+        full_name ('Mr', 'Daniel', 'Wilson'),
+        address_Type ('Wilson Street', 'Madrid', '28009'),
+        'DC004',
+        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0677'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Fred', 'Johnson'),
-        address_Type ('FredStreet', 'FredCity', 'Post'),
-        'N2005',
-        phones_collections (phone_type ('Mobile', '07700 900955'), phone_type ('Home', '020 7946 0996')),
-        'C1005'
+        'C1005',
+        full_name ('Mrs', 'Olivia', 'Anderson'),
+        address_Type ('Anderson Rd.', 'Rome', '00186'),
+        'DC005',
+        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0688'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Earl', 'Gray'),
-        address_Type ('EarlStreet', 'EarlCity', 'Post'),
-        'N2006',
-        phones_collections (phone_type ('Mobile', '07700 900719'), phone_type ('Home', '020 7946 0571')),
-        'C1006'
+        'C1006',
+        full_name ('Mr', 'Matthew', 'Thomas'),
+        address_Type ('Thomas Street', 'Rome', '00153'),
+        'DC006',
+        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0699'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Frank', 'Long'),
-        address_Type ('FrankStreet', 'FrankCity', 'Post'),
-        'N2007',
-        phones_collections (phone_type ('Mobile', '07600900791'), phone_type ('Mobile', '07700 900125'), phone_type ('Home', '0141 496 0039')),
-        'C1007'
+        'C1007',
+        full_name ('Ms', 'Isabella', 'Martinez'),
+        address_Type ('Martinez Lane', 'Rome', '00184'),
+        'DC007',
+        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0700'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Ralph', 'James'),
-        address_Type ('RalphStreet', 'RalphCity', 'Post'),
-        'N2008',
-        phones_collections (phone_type ('Mobile', '07700 900475'), phone_type ('Home', '0141 496 0039')),
-        'C1008'
+        'C1008',
+        full_name ('Dr', 'Elizabeth', 'Garcia'),
+        address_Type ('Garcia St.', 'Madrid', '28001'),
+        'DC008',
+        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0711'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Ernest', 'Cevic'),
-        address_Type ('ErnestStreet', 'ErnestCity', 'Post'),
-        'N2009',
-        phones_collections (phone_type ('Mobile', '07700 900485'), phone_type ('Home', '0141 496 0948')),
-        'C1009'
+        'C1009',
+        full_name ('Mrs', 'Mia', 'Rodriguez'),
+        address_Type ('Rodriguez Rd.', 'Madrid', '28008'),
+        'DC009',
+        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0722'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Eric', 'Perez'),
-        address_Type ('EricStreet', 'EricCity', 'Post'),
-        'N2010',
-        phones_collections (phone_type ('Mobile', '07700 900758'), phone_type ('Home', '0141 496 0000')),
-        'C1010'
+        'C1010',
+        full_name ('Mr', 'James', 'Hernandez'),
+        address_Type ('Hernandez Lane', 'Madrid', '28004'),
+        'DC010',
+        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0733'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Victor', 'Evans'),
-        address_Type ('VictorStreet', 'VictorCity', 'Post'),
-        'N2011',
-        phones_collections (phone_type ('Mobile', '07700 900899'), phone_type ('Home', '0141 496 0207')),
-        'C1011'
+        'C1011',
+        full_name ('Ms', 'Charlotte', 'Lopez'),
+        address_Type ('Lopez St.', 'Barcelona', '08007'),
+        'DC011',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0744'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Dennis', 'Henderson'),
-        address_Type ('DennisStreet', 'DennisCity', 'Post'),
-        'N2012',
-        phones_collections (phone_type ('Mobile', '07700 900721'), phone_type ('Home', '0141 496 0251')),
-        'C1012'
+        'C1012',
+        full_name ('Mr', 'Benjamin', 'Gonzalez'),
+        address_Type ('Gonzalez Lane', 'Barcelona', '08002'),
+        'DC012',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0755'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Brandon', 'Smith'),
-        address_Type ('BrandonStreet', 'BrandonCity', 'Post'),
-        'N2013',
-        phones_collections (phone_type ('Mobile', '07500900791'), phone_type ('Mobile', '07700 900286'), phone_type ('Home', '029 2018 0579')),
-        'C1013'
+        'C1013',
+        full_name ('Mrs', 'Amelia', 'Perez'),
+        address_Type ('Perez St.', 'Barcelona', '08008'),
+        'DC013',
+        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0766'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Clarence', 'Diaz'),
-        address_Type ('ClarenceStreet', 'ClarenceCity', 'Post'),
-        'N2014',
-        phones_collections (phone_type ('Mobile', '07700 900384'), phone_type ('Home', '029 2018 0579')),
-        'C1014'
+        'C1014',
+        full_name ('Mr', 'Ethan', 'Sanchez'),
+        address_Type ('Sanchez Rd.', 'Barcelona', '08008'),
+        'DC014',
+        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0777'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Edward', 'Scott'),
-        address_Type ('ScottStreet', 'ScottCity', 'Post'),
-        'N2015',
-        phones_collections (phone_type ('Mobile', '07700 900847'), phone_type ('Home', '029 2018 0911')),
-        'C1015'
+        'C1015',
+        full_name ('Ms', 'Chloe', 'Ramirez'),
+        address_Type ('Ramirez Lane', 'Barcelona', '08007'),
+        'DC015',
+        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0788'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Kevin', 'Collins'),
-        address_Type ('CollinsStreet', 'CollinsCity', 'Post'),
-        'N2016',
-        phones_collections (phone_type ('Mobile', '07700 900225'), phone_type ('Home', '029 2018 0765')),
-        'C1016'
+        'C1016',
+        full_name ('Dr', 'Ava', 'Torres'),
+        address_Type ('Torres St.', 'Barcelona', '08002'),
+        'DC016',
+        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0799'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Gary', 'Sanchez'),
-        address_Type ('GaryStreet', 'GaryCity', 'Post'),
-        'N2017',
-        phones_collections (phone_type ('Mobile', '07700 900324'), phone_type ('Home', '029 2018 0897')),
-        'C1017'
+        'C1017',
+        full_name ('Mrs', 'Aria', 'Vazquez'),
+        address_Type ('Vazquez Rd.', 'Barcelona', '08008'),
+        'DC017',
+        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0800'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Russell', 'Wright'),
-        address_Type ('WrightStreet', 'WrightCity', 'Post'),
-        'N2018',
-        phones_collections (phone_type ('Mobile', '07700 900591'), phone_type ('Home', '29 2018 0570')),
-        'C1018'
+        'C1018',
+        full_name ('Mr', 'Leo', 'Gomez'),
+        address_Type ('Gomez Lane', 'Paris', '75001'),
+        'DC018',
+        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0811'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Joshua', 'Rogers'),
-        address_Type ('JoshuaStreet', 'JoshuaCity', 'Post'),
-        'N2019',
-        phones_collections (phone_type ('Mobile', '07400900791'), phone_type ('Mobile', '07700 900890'), phone_type ('Home', '029 2018 0062')),
-        'C1019'
+        'C1019',
+        full_name ('Ms', 'Scarlett', 'Fernandez'),
+        address_Type ('Fernandez St.', 'Paris', '75004'),
+        'DC019',
+        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0822'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Michael', 'Walker'),
-        address_Type ('MichaelStreet', 'MichaelCity', 'Post'),
-        'N2020',
-        phones_collections (phone_type ('Mobile', '07700 900514'), phone_type ('Home', '0191 498 0472')),
-        'C1020'
+        'C1020',
+        full_name ('Mr', 'Jack', 'Lopez'),
+        address_Type ('Lopez Lane', 'Paris', '75001'),
+        'DC020',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0833'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Sandra', 'Richardson'),
-        address_Type ('SandraStreet', 'SandraCity', 'Post'),
-        'N2021',
-        phones_collections (phone_type ('Mobile', '07700 900671'), phone_type ('Home', '0191 498 0674')),
-        'C1021'
+        'C1021',
+        full_name ('Mrs', 'Nora', 'Hernandez'),
+        address_Type ('Hernandez St.', 'Paris', '75001'),
+        'DC021',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0844'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Sarah', 'King'),
-        address_Type ('SarahStreet', 'SarahCity', 'Post'),
-        'N2022',
-        phones_collections (phone_type ('Mobile', '07700 900045'), phone_type ('Home', '0191 498 0932')),
-        'C1022'
+        'C1022',
+        full_name ('Mr', 'Logan', 'Martinez'),
+        address_Type ('Martinez Rd.', 'Madrid', '28001'),
+        'DC022',
+        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0855'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Doris', 'Gonzales'),
-        address_Type ('DorisStreet', 'DorisCity', 'Post'),
-        'N2023',
-        phones_collections (phone_type ('Mobile', '07700 900861'), phone_type ('Home', '0191 498 0754')),
-        'C1023'
+        'C1023',
+        full_name ('Ms', 'Lily', 'Gomez'),
+        address_Type ('Gomez St.', 'Madrid', '28001'),
+        'DC023',
+        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0866'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Mr', 'Bruce', 'Barnes'),
-        address_Type ('BruceStreet', 'BruceCity', 'Post'),
-        'N2024',
-        phones_collections (phone_type ('Mobile', '07700 900024'), phone_type ('Home', '0191 498 0265')),
-        'C1024'
+        'C1024',
+        full_name ('Mr', 'William', 'Torres'),
+        address_Type ('Torres Lane', 'London', 'WC1H 0LQ'),
+        'DC024',
+        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0877'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Katherine', 'Jones'),
-        address_Type ('KatherineStreet', 'KatherineCity', 'Post'),
-        'N2025',
-        phones_collections (phone_type ('Mobile', '07700 900001'), phone_type ('Home', '0191 498 0236')),
-        'C1025'
+        'C1025',
+        full_name ('Mrs', 'Evelyn', 'Martinez'),
+        address_Type ('Martinez Rd.', 'London', 'W1B 4HX'),
+        'DC025',
+        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0888'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Kathryn', 'Rogers'),
-        address_Type ('KathrynStreet', 'KathrynCity', 'Post'),
-        'N2026',
-        phones_collections (phone_type ('Mobile', '07300900791'), phone_type ('Mobile', '07700 900694'), phone_type ('Home', '0113 496 0953')),
-        'C1026'
+        'C1026',
+        full_name ('Mr', 'Oliver', 'Torres'),
+        address_Type ('Torres Lane', 'London', 'W1U 6AX'),
+        'DC026',
+        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0899'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Karen', 'Martinez'),
-        address_Type ('DorisStreet', 'DorisCity', 'Post'),
-        'N2027',
-        phones_collections (phone_type ('Mobile', '07700 900267'), phone_type ('Home', '0113 496 0895')),
-        'C1027'
+        'C1027',
+        full_name ('Ms', 'Ava', 'Gomez'),
+        address_Type ('Gomez St.', 'London', 'WC1H 0LQ'),
+        'DC027',
+        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0900'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Judy', 'Taylor'),
-        address_Type ('JudyStreet', 'JudyCity', 'Post'),
-        'N2028',
-        phones_collections (phone_type ('Mobile', '07700 900843'), phone_type ('Home', '0113 496 0052')),
-        'C1028'
+        'C1028',
+        full_name ('Mr', 'Henry', 'Lopez'),
+        address_Type ('Lopez Lane', 'Edinburgh', 'EH1 5AB'),
+        'DC028',
+        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0911'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Priscilla', 'Moure'),
-        address_Type ('AnnStreet', 'AnnCity', 'Post'),
-        'N2029',
-        phones_collections (phone_type ('Mobile', '07700 900549'), phone_type ('Home', '0113 496 0566')),
-        'C1029'
+        'C1029',
+        full_name ('Mrs', 'Madison', 'Torres'),
+        address_Type ('Torres St.', 'Edinburgh', 'EH3 9BN'),
+        'DC029',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0922'))
     );
 
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
+    customers (customer_id, name, address, ni_num, phone)
 VALUES
     (
-        full_name ('Ms', 'Esther', 'Moure'),
-        address_Type ('EstherStreet', 'EstherCity', 'Post'),
-        'N2030',
-        phones_collections (phone_type ('Mobile', '07700 900571'), phone_type ('Home', '0113 496 0070')),
-        'C1030'
+        'C1030',
+        full_name ('Ms', 'Harper', 'Martinez'),
+        address_Type ('Martinez Rd.', 'Edinburgh', 'EH2 1EL'),
+        'DC030',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0933'))
     );
 
+/* populate customer_account */
 INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Christine', 'Bennett'),
-        address_Type ('ChristineStreet', 'ChristineCity', 'Post'),
-        'N2031',
-        phones_collections (phone_type ('Mobile', '07700 900381'), phone_type ('Home', '0113 496 0981')),
-        'C1031'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Lois', 'Adams'),
-        address_Type ('LoisStreet', 'LoisCity', 'Post'),
-        'N2032',
-        phones_collections (phone_type ('Mobile', '07700 900203'), phone_type ('Home', '0116 496 0515')),
-        'C1032'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Jessica', 'Young'),
-        address_Type ('JessicaStreet', 'JessicaCity', 'Post'),
-        'N2033',
-        phones_collections (phone_type ('Mobile', '07700 900791'), phone_type ('Mobile', '07700 900219'), phone_type ('Home', '0116 496 0549')),
-        'C1033'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Amanda', 'Parker'),
-        address_Type ('AmandaStreet', 'AmandaCity', 'Post'),
-        'N2034',
-        phones_collections (phone_type ('Mobile', '07700 900525'), phone_type ('Home', '0116 496 0738')),
-        'C1034'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Angela', 'Jackson'),
-        address_Type ('AngelaStreet', 'AngelaCity', 'Post'),
-        'N2035',
-        phones_collections (phone_type ('Mobile', '07700 900867'), phone_type ('Home', '0116 496 0805')),
-        'C1035'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Denise', 'Edwards'),
-        address_Type ('ChristineStreet', 'ChristineCity', 'Post'),
-        'N2036',
-        phones_collections (phone_type ('Mobile', '07700 900003'), phone_type ('Home', '0116 496 0841')),
-        'C1036'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Helen', 'Russel'),
-        address_Type ('HelenWStreet', 'HelenWCity', 'Post'),
-        'N2037',
-        phones_collections (phone_type ('Mobile', '07700 900640'), phone_type ('Home', '0116 496 0160')),
-        'C1037'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Laura', 'Young'),
-        address_Type ('LauraStreet', 'LauraCity', 'Post'),
-        'N2038',
-        phones_collections (phone_type ('Mobile', '07200900791'), phone_type ('Mobile', '07700 900041'), phone_type ('Home', '0161 496 0590')),
-        'C1038'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Marie', 'Robinson'),
-        address_Type ('MarieStreet', 'MarieCity', 'Post'),
-        'N2039',
-        phones_collections (phone_type ('Mobile', '07700 900731'), phone_type ('Home', '0161 496 0190')),
-        'C1039'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Ms', 'Louise', 'Williams'),
-        address_Type ('LouiseStreet', 'LouiseCity', 'Post'),
-        'N2040',
-        phones_collections (phone_type ('Mobile', '07700 900599'), phone_type ('Home', '0161 496 0495')),
-        'C1040'
-    );
-
-INSERT INTO
-    customer_table (name, address, ni_num, phone, cust_id)
-VALUES
-    (
-        full_name ('Mr', 'Jonathan', 'Saxo'),
-        address_Type ('JonathanStreet', 'JonathanCity', 'Post'),
-        'N2041',
-        phones_collections (phone_type ('Mobile', '07100900791'), phone_type ('Mobile', '07700 900833'), phone_type ('Home', '0161 496 0667')),
-        'C1041'
-    );
-
-/*
-
- ****
-INSERT INTO CUSTOMER_ACCOUNT
- ****
-
- */
-INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1001'
+                customer_id = 'C1001'
         ),
         (
             SELECT
@@ -2627,21 +2500,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '45645654'
+                acc_number = 12345678
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1002'
+                customer_id = 'C1002'
         ),
         (
             SELECT
@@ -2649,21 +2522,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '64758904'
+                acc_number = 23456789
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1002'
+                customer_id = 'C1003'
         ),
         (
             SELECT
@@ -2671,21 +2544,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '85967485'
+                acc_number = 34567890
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1003'
+                customer_id = 'C1004'
         ),
         (
             SELECT
@@ -2693,21 +2566,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '34528754'
+                acc_number = 45678901
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1004'
+                customer_id = 'C1005'
         ),
         (
             SELECT
@@ -2715,21 +2588,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '76895465'
+                acc_number = 56789012
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1005'
+                customer_id = 'C1006'
         ),
         (
             SELECT
@@ -2737,21 +2610,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '6057342'
+                acc_number = 67890123
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1006'
+                customer_id = 'C1007'
         ),
         (
             SELECT
@@ -2759,21 +2632,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '92157579'
+                acc_number = 78901234
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1006'
+                customer_id = 'C1008'
         ),
         (
             SELECT
@@ -2781,21 +2654,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '74853652'
+                acc_number = 89012345
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1007'
+                customer_id = 'C1009'
         ),
         (
             SELECT
@@ -2803,21 +2676,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '36428802'
+                acc_number = 90123456
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1008'
+                customer_id = 'C1010'
         ),
         (
             SELECT
@@ -2825,21 +2698,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '30360522'
+                acc_number = 10234567
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1009'
+                customer_id = 'C1011'
         ),
         (
             SELECT
@@ -2847,21 +2720,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '45947960'
+                acc_number = 21345678
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1010'
+                customer_id = 'C1012'
         ),
         (
             SELECT
@@ -2869,21 +2742,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '61759251'
+                acc_number = 32456789
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1011'
+                customer_id = 'C1013'
         ),
         (
             SELECT
@@ -2891,21 +2764,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '47935252'
+                acc_number = 43567890
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1012'
+                customer_id = 'C1014'
         ),
         (
             SELECT
@@ -2913,21 +2786,21 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '91908038'
+                acc_number = 54678901
         )
     );
 
 INSERT INTO
-    customer_account (cust_id, acc_number)
+    customer_account (customer_id, acc_number)
 VALUES
     (
         (
             SELECT
                 REF (c)
             FROM
-                customer_table c
+                customers c
             WHERE
-                cust_id = 'C1013'
+                customer_id = 'C1015'
         ),
         (
             SELECT
@@ -2935,689 +2808,7 @@ VALUES
             FROM
                 accounts a
             WHERE
-                acc_number = '48566965'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1014'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '26502506'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1015'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '3621280'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1015'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '85963258'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1016'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '32116769'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1017'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '99481068'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1018'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '55163952'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1019'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '58489233'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1020'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '82516698'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1020'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '14786952'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1021'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '58411184'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1022'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '69732823'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1023'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '80129532'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1024'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '04834745'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1024'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '85479652'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1025'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '16095573'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1026'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '35953164'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1027'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '52965833'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1028'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '40130365'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1029'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '47016078'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1030'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '31866334'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1031'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '83672918'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1032'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '12667691'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1033'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '5545073'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1034'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '64793745'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1035'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '88736868'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1036'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '3608694'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1037'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '32722516'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1038'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '65004171'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1039'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '95646311'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1039'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '14785963'
-        )
-    );
-
-INSERT INTO
-    customer_account (cust_id, acc_number)
-VALUES
-    (
-        (
-            SELECT
-                REF (c)
-            FROM
-                customer_table c
-            WHERE
-                cust_id = 'C1040'
-        ),
-        (
-            SELECT
-                REF (a)
-            FROM
-                accounts a
-            WHERE
-                acc_number = '59641812'
+                acc_number = 65789012
         )
     );
 
