@@ -67,17 +67,13 @@ SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS f
 FROM customers c,
      TABLE(c.customer_phone_collection) ph
 WHERE c.customer_id IN (
-    SELECT customer_id
-    FROM (
-        SELECT customer_id,
-               COUNT(*) AS num_mobiles,
-               SUM(CASE WHEN SUBSTR(phone_number.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) AS num_starting_0750
-        FROM TABLE(c.customer_phone_collection)
-        GROUP BY customer_id
-        HAVING COUNT(*) > 1 AND SUM(CASE WHEN SUBSTR(phone_number.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
-    )
+    SELECT c.customer_id
+    FROM customers c,
+         TABLE(c.customer_phone_collection) ph
+    GROUP BY c.customer_id
+    HAVING COUNT(*) > 1
+       AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
 );
-
 
 /* 7 */
 /* Note there is no mr Barclay nor mrs Smith */
