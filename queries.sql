@@ -62,39 +62,21 @@ ORDER BY b.branch_id;
 
 /* 6 */
 SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
-       phone.phone_number AS mobile_number
-FROM customers c
-JOIN TABLE(c.phone) phone
-ON phone.device_type = 'Mobile'
-WHERE (
-    SELECT COUNT(*) 
-    FROM TABLE(c.phone) 
-    WHERE device_type = 'Mobile'
-) > 1
-AND EXISTS (
-    SELECT 1 
-    FROM TABLE(c.phone) 
-    WHERE device_type = 'Mobile' 
-    AND phone_number LIKE '0750%'
-);
-
-SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
        ph.device_type,
        ph.phone_number
 FROM customers c,
-     TABLE(c.phone) ph
+     TABLE(c.customer_phone_collection) ph
 WHERE c.customer_id IN (
     SELECT customer_id
     FROM (
         SELECT customer_id,
                COUNT(*) AS num_mobiles,
-               SUM(CASE WHEN SUBSTR(phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) AS num_starting_0750
-        FROM TABLE(c.phone)
+               SUM(CASE WHEN SUBSTR(phone_number.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) AS num_starting_0750
+        FROM TABLE(c.customer_phone_collection)
         GROUP BY customer_id
-        HAVING COUNT(*) > 1 AND SUM(CASE WHEN SUBSTR(phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
+        HAVING COUNT(*) > 1 AND SUM(CASE WHEN SUBSTR(phone_number.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
     )
 );
-
 
 
 /* 7 */
