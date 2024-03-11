@@ -78,6 +78,25 @@ AND EXISTS (
     AND phone_number LIKE '0750%'
 );
 
+SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
+       p.device_type,
+       p.phone_number
+FROM customers c
+JOIN TABLE(c.phone) p
+ON c.customer_id = p.customer_id
+WHERE c.customer_id IN (
+    SELECT customer_id
+    FROM (
+        SELECT customer_id,
+               COUNT(*) AS num_mobiles,
+               SUM(CASE WHEN SUBSTR(phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) AS num_starting_0750
+        FROM TABLE(c.phone)
+        GROUP BY customer_id
+        HAVING COUNT(*) > 1 AND SUM(CASE WHEN SUBSTR(phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
+    )
+);
+
+
 /* 7 */
 /* Note there is no mr Barclay nor mrs Smith */
 
