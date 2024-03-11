@@ -22,11 +22,14 @@ FROM
 JOIN 
     accounts a ON DEREF(a.branch_id).branch_id = b.branch_id
 JOIN 
-    customers c ON DEREF(a.customer_id).customer_id = c.customer_id
+    customer_account ca ON DEREF(ca.acc_number).acc_number = a.acc_number
+JOIN 
+    customers c ON DEREF(ca.customer_id).customer_id = c.customer_id
 WHERE 
     a.acc_type = 'Savings'
 GROUP BY 
     b.branch_id, c.name.title, c.name.first_name, c.name.last_name;
+
 
 
 /* 4 */
