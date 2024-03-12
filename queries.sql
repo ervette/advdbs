@@ -43,23 +43,22 @@ WHERE e.supervisor_id IS NOT NULL;
 
 /* 5 */
 SELECT 
-    b.branch_id,
-    c.name.title || ' ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
-    a.limit_of_free_od
+    b.branch_id, 
+    DEREF(c.customer_ref).full_name AS full_name, 
+    a.limit_of_free_od AS max_free_overdraft_limit
 FROM 
-    branches b
-JOIN accounts a ON a.branch_id = REF(b)
-JOIN customer_account ca ON ca.acc_number = REF(a)
-JOIN customers c ON c.customer_id = ca.customer_id
+    accounts a, 
+    branches b, 
+    customers c
 WHERE 
     a.acc_type = 'Current'
-    AND a.limit_of_free_od IN (
-        SELECT MAX(ac.limit_of_free_od)
-        FROM accounts ac
-        WHERE ac.acc_type = 'Current'
-        GROUP BY ac.branch_id
-    )
-ORDER BY b.branch_id, a.limit_of_free_od DESC;
+    AND a.branch_id = REF(b)
+    AND a.customer_id = REF(c)
+GROUP BY 
+    b.branch_id, c.customer_id
+HAVING 
+    a.limit_of_free_od = MAX(a.limit_of_free_od) OVER (PARTITION BY b.branch_id);
+
 
 
 
