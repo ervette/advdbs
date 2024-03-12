@@ -14,13 +14,15 @@ GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
 SELECT b.branch_id, c.name.first_name || ' ' || c.name.last_name AS full_name, MIN(a.balance) AS balance
-FROM accounts a
-INNER JOIN branches b ON a.branch_id = b.branch_id
-INNER JOIN customer_account ca ON a.acc_number = ca.acc_number
-INNER JOIN customers c ON ca.customer_id = c.customer_id
+FROM accounts a, branches b, customer_account ca, customers c
 WHERE a.acc_type = 'Savings'
+AND a.branch_id = REF(b)
+AND ca.acc_number = REF(a)
+AND ca.customer_id = REF(c)
 GROUP BY b.branch_id, c.name.first_name, c.name.last_name
-HAVING a.balance = MIN(a.balance);
+ORDER BY balance ASC
+FETCH FIRST 1 ROW WITH TIES;
+
 
 
 /* 4 */
