@@ -13,21 +13,15 @@ WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
-SELECT branch_id, customer_name, balance
-FROM (
-    SELECT 
-        a.branch_id, 
-        c.name.first_name || ' ' || c.name.last_name AS customer_name, 
-        a.balance,
-        RANK() OVER (PARTITION BY a.branch_id ORDER BY a.balance ASC) as rank
-    FROM accounts a
-    INNER JOIN customer_account ca ON a.acc_number = ca.acc_number
-    INNER JOIN customers c ON ca.customer_id = c.customer_id
-    WHERE a.acc_type = 'Savings'
-)
-WHERE rank = 1;
-
-
+SELECT a.branch_id, 
+       c.name.first_name || ' ' || c.name.last_name AS customer_name, 
+       MIN(a.balance) AS lowest_balance
+FROM accounts a
+JOIN customer_account ca ON a.acc_number = ca.acc_number
+JOIN customers c ON c.customer_id = ca.customer_id
+WHERE a.acc_type = 'Savings'
+GROUP BY a.branch_id, c.name.first_name, c.name.last_name
+ORDER BY a.branch_id, MIN(a.balance);
 
 
 /* 4 */
