@@ -83,38 +83,17 @@ WHERE c.customer_id IN (
          TABLE(c.phone) ph
     GROUP BY c.customer_id
     HAVING COUNT(*) > 1
-       AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 5) = '07701' THEN 1 ELSE 0 END) >= 1
+       AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 4) = '0770' THEN 1 ELSE 0 END) >= 1
 );
 
 /* 7 + */
 
 SELECT COUNT(*) AS answer
-FROM employees e
-JOIN employees supervisor ON e.supervisor_id = supervisor.emp_id
-JOIN employees grand_supervisor ON supervisor.supervisor_id = grand_supervisor.emp_id
-WHERE supervisor.name.title = 'Mrs' AND supervisor.name.last_name = 'Johnson'
-WHERE grand_supervisor.name.title = 'Mrs' AND grand_supervisor.name.last_name = 'Anderson';
-
-/* Note there is no mr Barclay nor mrs Smith */
-
-SELECT COUNT(*) AS num_employees
-FROM employees e
-WHERE DEREF(e.supervisor_id).emp_id IN (
-    SELECT emp_id
-    FROM employees
-    WHERE DEREF(supervisor_id).emp_id = (
-        SELECT emp_id
-        FROM employees
-        WHERE DEREF(supervisor_id).emp_id = (
-            SELECT emp_id
-            FROM employees
-            WHERE DEREF(supervisor_id).name.last_name = 'Johnson'
-            AND DEREF(supervisor_id).name.title = 'Mrs'
-        )
-        AND DEREF(supervisor_id).name.last_name = 'Anderson'
-        AND DEREF(supervisor_id).name.title = 'Mrs'
-    )
-);
+FROM employees e, employees es
+WHERE DEREF(e.supervisor_id).name.title = 'Mrs' 
+AND DEREF(e.supervisor_id).name.last_name = 'Johnson'
+AND DEREF(es.supervisor_id).name.title = 'Dr' 
+AND DEREF(es.supervisor_id).name.last_name = 'Brown';
 
 /* 8 + */
 SELECT 
