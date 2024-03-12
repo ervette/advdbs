@@ -76,8 +76,9 @@ INSERT INTO
 VALUES
     ('Passeig de Gracia', 'Barcelona', '08008', 'B789', phones_collection (phone_type ('Mobile', '07081234567')));
 
-
-/* populating customers */
+/* ----------------- */
+/* populate customers */
+/* ----------------- */
 INSERT INTO
     customers (customer_id, name, address, ni_num, phone)
 VALUES
@@ -1213,7 +1214,10 @@ VALUES
         '23-MAY-2017'
     );
 
+
+/* ----------------- */
 /* populate employees data */
+/* ----------------- */
 INSERT INTO
     employees_data (employee_data_id, position, salary)
 VALUES
@@ -1329,7 +1333,9 @@ INSERT INTO
 VALUES
     (10023, 'Supervisor', 100000);
 
-/* populating employees */
+/* ----------------- */
+/* populate employees */
+/* ----------------- */
 INSERT INTO
     employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
 VALUES
@@ -2484,7 +2490,9 @@ VALUES
         )
     );
 
+/* ----------------- */
 /* populate customer_account */
+/* ----------------- */
 INSERT INTO
     customer_account (customer_id, acc_number)
 VALUES
