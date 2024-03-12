@@ -1,10 +1,10 @@
-/* 1 + */ 
+/* 1 + note: There is no London branch therefore just any branch */ 
 SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM employees e
 WHERE e.name.first_name LIKE '%mi%'
-AND e.address.city = ‘Paris’;
+AND e.address.city = ‘Madrid’;
 
-/* 2 */
+/* 2 + */
 SELECT b.street || ', ' || b.city || ', ' || b.postcode AS branch_address,
        COUNT(*) AS num_savings_accounts
 FROM branches b
@@ -13,22 +13,20 @@ WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
-SELECT 
-    b.branch_id,
-    c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
-    MIN(a.balance) AS min_savings_balance
-FROM 
-    branches b
-JOIN 
-    accounts a ON DEREF(a.branch_id).branch_id = b.branch_id
-JOIN 
-    customer_account ca ON DEREF(ca.acc_number).acc_number = a.acc_number
-JOIN 
-    customers c ON DEREF(ca.customer_id).customer_id = c.customer_id
-WHERE 
-    a.acc_type = 'Savings'
-GROUP BY 
-    b.branch_id, c.name.title, c.name.first_name, c.name.last_name;
+SELECT branch_id, customer_name, balance
+FROM (
+    SELECT 
+        a.branch_id, 
+        c.name.first_name || ' ' || c.name.last_name AS customer_name, 
+        a.balance,
+        RANK() OVER (PARTITION BY a.branch_id ORDER BY a.balance ASC) as rank
+    FROM accounts a
+    INNER JOIN customer_account ca ON a.acc_number = ca.acc_number
+    INNER JOIN customers c ON ca.customer_id = c.customer_id
+    WHERE a.acc_type = 'Savings'
+)
+WHERE rank = 1;
+
 
 
 
