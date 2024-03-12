@@ -2,7 +2,7 @@
 SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM employees e
 WHERE e.name.first_name LIKE '%mi%'
-AND e.address.city = ‘Madrid’;
+AND e.address.city = ‘Paris’;
 
 /* 2 */
 SELECT b.street || ', ' || b.city || ', ' || b.postcode AS branch_address,
