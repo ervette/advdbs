@@ -13,25 +13,10 @@ WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
-SELECT
-    b.branch_id,
-    c.name.first_name || ' ' || c.name.last_name AS customer_full_name,
-    MIN(a.balance) AS lowest_balance
-FROM
-    accounts a,
-    branches b,
-    customers c,
-    customer_account ca
-WHERE
-    a.branch_id = REF(b)
-    AND ca.acc_number = REF(a)
-    AND ca.customer_id = REF(c)
-    AND a.acc_type = 'Savings'
-GROUP BY
-    b.branch_id,
-    c.name.first_name,
-    c.name.last_name
-
+SELECT a.branch_id, MIN(a.balance) AS lowest_balance
+FROM accounts a
+WHERE a.acc_type = 'Savings'
+GROUP BY a.branch_id;
 
 /* 4 */
 SELECT e.address.street || ', ' || e.address.city || ', ' || e.address.postcode AS employee_branch_address,
