@@ -4,77 +4,77 @@
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Rose St.', 'Paris', '75001', 'P753', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Rose St.', 'London', '75001', 'P753', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Portobello Rd.', 'Madrid', '28001', 'M822', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Portobello Rd.', 'London', '28001', 'M822', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Rue de Rivoli', 'Paris', '75004', 'P129', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Rue de Rivoli', 'London', '75004', 'P129', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Gran Via', 'Madrid', '28013', 'M475', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Gran Via', 'London', '28013', 'M475', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Calle de Alcala', 'Madrid', '28009', 'M636', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Calle de Alcala', 'London', '28009', 'M636', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Via del Corso', 'Rome', '00186', 'R901', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Via del Corso', 'Edinburgh', '00186', 'R901', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Viale dei Trastevere', 'Rome', '00153', 'R732', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Viale dei Trastevere', 'Edinburgh', '00153', 'R732', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Via Nazionale', 'Rome', '00184', 'R500', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Via Nazionale', 'Edinburgh', '00184', 'R500', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Via Condotti', 'Rome', '00187', 'R211', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Via Condotti', 'Edinburgh', '00187', 'R211', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Calle de Goya', 'Madrid', '28001', 'M333', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Calle de Goya', 'London', '28001', 'M333', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Calle de la Princesa', 'Madrid', '28008', 'M808', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Calle de la Princesa', 'London', '28008', 'M808', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Calle de Fuencarral', 'Madrid', '28004', 'M200', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Calle de Fuencarral', 'London', '28004', 'M200', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Carrer de Balmes', 'Barcelona', '08007', 'B555', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Carrer de Balmes', 'Cardiff', '08007', 'B555', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Carrer de Ferran', 'Barcelona', '08002', 'B123', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Carrer de Ferran', 'Cardiff', '08002', 'B123', phones_collection (phone_type ('Mobile', '07081234567')));
 
 INSERT INTO
     branches (street, city, postcode, branch_id, phone)
 VALUES
-    ('Passeig de Gracia', 'Barcelona', '08008', 'B789', phones_collection (phone_type ('Mobile', '07081234567')));
+    ('Passeig de Gracia', 'Cardiff', '08008', 'B789', phones_collection (phone_type ('Mobile', '07081234567')));
 
 /* ----------------- */
 /* populate customers */
@@ -96,7 +96,7 @@ VALUES
     (
         'C1002',
         full_name ('Mrs', 'Emily', 'Johnson'),
-        address_Type ('Johnson Ave.', 'Madrid', '28001'),
+        address_Type ('Johnson Ave.', 'London', '28001'),
         'DC002',
         phones_collection (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0655'))
     );
@@ -107,7 +107,7 @@ VALUES
     (
         'C1003',
         full_name ('Ms', 'Sophia', 'Clark'),
-        address_Type ('Clark Lane', 'Madrid', '28013'),
+        address_Type ('Clark Lane', 'London', '28013'),
         'DC003',
         phones_collection (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0666'))
     );
@@ -118,7 +118,7 @@ VALUES
     (
         'C1004',
         full_name ('Mr', 'Daniel', 'Wilson'),
-        address_Type ('Wilson Street', 'Madrid', '28009'),
+        address_Type ('Wilson Street', 'London', '28009'),
         'DC004',
         phones_collection (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0677'))
     );
@@ -129,7 +129,7 @@ VALUES
     (
         'C1005',
         full_name ('Mrs', 'Olivia', 'Anderson'),
-        address_Type ('Anderson Rd.', 'Rome', '00186'),
+        address_Type ('Anderson Rd.', 'Edinburgh', '00186'),
         'DC005',
         phones_collection (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0688'))
     );
@@ -140,7 +140,7 @@ VALUES
     (
         'C1006',
         full_name ('Mr', 'Matthew', 'Thomas'),
-        address_Type ('Thomas Street', 'Rome', '00153'),
+        address_Type ('Thomas Street', 'Edinburgh', '00153'),
         'DC006',
         phones_collection (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0699'))
     );
@@ -151,7 +151,7 @@ VALUES
     (
         'C1007',
         full_name ('Ms', 'Isabella', 'Martinez'),
-        address_Type ('Martinez Lane', 'Rome', '00184'),
+        address_Type ('Martinez Lane', 'Edinburgh', '00184'),
         'DC007',
         phones_collection (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0700'))
     );
@@ -162,7 +162,7 @@ VALUES
     (
         'C1008',
         full_name ('Dr', 'Elizabeth', 'Garcia'),
-        address_Type ('Garcia St.', 'Madrid', '28001'),
+        address_Type ('Garcia St.', 'London', '28001'),
         'DC008',
         phones_collection (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0711'))
     );
@@ -173,7 +173,7 @@ VALUES
     (
         'C1009',
         full_name ('Mrs', 'Mia', 'Rodriguez'),
-        address_Type ('Rodriguez Rd.', 'Madrid', '28008'),
+        address_Type ('Rodriguez Rd.', 'London', '28008'),
         'DC009',
         phones_collection (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0722'))
     );
@@ -184,7 +184,7 @@ VALUES
     (
         'C1010',
         full_name ('Mr', 'James', 'Hernandez'),
-        address_Type ('Hernandez Lane', 'Madrid', '28004'),
+        address_Type ('Hernandez Lane', 'London', '28004'),
         'DC010',
         phones_collection (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0733'))
     );
@@ -195,7 +195,7 @@ VALUES
     (
         'C1011',
         full_name ('Ms', 'Charlotte', 'Lopez'),
-        address_Type ('Lopez St.', 'Barcelona', '08007'),
+        address_Type ('Lopez St.', 'Cardiff', '08007'),
         'DC011',
         phones_collection (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0744'))
     );
@@ -206,7 +206,7 @@ VALUES
     (
         'C1012',
         full_name ('Mr', 'Benjamin', 'Gonzalez'),
-        address_Type ('Gonzalez Lane', 'Barcelona', '08002'),
+        address_Type ('Gonzalez Lane', 'Cardiff', '08002'),
         'DC012',
         phones_collection (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0755'))
     );
@@ -217,7 +217,7 @@ VALUES
     (
         'C1013',
         full_name ('Mrs', 'Amelia', 'Perez'),
-        address_Type ('Perez St.', 'Barcelona', '08008'),
+        address_Type ('Perez St.', 'Cardiff', '08008'),
         'DC013',
         phones_collection (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0766'))
     );
@@ -228,7 +228,7 @@ VALUES
     (
         'C1014',
         full_name ('Mr', 'Ethan', 'Sanchez'),
-        address_Type ('Sanchez Rd.', 'Barcelona', '08008'),
+        address_Type ('Sanchez Rd.', 'Cardiff', '08008'),
         'DC014',
         phones_collection (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0777'))
     );
@@ -239,7 +239,7 @@ VALUES
     (
         'C1015',
         full_name ('Ms', 'Chloe', 'Ramirez'),
-        address_Type ('Ramirez Lane', 'Barcelona', '08007'),
+        address_Type ('Ramirez Lane', 'Cardiff', '08007'),
         'DC015',
         phones_collection (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0788'))
     );
@@ -250,7 +250,7 @@ VALUES
     (
         'C1016',
         full_name ('Dr', 'Ava', 'Torres'),
-        address_Type ('Torres St.', 'Barcelona', '08002'),
+        address_Type ('Torres St.', 'Cardiff', '08002'),
         'DC016',
         phones_collection (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0799'))
     );
@@ -261,7 +261,7 @@ VALUES
     (
         'C1017',
         full_name ('Mrs', 'Aria', 'Vazquez'),
-        address_Type ('Vazquez Rd.', 'Barcelona', '08008'),
+        address_Type ('Vazquez Rd.', 'Cardiff', '08008'),
         'DC017',
         phones_collection (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0800'))
     );
@@ -272,7 +272,7 @@ VALUES
     (
         'C1018',
         full_name ('Mr', 'Leo', 'Gomez'),
-        address_Type ('Gomez Lane', 'Paris', '75001'),
+        address_Type ('Gomez Lane', 'London', '75001'),
         'DC018',
         phones_collection (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0811'))
     );
@@ -283,7 +283,7 @@ VALUES
     (
         'C1019',
         full_name ('Ms', 'Scarlett', 'Fernandez'),
-        address_Type ('Fernandez St.', 'Paris', '75004'),
+        address_Type ('Fernandez St.', 'London', '75004'),
         'DC019',
         phones_collection (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0822'))
     );
@@ -294,7 +294,7 @@ VALUES
     (
         'C1020',
         full_name ('Mr', 'Jack', 'Lopez'),
-        address_Type ('Lopez Lane', 'Paris', '75001'),
+        address_Type ('Lopez Lane', 'London', '75001'),
         'DC020',
         phones_collection (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0833'))
     );
@@ -305,7 +305,7 @@ VALUES
     (
         'C1021',
         full_name ('Mrs', 'Nora', 'Hernandez'),
-        address_Type ('Hernandez St.', 'Paris', '75001'),
+        address_Type ('Hernandez St.', 'London', '75001'),
         'DC021',
         phones_collection (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0844'))
     );
@@ -316,7 +316,7 @@ VALUES
     (
         'C1022',
         full_name ('Mr', 'Logan', 'Martinez'),
-        address_Type ('Martinez Rd.', 'Madrid', '28001'),
+        address_Type ('Martinez Rd.', 'London', '28001'),
         'DC022',
         phones_collection (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0855'))
     );
@@ -327,7 +327,7 @@ VALUES
     (
         'C1023',
         full_name ('Ms', 'Lily', 'Gomez'),
-        address_Type ('Gomez St.', 'Madrid', '28001'),
+        address_Type ('Gomez St.', 'London', '28001'),
         'DC023',
         phones_collection (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0866'))
     );
@@ -1341,7 +1341,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Dr', 'Michael', 'Brown'),
-        address_type ('Brown St.', 'Paris', '75001'),
+        address_type ('Brown St.', 'London', '75001'),
         'AB123',
         phones_collection (phone_type ('Mobile', '07701234566'), phone_type ('Home', '0131 496 0355')),
         10001,
@@ -1370,7 +1370,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Emily', 'Johnson'),
-        address_type ('Johnson Ave.', 'Madrid', '28001'),
+        address_type ('Johnson Ave.', 'London', '28001'),
         'CD234',
         phones_collection (phone_type ('Mobile', '07701234567'), phone_type ('Home', '0131 496 0356')),
         10002,
@@ -1399,7 +1399,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'David', 'Taylor'),
-        address_type ('Taylor Rd.', 'Paris', '75004'),
+        address_type ('Taylor Rd.', 'London', '75004'),
         'EF345',
         phones_collection (phone_type ('Mobile', '07701234568'), phone_type ('Home', '0131 496 0357')),
         10003,
@@ -1435,7 +1435,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Ms', 'Sophia', 'Clark'),
-        address_type ('Clark Lane', 'Madrid', '28013'),
+        address_type ('Clark Lane', 'London', '28013'),
         'GH456',
         phones_collection (phone_type ('Mobile', '07701234569'), phone_type ('Home', '0131 496 0358')),
         10004,
@@ -1471,7 +1471,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Daniel', 'Wilson'),
-        address_type ('Wilson Street', 'Madrid', '28009'),
+        address_type ('Wilson Street', 'London', '28009'),
         'IJ567',
         phones_collection (phone_type ('Mobile', '07701234570'), phone_type ('Home', '0131 496 0359')),
         10005,
@@ -1507,7 +1507,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Olivia', 'Anderson'),
-        address_type ('Anderson Rd.', 'Rome', '00186'),
+        address_type ('Anderson Rd.', 'Edinburgh', '00186'),
         'KL678',
         phones_collection (phone_type ('Mobile', '07701234571'), phone_type ('Home', '0131 496 0360')),
         10006,
@@ -1543,7 +1543,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Matthew', 'Thomas'),
-        address_type ('Thomas Street', 'Rome', '00153'),
+        address_type ('Thomas Street', 'Edinburgh', '00153'),
         'MN789',
         phones_collection (phone_type ('Mobile', '07701234572'), phone_type ('Home', '0131 496 0361')),
         10007,
@@ -1579,7 +1579,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Ms', 'Isabella', 'Martinez'),
-        address_type ('Martinez Lane', 'Rome', '00184'),
+        address_type ('Martinez Lane', 'Edinburgh', '00184'),
         'OP890',
         phones_collection (phone_type ('Mobile', '07701234573'), phone_type ('Home', '0131 496 0362')),
         10008,
@@ -1615,7 +1615,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Dr', 'Elizabeth', 'Garcia'),
-        address_type ('Garcia St.', 'Madrid', '28001'),
+        address_type ('Garcia St.', 'London', '28001'),
         'QR901',
         phones_collection (phone_type ('Mobile', '07701234574'), phone_type ('Home', '0131 496 0363')),
         10009,
@@ -1644,7 +1644,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Mia', 'Rodriguez'),
-        address_type ('Rodriguez Rd.', 'Madrid', '28008'),
+        address_type ('Rodriguez Rd.', 'London', '28008'),
         'ST012',
         phones_collection (phone_type ('Mobile', '07701234575'), phone_type ('Home', '0131 496 0364')),
         10010,
@@ -1680,7 +1680,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'James', 'Hernandez'),
-        address_type ('Hernandez Lane', 'Madrid', '28004'),
+        address_type ('Hernandez Lane', 'London', '28004'),
         'UV123',
         phones_collection (phone_type ('Mobile', '07701234576'), phone_type ('Home', '0131 496 0365')),
         10011,
@@ -1716,7 +1716,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Ms', 'Charlotte', 'Lopez'),
-        address_type ('Lopez St.', 'Barcelona', '08007'),
+        address_type ('Lopez St.', 'Cardiff', '08007'),
         'WX234',
         phones_collection (phone_type ('Mobile', '07701234577'), phone_type ('Home', '0131 496 0366')),
         10012,
@@ -1752,7 +1752,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Henry', 'Gomez'),
-        address_type ('Gomez Rd.', 'Barcelona', '08002'),
+        address_type ('Gomez Rd.', 'Cardiff', '08002'),
         'YZ345',
         phones_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
         10013,
@@ -1788,7 +1788,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Amelia', 'Sanchez'),
-        address_type ('Sanchez St.', 'Barcelona', '08008'),
+        address_type ('Sanchez St.', 'Cardiff', '08008'),
         'ZA456',
         phones_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
         10014,
@@ -1817,7 +1817,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Ms', 'Victoria', 'Perez'),
-        address_type ('Perez Lane', 'Barcelona', '08009'),
+        address_type ('Perez Lane', 'Cardiff', '08009'),
         'AB567',
         phones_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
         10015,
@@ -1853,7 +1853,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Joseph', 'Gonzalez'),
-        address_type ('Gonzalez St.', 'Barcelona', '08010'),
+        address_type ('Gonzalez St.', 'Cardiff', '08010'),
         'CD678',
         phones_collection (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
         10016,
@@ -2091,7 +2091,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Dr', 'William', 'Baker'),
-        address_type ('Baker St.', 'Barcelona', '08007'),
+        address_type ('Baker St.', 'Cardiff', '08007'),
         'QR567',
         phones_collection (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
         10023,
@@ -2120,7 +2120,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Benjamin', 'Gonzalez'),
-        address_type ('Gonzalez Lane', 'Barcelona', '08002'),
+        address_type ('Gonzalez Lane', 'Cardiff', '08002'),
         'YZ345',
         phones_collection (phone_type ('Mobile', '07701234578'), phone_type ('Home', '0131 496 0367')),
         10024,
@@ -2156,7 +2156,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Amelia', 'Perez'),
-        address_type ('Perez St.', 'Barcelona', '08008'),
+        address_type ('Perez St.', 'Cardiff', '08008'),
         'AB456',
         phones_collection (phone_type ('Mobile', '07701234579'), phone_type ('Home', '0131 496 0368')),
         10025,
@@ -2192,7 +2192,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Ethan', 'Sanchez'),
-        address_type ('Sanchez Rd.', 'Barcelona', '08008'),
+        address_type ('Sanchez Rd.', 'Cardiff', '08008'),
         'CD567',
         phones_collection (phone_type ('Mobile', '07701234580'), phone_type ('Home', '0131 496 0369')),
         10026,
@@ -2228,7 +2228,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Ms', 'Chloe', 'Ramirez'),
-        address_type ('Ramirez Lane', 'Barcelona', '08007'),
+        address_type ('Ramirez Lane', 'Cardiff', '08007'),
         'EF678',
         phones_collection (phone_type ('Mobile', '07701234581'), phone_type ('Home', '0131 496 0370')),
         10016,
@@ -2257,7 +2257,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Dr', 'Ava', 'Torres'),
-        address_type ('Torres St.', 'Barcelona', '08002'),
+        address_type ('Torres St.', 'Cardiff', '08002'),
         'GH890',
         phones_collection (phone_type ('Mobile', '07701234582'), phone_type ('Home', '0131 496 0371')),
         10017,
@@ -2293,7 +2293,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Aria', 'Vazquez'),
-        address_type ('Vazquez Rd.', 'Barcelona', '08008'),
+        address_type ('Vazquez Rd.', 'Cardiff', '08008'),
         'IJ012',
         phones_collection (phone_type ('Mobile', '07701234583'), phone_type ('Home', '0131 496 0372')),
         10018,
@@ -2329,7 +2329,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Leo', 'Gomez'),
-        address_type ('Gomez Lane', 'Paris', '75001'),
+        address_type ('Gomez Lane', 'London', '75001'),
         'KL234',
         phones_collection (phone_type ('Mobile', '07701234584'), phone_type ('Home', '0131 496 0373')),
         10019,
@@ -2365,7 +2365,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Ms', 'Scarlett', 'Fernandez'),
-        address_type ('Fernandez St.', 'Paris', '75004'),
+        address_type ('Fernandez St.', 'London', '75004'),
         'MN456',
         phones_collection (phone_type ('Mobile', '07701234585'), phone_type ('Home', '0131 496 0374')),
         10020,
@@ -2394,7 +2394,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Jack', 'Lopez'),
-        address_type ('Lopez Lane', 'Paris', '75001'),
+        address_type ('Lopez Lane', 'London', '75001'),
         'OP678',
         phones_collection (phone_type ('Mobile', '07701234586'), phone_type ('Home', '0131 496 0375')),
         10021,
@@ -2430,7 +2430,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mrs', 'Nora', 'Hernandez'),
-        address_type ('Hernandez St.', 'Paris', '75001'),
+        address_type ('Hernandez St.', 'London', '75001'),
         'QR890',
         phones_collection (phone_type ('Mobile', '07701234587'), phone_type ('Home', '0131 496 0376')),
         10022,
@@ -2466,7 +2466,7 @@ INSERT INTO
 VALUES
     (
         full_name ('Mr', 'Logan', 'Martinez'),
-        address_type ('Martinez Rd.', 'Madrid', '28001'),
+        address_type ('Martinez Rd.', 'London', '28001'),
         'ST234',
         phones_collection (phone_type ('Mobile', '07701234588'), phone_type ('Home', '0131 496 0377')),
         10023,
