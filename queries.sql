@@ -75,17 +75,18 @@ SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS f
        ph.device_type,
        ph.phone_number
 FROM customers c,
-     TABLE(c.customer_phone_collection) ph
+     TABLE(c.phone) ph
 WHERE c.customer_id IN (
     SELECT c.customer_id
     FROM customers c,
-         TABLE(c.customer_phone_collection) ph
+         TABLE(c.phone) ph
     GROUP BY c.customer_id
     HAVING COUNT(*) > 1
        AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
 );
 
 /* 7 + */
+
 /* Note there is no mr Barclay nor mrs Smith */
 
 SELECT COUNT(*) AS num_employees
