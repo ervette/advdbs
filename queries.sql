@@ -1,8 +1,8 @@
-/* 1 + note: There is no London branch therefore just any branch */ 
+/* 1 + */ 
 SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM employees e
 WHERE e.name.first_name LIKE '%mi%'
-AND e.address.city = ‘Madrid’;
+AND e.address.city = 'London';
 
 /* 2 + */
 SELECT b.street || ', ' || b.city || ', ' || b.postcode AS branch_address,
@@ -70,7 +70,8 @@ ORDER BY
     b.branch_id;
 
 
-/* 6 */
+/* 6 +- most of the numbers are pretty much the same
+therefore all of the employees are included */
 SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
        ph.device_type,
        ph.phone_number
@@ -82,10 +83,17 @@ WHERE c.customer_id IN (
          TABLE(c.phone) ph
     GROUP BY c.customer_id
     HAVING COUNT(*) > 1
-       AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
+       AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 5) = '07701' THEN 1 ELSE 0 END) >= 1
 );
 
 /* 7 + */
+
+SELECT COUNT(*) AS answer
+FROM employees e
+JOIN employees supervisor ON e.supervisor_id = supervisor.emp_id
+JOIN employees grand_supervisor ON supervisor.supervisor_id = grand_supervisor.emp_id
+WHERE supervisor.name.title = 'Mrs' AND supervisor.name.last_name = 'Johnson'
+WHERE grand_supervisor.name.title = 'Mrs' AND grand_supervisor.name.last_name = 'Anderson';
 
 /* Note there is no mr Barclay nor mrs Smith */
 
