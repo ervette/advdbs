@@ -26,10 +26,10 @@ JOIN
 WHERE 
     a.acc_type = 'Savings'
     AND a.balance = (
-        SELECT MIN(a2.balance) 
-        FROM accounts a2 
-        WHERE a2.acc_type = 'Savings'
-        AND DEREF(a2.branch_id).branch_id = DEREF(a.branch_id).branch_id
+        SELECT MIN(ac.balance) 
+        FROM accounts ac 
+        WHERE ac.acc_type = 'Savings'
+        AND DEREF(ac.branch_id).branch_id = DEREF(a.branch_id).branch_id
     );
 
 
@@ -44,30 +44,23 @@ WHERE e.supervisor_id IS NOT NULL;
 /* 5 */
 SELECT 
     b.branch_id,
-    c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
-    MAX(a.limit_of_free_od) AS max_free_overdraft_limit
+    c.name.title || ' ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
+    a.limit_of_free_od
 FROM 
     branches b
-JOIN 
-    accounts a ON DEREF(a.branch_id).branch_id = b.branch_id
-JOIN 
-    customer_account ca ON DEREF(ca.acc_number).acc_number = a.acc_number
-JOIN 
-    customers c ON ca.customer_id = REF(c)
+JOIN accounts a ON a.branch_id = REF(b)
+JOIN customer_account ca ON ca.acc_number = REF(a)
+JOIN customers c ON c.customer_id = ca.customer_id
 WHERE 
     a.acc_type = 'Current'
-    AND a.limit_of_free_od > 0
-    AND a.acc_number IN (
-        SELECT a2.acc_number
-        FROM accounts a2
-        WHERE a2.acc_type = 'Current'
-        GROUP BY a2.acc_number
-        HAVING COUNT(*) > 1
+    AND a.limit_of_free_od IN (
+        SELECT MAX(ac.limit_of_free_od)
+        FROM accounts ac
+        WHERE ac.acc_type = 'Current'
+        GROUP BY ac.branch_id
     )
-GROUP BY 
-    b.branch_id, c.name.title, c.name.first_name, c.name.last_name
-ORDER BY 
-    b.branch_id;
+ORDER BY b.branch_id, a.limit_of_free_od DESC;
+
 
 
 /* 6 +- most of the numbers are pretty much the same
