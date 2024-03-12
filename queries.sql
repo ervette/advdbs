@@ -88,13 +88,14 @@ WHERE c.customer_id IN (
 /* 7 + */
 
 SELECT 
-    e.name.first_name || ' ' || e.name.last_name AS employee_full_name
+    e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM 
-    employees e
-JOIN 
-    employees sup ON e.supervisor_id = sup.emp_id
+    employees e,
+    employees supervisor
 WHERE 
-    sup.name.first_name = 'Michael' AND sup.name.last_name = 'Brown';
+    supervisor.name.first_name = 'Michael' 
+    AND supervisor.name.last_name = 'Brown'
+    AND e.supervisor_id = REF(supervisor);
 
 
 /* Note there is no mr Barclay nor mrs Smith */
