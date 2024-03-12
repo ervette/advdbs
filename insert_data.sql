@@ -1391,7 +1391,14 @@ VALUES
             WHERE
                 e.employee_data_id = 10002
         ),
-        s
+        (
+            SELECT
+                REF (e)
+            FROM
+                employees e
+            WHERE
+                e.emp_id = 10001
+        )
     );
 
 INSERT INTO
