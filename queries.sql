@@ -13,17 +13,14 @@ WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
-SELECT branch_id, full_name, balance FROM (
-  SELECT 
-    DEREF(a.branch_id).branch_id AS branch_id, 
-    c.name.first_name || ' ' || c.name.last_name AS full_name, 
-    a.balance,
-    RANK() OVER (PARTITION BY DEREF(a.branch_id).branch_id ORDER BY a.balance ASC) AS rnk
-  FROM accounts a, customer_account ca, customers c
-  WHERE a.acc_type = 'Savings'
-  AND ca.acc_number = a.acc_number
-  AND ca.customer_id = c.customer_id
-) WHERE rnk = 1;
+SELECT b.branch_id, (c.name).first_name || ' ' || (c.name).last_name AS full_name, MIN(a.balance) AS balance
+FROM accounts a
+JOIN customer_account ca ON a.acc_number = ca.acc_number
+JOIN customers c ON ca.customer_id = c.customer_id
+JOIN branches b ON b.branch_id = a.branch_id
+WHERE a.acc_type = 'Savings'
+GROUP BY b.branch_id, (c.name).first_name, (c.name).last_name
+HAVING a.balance = MIN(a.balance);
 
 /* 4 */
 SELECT e.address.street || ', ' || e.address.city || ', ' || e.address.postcode AS employee_branch_address,
