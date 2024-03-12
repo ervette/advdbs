@@ -19,21 +19,18 @@ WHERE a.acc_type = 'Savings'
 GROUP BY a.branch_id;
 
 SELECT 
-    DEREF(a.branch_id).branch_id AS "Branch-ID", 
-    c.name.first_name || ' ' || c.name.last_name AS "Customer Full Name",
-    MIN(a.balance) AS "Lowest Balance"
+    DEREF(a.branch_id).branch_id AS "Branch-ID",
+    MIN(a.balance) AS "Lowest Balance",
+    (SELECT c.name.first_name || ' ' || c.name.last_name 
+     FROM customer_account ca, customers c 
+     WHERE ca.acc_number = REF(a) AND ca.customer_id = REF(c)) AS "Customer Full Name"
 FROM 
-    accounts a,
-    customer_account ca,
-    customers c
+    accounts a
 WHERE 
     a.acc_type = 'Savings'
-    AND ca.acc_number = REF(a)
-    AND ca.customer_id = REF(c)
 GROUP BY 
-    DEREF(a.branch_id).branch_id, 
-    c.name.first_name, 
-    c.name.last_name;
+    a.branch_id;
+
 
 
 /* 4 */
