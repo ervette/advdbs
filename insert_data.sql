@@ -76,6 +76,340 @@ INSERT INTO
 VALUES
     ('Passeig de Gracia', 'Barcelona', '08008', 'B789', phones_collection (phone_type ('Mobile', '07081234567')));
 
+
+/* populating customers */
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1001',
+        full_name ('Mr', 'Kevin', 'Rivera'),
+        address_Type ('KevinStreet', 'London', 'WC2E 8JF'),
+        'DC001',
+        phones_collections (phone_type ('Mobile', '07700900314'), phone_type ('Home', '020 7946 0648'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1002',
+        full_name ('Mrs', 'Emily', 'Johnson'),
+        address_Type ('Johnson Ave.', 'Madrid', '28001'),
+        'DC002',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0655'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1003',
+        full_name ('Ms', 'Sophia', 'Clark'),
+        address_Type ('Clark Lane', 'Madrid', '28013'),
+        'DC003',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0666'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1004',
+        full_name ('Mr', 'Daniel', 'Wilson'),
+        address_Type ('Wilson Street', 'Madrid', '28009'),
+        'DC004',
+        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0677'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1005',
+        full_name ('Mrs', 'Olivia', 'Anderson'),
+        address_Type ('Anderson Rd.', 'Rome', '00186'),
+        'DC005',
+        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0688'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1006',
+        full_name ('Mr', 'Matthew', 'Thomas'),
+        address_Type ('Thomas Street', 'Rome', '00153'),
+        'DC006',
+        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0699'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1007',
+        full_name ('Ms', 'Isabella', 'Martinez'),
+        address_Type ('Martinez Lane', 'Rome', '00184'),
+        'DC007',
+        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0700'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1008',
+        full_name ('Dr', 'Elizabeth', 'Garcia'),
+        address_Type ('Garcia St.', 'Madrid', '28001'),
+        'DC008',
+        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0711'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1009',
+        full_name ('Mrs', 'Mia', 'Rodriguez'),
+        address_Type ('Rodriguez Rd.', 'Madrid', '28008'),
+        'DC009',
+        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0722'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1010',
+        full_name ('Mr', 'James', 'Hernandez'),
+        address_Type ('Hernandez Lane', 'Madrid', '28004'),
+        'DC010',
+        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0733'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1011',
+        full_name ('Ms', 'Charlotte', 'Lopez'),
+        address_Type ('Lopez St.', 'Barcelona', '08007'),
+        'DC011',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0744'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1012',
+        full_name ('Mr', 'Benjamin', 'Gonzalez'),
+        address_Type ('Gonzalez Lane', 'Barcelona', '08002'),
+        'DC012',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0755'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1013',
+        full_name ('Mrs', 'Amelia', 'Perez'),
+        address_Type ('Perez St.', 'Barcelona', '08008'),
+        'DC013',
+        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0766'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1014',
+        full_name ('Mr', 'Ethan', 'Sanchez'),
+        address_Type ('Sanchez Rd.', 'Barcelona', '08008'),
+        'DC014',
+        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0777'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1015',
+        full_name ('Ms', 'Chloe', 'Ramirez'),
+        address_Type ('Ramirez Lane', 'Barcelona', '08007'),
+        'DC015',
+        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0788'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1016',
+        full_name ('Dr', 'Ava', 'Torres'),
+        address_Type ('Torres St.', 'Barcelona', '08002'),
+        'DC016',
+        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0799'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1017',
+        full_name ('Mrs', 'Aria', 'Vazquez'),
+        address_Type ('Vazquez Rd.', 'Barcelona', '08008'),
+        'DC017',
+        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0800'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1018',
+        full_name ('Mr', 'Leo', 'Gomez'),
+        address_Type ('Gomez Lane', 'Paris', '75001'),
+        'DC018',
+        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0811'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1019',
+        full_name ('Ms', 'Scarlett', 'Fernandez'),
+        address_Type ('Fernandez St.', 'Paris', '75004'),
+        'DC019',
+        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0822'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1020',
+        full_name ('Mr', 'Jack', 'Lopez'),
+        address_Type ('Lopez Lane', 'Paris', '75001'),
+        'DC020',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0833'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1021',
+        full_name ('Mrs', 'Nora', 'Hernandez'),
+        address_Type ('Hernandez St.', 'Paris', '75001'),
+        'DC021',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0844'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1022',
+        full_name ('Mr', 'Logan', 'Martinez'),
+        address_Type ('Martinez Rd.', 'Madrid', '28001'),
+        'DC022',
+        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0855'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1023',
+        full_name ('Ms', 'Lily', 'Gomez'),
+        address_Type ('Gomez St.', 'Madrid', '28001'),
+        'DC023',
+        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0866'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1024',
+        full_name ('Mr', 'William', 'Torres'),
+        address_Type ('Torres Lane', 'London', 'WC1H 0LQ'),
+        'DC024',
+        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0877'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1025',
+        full_name ('Mrs', 'Evelyn', 'Martinez'),
+        address_Type ('Martinez Rd.', 'London', 'W1B 4HX'),
+        'DC025',
+        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0888'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1026',
+        full_name ('Mr', 'Oliver', 'Torres'),
+        address_Type ('Torres Lane', 'London', 'W1U 6AX'),
+        'DC026',
+        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0899'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1027',
+        full_name ('Ms', 'Ava', 'Gomez'),
+        address_Type ('Gomez St.', 'London', 'WC1H 0LQ'),
+        'DC027',
+        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0900'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1028',
+        full_name ('Mr', 'Henry', 'Lopez'),
+        address_Type ('Lopez Lane', 'Edinburgh', 'EH1 5AB'),
+        'DC028',
+        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0911'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1029',
+        full_name ('Mrs', 'Madison', 'Torres'),
+        address_Type ('Torres St.', 'Edinburgh', 'EH3 9BN'),
+        'DC029',
+        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0922'))
+    );
+
+INSERT INTO
+    customers (customer_id, name, address, ni_num, phone)
+VALUES
+    (
+        'C1030',
+        full_name ('Ms', 'Harper', 'Martinez'),
+        address_Type ('Martinez Rd.', 'Edinburgh', 'EH2 1EL'),
+        'DC030',
+        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0933'))
+    );
+
+
+
 /* ----------------- */
 /* populate accounts */
 /* ----------------- */
@@ -2148,337 +2482,6 @@ VALUES
             WHERE
                 e.emp_id = 10022
         )
-    );
-
-/* populating customers */
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1001',
-        full_name ('Mr', 'Kevin', 'Rivera'),
-        address_Type ('KevinStreet', 'London', 'WC2E 8JF'),
-        'DC001',
-        phones_collections (phone_type ('Mobile', '07700900314'), phone_type ('Home', '020 7946 0648'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1002',
-        full_name ('Mrs', 'Emily', 'Johnson'),
-        address_Type ('Johnson Ave.', 'Madrid', '28001'),
-        'DC002',
-        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0655'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1003',
-        full_name ('Ms', 'Sophia', 'Clark'),
-        address_Type ('Clark Lane', 'Madrid', '28013'),
-        'DC003',
-        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0666'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1004',
-        full_name ('Mr', 'Daniel', 'Wilson'),
-        address_Type ('Wilson Street', 'Madrid', '28009'),
-        'DC004',
-        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0677'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1005',
-        full_name ('Mrs', 'Olivia', 'Anderson'),
-        address_Type ('Anderson Rd.', 'Rome', '00186'),
-        'DC005',
-        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0688'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1006',
-        full_name ('Mr', 'Matthew', 'Thomas'),
-        address_Type ('Thomas Street', 'Rome', '00153'),
-        'DC006',
-        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0699'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1007',
-        full_name ('Ms', 'Isabella', 'Martinez'),
-        address_Type ('Martinez Lane', 'Rome', '00184'),
-        'DC007',
-        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0700'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1008',
-        full_name ('Dr', 'Elizabeth', 'Garcia'),
-        address_Type ('Garcia St.', 'Madrid', '28001'),
-        'DC008',
-        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0711'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1009',
-        full_name ('Mrs', 'Mia', 'Rodriguez'),
-        address_Type ('Rodriguez Rd.', 'Madrid', '28008'),
-        'DC009',
-        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0722'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1010',
-        full_name ('Mr', 'James', 'Hernandez'),
-        address_Type ('Hernandez Lane', 'Madrid', '28004'),
-        'DC010',
-        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0733'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1011',
-        full_name ('Ms', 'Charlotte', 'Lopez'),
-        address_Type ('Lopez St.', 'Barcelona', '08007'),
-        'DC011',
-        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0744'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1012',
-        full_name ('Mr', 'Benjamin', 'Gonzalez'),
-        address_Type ('Gonzalez Lane', 'Barcelona', '08002'),
-        'DC012',
-        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0755'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1013',
-        full_name ('Mrs', 'Amelia', 'Perez'),
-        address_Type ('Perez St.', 'Barcelona', '08008'),
-        'DC013',
-        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0766'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1014',
-        full_name ('Mr', 'Ethan', 'Sanchez'),
-        address_Type ('Sanchez Rd.', 'Barcelona', '08008'),
-        'DC014',
-        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0777'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1015',
-        full_name ('Ms', 'Chloe', 'Ramirez'),
-        address_Type ('Ramirez Lane', 'Barcelona', '08007'),
-        'DC015',
-        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0788'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1016',
-        full_name ('Dr', 'Ava', 'Torres'),
-        address_Type ('Torres St.', 'Barcelona', '08002'),
-        'DC016',
-        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0799'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1017',
-        full_name ('Mrs', 'Aria', 'Vazquez'),
-        address_Type ('Vazquez Rd.', 'Barcelona', '08008'),
-        'DC017',
-        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0800'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1018',
-        full_name ('Mr', 'Leo', 'Gomez'),
-        address_Type ('Gomez Lane', 'Paris', '75001'),
-        'DC018',
-        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0811'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1019',
-        full_name ('Ms', 'Scarlett', 'Fernandez'),
-        address_Type ('Fernandez St.', 'Paris', '75004'),
-        'DC019',
-        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0822'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1020',
-        full_name ('Mr', 'Jack', 'Lopez'),
-        address_Type ('Lopez Lane', 'Paris', '75001'),
-        'DC020',
-        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0833'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1021',
-        full_name ('Mrs', 'Nora', 'Hernandez'),
-        address_Type ('Hernandez St.', 'Paris', '75001'),
-        'DC021',
-        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0844'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1022',
-        full_name ('Mr', 'Logan', 'Martinez'),
-        address_Type ('Martinez Rd.', 'Madrid', '28001'),
-        'DC022',
-        phones_collections (phone_type ('Mobile', '07700 336699'), phone_type ('Home', '020 7946 0855'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1023',
-        full_name ('Ms', 'Lily', 'Gomez'),
-        address_Type ('Gomez St.', 'Madrid', '28001'),
-        'DC023',
-        phones_collections (phone_type ('Mobile', '07700 448822'), phone_type ('Home', '020 7946 0866'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1024',
-        full_name ('Mr', 'William', 'Torres'),
-        address_Type ('Torres Lane', 'London', 'WC1H 0LQ'),
-        'DC024',
-        phones_collections (phone_type ('Mobile', '07700 551144'), phone_type ('Home', '020 7946 0877'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1025',
-        full_name ('Mrs', 'Evelyn', 'Martinez'),
-        address_Type ('Martinez Rd.', 'London', 'W1B 4HX'),
-        'DC025',
-        phones_collections (phone_type ('Mobile', '07700 663322'), phone_type ('Home', '020 7946 0888'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1026',
-        full_name ('Mr', 'Oliver', 'Torres'),
-        address_Type ('Torres Lane', 'London', 'W1U 6AX'),
-        'DC026',
-        phones_collections (phone_type ('Mobile', '07700 775533'), phone_type ('Home', '020 7946 0899'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1027',
-        full_name ('Ms', 'Ava', 'Gomez'),
-        address_Type ('Gomez St.', 'London', 'WC1H 0LQ'),
-        'DC027',
-        phones_collections (phone_type ('Mobile', '07700 887744'), phone_type ('Home', '020 7946 0900'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1028',
-        full_name ('Mr', 'Henry', 'Lopez'),
-        address_Type ('Lopez Lane', 'Edinburgh', 'EH1 5AB'),
-        'DC028',
-        phones_collections (phone_type ('Mobile', '07700 990011'), phone_type ('Home', '020 7946 0911'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1029',
-        full_name ('Mrs', 'Madison', 'Torres'),
-        address_Type ('Torres St.', 'Edinburgh', 'EH3 9BN'),
-        'DC029',
-        phones_collections (phone_type ('Mobile', '07700 112233'), phone_type ('Home', '020 7946 0922'))
-    );
-
-INSERT INTO
-    customers (customer_id, name, address, ni_num, phone)
-VALUES
-    (
-        'C1030',
-        full_name ('Ms', 'Harper', 'Martinez'),
-        address_Type ('Martinez Rd.', 'Edinburgh', 'EH2 1EL'),
-        'DC030',
-        phones_collections (phone_type ('Mobile', '07700 224466'), phone_type ('Home', '020 7946 0933'))
     );
 
 /* populate customer_account */
