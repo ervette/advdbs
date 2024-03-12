@@ -177,22 +177,19 @@ CREATE OR REPLACE TYPE BODY employee_sub AS
 END;
 /
 
-ALTER TYPE person
-ADD MEMBER FUNCTION get_person_name RETURN VARCHAR2,
-ADD MEMBER FUNCTION get_person_address RETURN VARCHAR2 CASCADE; 
-
 CREATE OR REPLACE TYPE BODY person AS 
   MEMBER FUNCTION get_person_name RETURN VARCHAR2 IS 
   BEGIN
-    RETURN name.title || '. ' || name.firstname || ' ' || name.surname;
+    RETURN name.title || '. ' || name.first_name || ' ' || name.last_name;
   END get_person_name; 
 
   MEMBER FUNCTION get_person_address RETURN VARCHAR2 IS 
   BEGIN
     RETURN address.street || ', ' || address.city || ', ' || address.postcode;
   END get_person_address; 
-END; 
+END;
 /
+
 
 ALTER TYPE branch_sub
 ADD MEMBER FUNCTION get_branch_address RETURN VARCHAR2 CASCADE; 
