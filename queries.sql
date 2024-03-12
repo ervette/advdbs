@@ -26,7 +26,7 @@ GROUP BY branch_id, a.acc_number
 ORDER BY "Lowest Balance" ASC
 FETCH FIRST 1 ROW WITH TIES;
 
-/* 4 */
+/* 4 + */
 SELECT e.address.street || ', ' || e.address.city || ', ' || e.address.postcode AS employee_branch_address,
        b.street || ', ' || b.city || ', ' || b.postcode AS account_branch_address
 FROM employees e

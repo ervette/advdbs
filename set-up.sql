@@ -25,6 +25,16 @@ DROP FUNCTION get_person_name FORCE;
 DROP FUNCTION get_branch_address FORCE;
 
 /* Types initialization */
+
+CREATE TYPE phone_type AS OBJECT (
+    device_type VARCHAR2(20), 
+    phone_number VARCHAR2(20))
+    FINAL; 
+/
+
+CREATE TYPE phones_collection AS TABLE OF phone_type;
+/
+
 CREATE TYPE full_name AS OBJECT (
     title VARCHAR2(5), 
     first_name VARCHAR2(20), 
@@ -37,15 +47,6 @@ CREATE TYPE address_type AS OBJECT (
     city VARCHAR2(20), 
     postcode VARCHAR2(10))
     NOT FINAL; 
-/
-
-CREATE TYPE phone_type AS OBJECT (
-    device_type VARCHAR2(20), 
-    phone_number VARCHAR2(20))
-    FINAL; 
-/
-
-CREATE TYPE phones_collection AS TABLE OF phone_type;
 /
 
 CREATE TYPE person AS OBJECT(
