@@ -42,24 +42,33 @@ JOIN branches b ON DEREF(a.branch_id).branch_id = b.branch_id
 WHERE e.supervisor_id IS NOT NULL;
 
 /* 5 */
-SELECT b.branch_id,
-       c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
-       MAX(a.limit_of_free_od) AS max_free_overdraft_limit
-FROM branches b
-JOIN accounts a ON DEREF(a.branch_id).branch_id = b.branch_id
-JOIN customer_account ca ON DEREF(ca.acc_number).acc_number = a.acc_number
-JOIN customers c ON DEREF(ca.customer_id).customer_id = DEREF(c).customer_id
-WHERE a.acc_type = 'Current'
-AND a.limit_of_free_od > 0
-AND a.acc_number IN (
-    SELECT a2.acc_number
-    FROM accounts a2
-    WHERE a2.acc_type = 'Current'
-    GROUP BY a2.acc_number
-    HAVING COUNT(*) > 1
-)
-GROUP BY b.branch_id, c.name.title, c.name.first_name, c.name.last_name
-ORDER BY b.branch_id;
+SELECT 
+    b.branch_id,
+    c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
+    MAX(a.limit_of_free_od) AS max_free_overdraft_limit
+FROM 
+    branches b
+JOIN 
+    accounts a ON DEREF(a.branch_id).branch_id = b.branch_id
+JOIN 
+    customer_account ca ON DEREF(ca.acc_number).acc_number = a.acc_number
+JOIN 
+    customers c ON ca.customer_id = REF(c)
+WHERE 
+    a.acc_type = 'Current'
+    AND a.limit_of_free_od > 0
+    AND a.acc_number IN (
+        SELECT a2.acc_number
+        FROM accounts a2
+        WHERE a2.acc_type = 'Current'
+        GROUP BY a2.acc_number
+        HAVING COUNT(*) > 1
+    )
+GROUP BY 
+    b.branch_id, c.name.title, c.name.first_name, c.name.last_name
+ORDER BY 
+    b.branch_id;
+
 
 /* 6 */
 SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
@@ -77,6 +86,17 @@ WHERE c.customer_id IN (
 );
 
 /* 7 + */
+
+SELECT 
+    e.name.first_name || ' ' || e.name.last_name AS employee_full_name
+FROM 
+    employees e
+JOIN 
+    employees sup ON e.supervisor_id = sup.emp_id
+WHERE 
+    sup.name.first_name = 'Michael' AND sup.name.last_name = 'Brown';
+
+
 /* Note there is no mr Barclay nor mrs Smith */
 
 SELECT COUNT(*) AS num_employees
@@ -90,7 +110,7 @@ WHERE DEREF(e.supervisor_id).emp_id IN (
         WHERE DEREF(supervisor_id).emp_id = (
             SELECT emp_id
             FROM employees
-            WHERE DEREF(supervisor_id).name.last_name = 'Barclay'
+            WHERE DEREF(supervisor_id).name.last_name = 'Brown'
             AND DEREF(supervisor_id).name.title = 'Mr'
         )
         AND DEREF(supervisor_id).name.last_name = 'Smith'
