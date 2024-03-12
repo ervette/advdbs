@@ -1337,7 +1337,7 @@ VALUES
 /* populate employees */
 /* ----------------- */
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Dr', 'Michael', 'Brown'),
@@ -1366,7 +1366,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Emily', 'Johnson'),
@@ -1391,11 +1391,11 @@ VALUES
             WHERE
                 e.employee_data_id = 10002
         ),
-        null
+        s
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'David', 'Taylor'),
@@ -1426,12 +1426,12 @@ VALUES
             FROM
                 employees e
             WHERE
-                e.emp_id = 10002
+                e.emp_id = 10001
         )
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Sophia', 'Clark'),
@@ -1467,7 +1467,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Daniel', 'Wilson'),
@@ -1503,7 +1503,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Olivia', 'Anderson'),
@@ -1539,7 +1539,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Matthew', 'Thomas'),
@@ -1575,7 +1575,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Isabella', 'Martinez'),
@@ -1611,7 +1611,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Dr', 'Elizabeth', 'Garcia'),
@@ -1640,7 +1640,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Mia', 'Rodriguez'),
@@ -1676,7 +1676,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'James', 'Hernandez'),
@@ -1712,7 +1712,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Charlotte', 'Lopez'),
@@ -1748,7 +1748,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Henry', 'Gomez'),
@@ -1784,7 +1784,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Amelia', 'Sanchez'),
@@ -1813,7 +1813,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Victoria', 'Perez'),
@@ -1849,7 +1849,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Joseph', 'Gonzalez'),
@@ -1885,7 +1885,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Grace', 'Diaz'),
@@ -1914,7 +1914,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Jack', 'Torres'),
@@ -1950,7 +1950,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Chloe', 'Fernandez'),
@@ -1986,7 +1986,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Benjamin', 'Ramirez'),
@@ -2015,7 +2015,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Emma', 'Wood'),
@@ -2051,7 +2051,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Lily', 'Russell'),
@@ -2087,7 +2087,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Dr', 'William', 'Baker'),
@@ -2116,7 +2116,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Benjamin', 'Gonzalez'),
@@ -2152,7 +2152,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Amelia', 'Perez'),
@@ -2188,7 +2188,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Ethan', 'Sanchez'),
@@ -2224,7 +2224,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Chloe', 'Ramirez'),
@@ -2253,7 +2253,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Dr', 'Ava', 'Torres'),
@@ -2289,7 +2289,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Aria', 'Vazquez'),
@@ -2325,7 +2325,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Leo', 'Gomez'),
@@ -2361,7 +2361,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Ms', 'Scarlett', 'Fernandez'),
@@ -2390,7 +2390,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Jack', 'Lopez'),
@@ -2426,7 +2426,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mrs', 'Nora', 'Hernandez'),
@@ -2462,7 +2462,7 @@ VALUES
     );
 
 INSERT INTO
-    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_position, supervisor_id)
+    employees (name, address, ni_num, phone, emp_id, join_date, branch_id, emp_data, supervisor_id)
 VALUES
     (
         full_name ('Mr', 'Logan', 'Martinez'),
