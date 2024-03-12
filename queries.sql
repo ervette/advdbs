@@ -43,24 +43,18 @@ WHERE e.supervisor_id IS NOT NULL;
 
 /* 5 */
 SELECT 
-    b.branch_id, 
-    DEREF(c.customer_ref).full_name AS full_name, 
+    b.branch_id,
+    c.full_name,
     a.limit_of_free_od AS max_free_overdraft_limit
 FROM 
-    accounts a, 
-    branches b, 
-    customers c
-WHERE 
-    a.acc_type = 'Current'
-    AND a.branch_id = REF(b)
-    AND a.customer_id = REF(c)
-GROUP BY 
-    b.branch_id, c.customer_id
-HAVING 
-    a.limit_of_free_od = MAX(a.limit_of_free_od) OVER (PARTITION BY b.branch_id);
-
-
-
+    (SELECT branch_id, MAX(limit_of_free_od) AS max_limit
+     FROM accounts
+     WHERE acc_type = 'Current'
+     GROUP BY branch_id) max_od
+JOIN accounts a ON a.branch_id = max_od.branch_id AND a.limit_of_free_od = max_od.max_limit
+JOIN customer_account ca ON ca.acc_number = a.acc_number
+JOIN customers c ON c.customer_id = ca.customer_id
+ORDER BY b.branch_id;
 
 /* 6 +- most of the numbers are pretty much the same
 therefore all of the employees are included */
