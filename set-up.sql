@@ -1,28 +1,28 @@
-/* Drop types */
-DROP TYPE full_name FORCE;
-DROP TYPE address_type FORCE;
-DROP TYPE phone_type FORCE;
-DROP TYPE phones_collection FORCE;
-DROP TYPE person FORCE;
-DROP TYPE account FORCE;
-DROP TYPE employee_data FORCE;
-DROP TYPE branch_sub FORCE;
-DROP TYPE employee_sub FORCE;
-DROP TYPE customer_sub FORCE;
+/* Drop functions */
+DROP FUNCTION get_branch_address;
+DROP FUNCTION get_person_address;
+DROP FUNCTION get_person_name;
+DROP FUNCTION award_stars;
 
 /* Drop tables */
-DROP TABLE branches FORCE;
-DROP TABLE employees FORCE;
-DROP TABLE customers FORCE;
-DROP TABLE accounts FORCE;
-DROP TABLE employees_data FORCE;
 DROP TABLE customer_account FORCE;
+DROP TABLE accounts FORCE;
+DROP TABLE customers FORCE;
+DROP TABLE employees FORCE;
+DROP TABLE employees_data FORCE;
+DROP TABLE branches FORCE;
 
-/* Drop functions */
-DROP FUNCTION award_stars FORCE;
-DROP FUNCTION get_person_address FORCE;
-DROP FUNCTION get_person_name FORCE;
-DROP FUNCTION get_branch_address FORCE;
+/* Drop types */
+DROP TYPE customer_sub FORCE;
+DROP TYPE employee_sub FORCE;
+DROP TYPE account FORCE;
+DROP TYPE branch_sub FORCE;
+DROP TYPE person FORCE;
+DROP TYPE phones_collection FORCE;
+DROP TYPE phone_type FORCE;
+DROP TYPE address_type FORCE;
+DROP TYPE full_name FORCE;
+DROP TYPE employee_data FORCE;
 
 /* Types initialization */
 
@@ -49,19 +49,19 @@ CREATE TYPE address_type AS OBJECT (
     NOT FINAL; 
 /
 
+/* Branch subtype initialization to allow reference to account type */
+CREATE TYPE branch_sub UNDER address_type (
+    branch_id VARCHAR2(5), 
+    phone phones_collection)
+    FINAL; 
+/
+
 CREATE TYPE person AS OBJECT(
     name full_name,
     address address_type,
     phone phones_collection, 
     ni_num VARCHAR2(10))
     NOT FINAL; 
-/
-
-/* Branch subtype initialization to allow reference to account type */
-CREATE TYPE branch_sub UNDER address_type (
-    branch_id VARCHAR2(5), 
-    phone phones_collection)
-    FINAL; 
 /
 
 CREATE TYPE account AS OBJECT (
@@ -134,7 +134,7 @@ CREATE TABLE customers OF customer_sub (
     CONSTRAINT cus_postcode_not_null CHECK(address.postcode IS NOT NULL), /* address */
     CONSTRAINT cus_ni_num_unique UNIQUE (ni_num),
     CONSTRAINT cus_ni_num_not_null CHECK(ni_num IS NOT NULL))
-    NESTED TABLE phone STORE AS customer_phone_collection; 
+    NESTED TABLE phone STORE AS cus_phone_collection; 
 
 CREATE TABLE accounts OF account (
     CONSTRAINT acc_number_pk PRIMARY KEY(acc_number), 
