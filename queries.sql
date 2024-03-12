@@ -13,17 +13,17 @@ WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
-SELECT b.branch_id, c.name.first_name || ' ' || c.name.last_name AS full_name, MIN(a.balance) AS balance
-FROM accounts a, branches b, customer_account ca, customers c
-WHERE a.acc_type = 'Savings'
-AND a.branch_id = REF(b)
-AND ca.acc_number = REF(a)
-AND ca.customer_id = REF(c)
-GROUP BY b.branch_id, c.name.first_name, c.name.last_name
-ORDER BY balance ASC
-FETCH FIRST 1 ROW WITH TIES;
-
-
+SELECT branch_id, full_name, balance FROM (
+  SELECT 
+    DEREF(a.branch_id).branch_id AS branch_id, 
+    c.name.first_name || ' ' || c.name.last_name AS full_name, 
+    a.balance,
+    RANK() OVER (PARTITION BY DEREF(a.branch_id).branch_id ORDER BY a.balance ASC) AS rnk
+  FROM accounts a, customer_account ca, customers c
+  WHERE a.acc_type = 'Savings'
+  AND ca.acc_number = a.acc_number
+  AND ca.customer_id = c.customer_id
+) WHERE rnk = 1;
 
 /* 4 */
 SELECT e.address.street || ', ' || e.address.city || ', ' || e.address.postcode AS employee_branch_address,
