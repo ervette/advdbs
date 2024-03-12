@@ -1,11 +1,3 @@
-INSERT INTO customers (customer_id, name, address, phone, ni_num)
-VALUES ('C001',
-        full_name('Mr.', 'John', 'Doe'),
-        address_type('123 Baker Street', 'London', 'NW1 6XE'),
-        phones_collection(phone_type('Mobile', '555-1234'), phone_type('Home', '555-5678')),
-        'AB123456C');
-
-
 /* 1 + note: There is no London branch therefore just any branch */ 
 SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM employees e
@@ -20,7 +12,7 @@ JOIN accounts a ON b.branch_id = DEREF(a.branch_id).branch_id
 WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
-/* 3 */
+/* 3 + */
 SELECT 
     DEREF(a.branch_id).branch_id AS "Branch-ID", 
     c.name.first_name || ' ' || c.name.last_name AS "Customer Full Name",
@@ -84,7 +76,7 @@ WHERE c.customer_id IN (
        AND SUM(CASE WHEN SUBSTR(ph.phone_number, 1, 4) = '0750' THEN 1 ELSE 0 END) >= 1
 );
 
-/* 7 */
+/* 7 + */
 /* Note there is no mr Barclay nor mrs Smith */
 
 SELECT COUNT(*) AS num_employees
@@ -106,7 +98,7 @@ WHERE DEREF(e.supervisor_id).emp_id IN (
     )
 );
 
-/* 8 */
+/* 8 + */
 SELECT 
     e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name,
     e.award_stars() AS stars_awarded
