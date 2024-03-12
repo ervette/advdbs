@@ -4,6 +4,11 @@ FROM employees e
 WHERE e.name.first_name LIKE '%mi%'
 AND e.address.city = 'London';
 
+SELECT e.get_person_name() AS name
+FROM employees e
+WHERE e.name.first_name LIKE '%mi%'
+AND e.address.city = 'London';
+
 /* 2 + */
 SELECT b.street || ', ' || b.city || ', ' || b.postcode AS branch_address,
        COUNT(*) AS num_savings_accounts
@@ -41,23 +46,25 @@ JOIN accounts a ON DEREF(a.branch_id).branch_id = DEREF(e.branch_id).branch_id
 JOIN branches b ON DEREF(a.branch_id).branch_id = b.branch_id
 WHERE e.supervisor_id IS NOT NULL;
 
-/* 5 */
+/* 5 + */
 SELECT
-    DEREF(a.branch_id).branch_id AS BranchID,
-    c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS FullName,
-    a.limit_of_free_od AS MaxFreeOverdraftLimit
-FROM 
-    accounts a
-    INNER JOIN customer_account ca ON ca.acc_number = REF(a)
-    INNER JOIN customers c ON c.customer_id = ca.customer_id
-WHERE 
-    a.acc_type = 'Current'
-    AND a.limit_of_free_od = (
-        SELECT MAX(a2.limit_of_free_od)
-        FROM accounts a2
-        WHERE a2.branch_id = a.branch_id
-        AND a2.acc_type = 'Current'
-    )
+DEREF(a.branch_id).branch_id AS BranchID,
+c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS Name,
+a.limit_of_free_od AS Max_OD
+FROM
+accounts a
+JOIN
+customer_account ca ON ca.acc_number = REF(a)
+JOIN
+customers c ON ca.customer_id = REF(c)
+WHERE
+a.acc_type = 'Current'
+AND a.limit_of_free_od = (
+SELECT MAX(ac.limit_of_free_od)
+FROM accounts ac
+WHERE ac.branch_id = a.branch_id
+AND ac.acc_type = 'Current'
+)
 ORDER BY a.branch_id;
 
 
