@@ -1,8 +1,8 @@
-/* 1 */
+/* 1 + */ 
 SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM employees e
-WHERE e.name.first_name LIKE '%st%'
-AND e.address.city = ‘London’;
+WHERE e.name.first_name LIKE '%mi%'
+AND e.address.city = ‘Madrid’;
 
 /* 2 */
 SELECT b.street || ', ' || b.city || ', ' || b.postcode AS branch_address,
