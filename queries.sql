@@ -86,18 +86,6 @@ WHERE c.customer_id IN (
 );
 
 /* 7 + */
-
-SELECT 
-    e.name.first_name || ' ' || e.name.last_name AS full_name
-FROM 
-    employees e,
-    employees supervisor
-WHERE 
-    supervisor.name.first_name = 'Michael' 
-    AND supervisor.name.last_name = 'Brown'
-    AND e.supervisor_id = REF(supervisor);
-
-
 /* Note there is no mr Barclay nor mrs Smith */
 
 SELECT COUNT(*) AS num_employees
@@ -111,10 +99,10 @@ WHERE DEREF(e.supervisor_id).emp_id IN (
         WHERE DEREF(supervisor_id).emp_id = (
             SELECT emp_id
             FROM employees
-            WHERE DEREF(supervisor_id).name.last_name = 'Brown'
-            AND DEREF(supervisor_id).name.title = 'Mr'
+            WHERE DEREF(supervisor_id).name.last_name = 'Johnson'
+            AND DEREF(supervisor_id).name.title = 'Mrs'
         )
-        AND DEREF(supervisor_id).name.last_name = 'Smith'
+        AND DEREF(supervisor_id).name.last_name = 'Anderson'
         AND DEREF(supervisor_id).name.title = 'Mrs'
     )
 );
