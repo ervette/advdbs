@@ -1,3 +1,11 @@
+INSERT INTO customers (customer_id, name, address, phone, ni_num)
+VALUES ('C001',
+        full_name('Mr.', 'John', 'Doe'),
+        address_type('123 Baker Street', 'London', 'NW1 6XE'),
+        phones_collection(phone_type('Mobile', '555-1234'), phone_type('Home', '555-5678')),
+        'AB123456C');
+
+
 /* 1 + note: There is no London branch therefore just any branch */ 
 SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
 FROM employees e
