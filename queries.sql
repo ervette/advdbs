@@ -14,24 +14,17 @@ GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
 SELECT 
-    DEREF(a.branch_id).branch_id AS "Branch-ID", 
-    c.name.first_name || ' ' || c.name.last_name AS "Customer Full Name",
-    a.balance AS "Lowest Balance"
-FROM 
-    accounts a
-JOIN 
-    customer_account ca ON ca.acc_number = REF(a)
-JOIN 
-    customers c ON ca.customer_id = REF(c)
-WHERE 
-    a.acc_type = 'Savings'
-    AND a.balance = (
-        SELECT MIN(a2.balance) 
-        FROM accounts a2 
-        WHERE a2.acc_type = 'Savings'
-        AND DEREF(a2.branch_id).branch_id = DEREF(a.branch_id).branch_id
-    );
-
+    branch_id AS "Branch-ID", 
+    (SELECT c.name.first_name || ' ' || c.name.last_name
+     FROM customers c 
+     JOIN customer_account ca ON ca.customer_id = REF(c)
+     WHERE ca.acc_number = REF(a) AND ROWNUM = 1) AS "Customer Full Name",
+    MIN(a.balance) AS "Lowest Balance"
+FROM accounts a
+WHERE a.acc_type = 'Savings'
+GROUP BY branch_id, a.acc_number
+ORDER BY "Lowest Balance" ASC
+FETCH FIRST 1 ROW WITH TIES;
 
 /* 4 */
 SELECT e.address.street || ', ' || e.address.city || ', ' || e.address.postcode AS employee_branch_address,
