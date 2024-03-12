@@ -13,7 +13,7 @@ WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
 /* 3 */
-SELECT DEREF(a.branch_id).branch_id as Branch-ID, MIN(a.balance) AS Lowest-balance
+SELECT DEREF(a.branch_id).branch_id as "Branch-ID", MIN(a.balance) AS "Lowest-balance"
 FROM accounts a
 WHERE a.acc_type = 'Savings'
 GROUP BY a.branch_id;
