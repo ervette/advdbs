@@ -1,9 +1,4 @@
 /* 1 + */ 
-SELECT e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name
-FROM employees e
-WHERE e.name.first_name LIKE '%mi%'
-AND e.address.city = 'London';
-
 SELECT e.get_person_name() AS name
 FROM employees e
 WHERE e.name.first_name LIKE '%mi%'
@@ -17,11 +12,18 @@ JOIN accounts a ON b.branch_id = DEREF(a.branch_id).branch_id
 WHERE a.acc_type = 'Savings'
 GROUP BY b.street, b.city, b.postcode;
 
+SELECT b.get_branch_address() AS branch_address,
+       COUNT(*) AS num_savings_accounts
+FROM branches b
+JOIN accounts a ON b.branch_id = DEREF(a.branch_id).branch_id
+WHERE a.acc_type = 'Savings'
+GROUP BY b.street, b.city, b.postcode;
+
 /* 3 + */
 SELECT 
-    DEREF(a.branch_id).branch_id AS "Branch-ID", 
-    c.name.first_name || ' ' || c.name.last_name AS "Customer Full Name",
-    a.balance AS "Lowest Balance"
+    DEREF(a.branch_id).branch_id AS branch_id, 
+    c.get_person_name() as name,
+    a.balance AS lowest_balance
 FROM 
     accounts a
 JOIN 
@@ -39,8 +41,8 @@ WHERE
 
 
 /* 4 + */
-SELECT e.address.street || ', ' || e.address.city || ', ' || e.address.postcode AS employee_branch_address,
-       b.street || ', ' || b.city || ', ' || b.postcode AS account_branch_address
+SELECT e.get_person_address() AS employee_branch_address,
+       b.get_branch_address() AS account_branch_address
 FROM employees e
 JOIN accounts a ON DEREF(a.branch_id).branch_id = DEREF(e.branch_id).branch_id
 JOIN branches b ON DEREF(a.branch_id).branch_id = b.branch_id
@@ -48,8 +50,8 @@ WHERE e.supervisor_id IS NOT NULL;
 
 /* 5 + */
 SELECT
-DEREF(a.branch_id).branch_id AS BranchID,
-c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS Name,
+DEREF(a.branch_id).branch_id AS branch_id,
+c.get_person_name AS name,
 a.limit_of_free_od AS Max_OD
 FROM
 accounts a
@@ -70,7 +72,7 @@ ORDER BY a.branch_id;
 
 /* 6 +- most of the numbers are pretty much the same
 therefore all of the employees are included */
-SELECT c.name.title || '. ' || c.name.first_name || ' ' || c.name.last_name AS full_name,
+SELECT c.get_person_name() AS name,
        ph.device_type,
        ph.phone_number
 FROM customers c,
@@ -95,7 +97,7 @@ AND DEREF(es.supervisor_id).name.last_name = 'Brown';
 
 /* 8 + */
 SELECT 
-    e.name.title || '. ' || e.name.first_name || ' ' || e.name.last_name AS full_name,
+    e.get_person_name() AS name,
     e.award_stars() AS stars_awarded
 FROM 
     employees e;
