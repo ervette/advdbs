@@ -17,7 +17,7 @@ SELECT b.get_branch_address() AS branch_address,
 FROM branches b
 JOIN accounts a ON b.branch_id = DEREF(a.branch_id).branch_id
 WHERE a.acc_type = 'Savings'
-GROUP BY b.street, b.city, b.postcode;
+GROUP BY b.get_branch_address();
 
 /* 3 + */
 SELECT 
@@ -51,7 +51,7 @@ WHERE e.supervisor_id IS NOT NULL;
 /* 5 + */
 SELECT
 DEREF(a.branch_id).branch_id AS branch_id,
-c.get_person_name AS name,
+c.get_person_name() AS name,
 a.limit_of_free_od AS Max_OD
 FROM
 accounts a
@@ -98,6 +98,6 @@ AND DEREF(es.supervisor_id).name.last_name = 'Brown';
 /* 8 + */
 SELECT 
     e.get_person_name() AS name,
-    e.award_stars() AS stars_awarded
+    e.award_stars() AS star
 FROM 
     employees e;
